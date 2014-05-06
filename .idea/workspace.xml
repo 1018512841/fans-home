@@ -47,7 +47,7 @@
       <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rdoc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="25" selection-start="684" selection-end="684" vertical-scroll-proportion="0.7589852" vertical-offset="344" max-vertical-offset="817">
+            <state line="37" column="0" selection-start="659" selection-end="684" vertical-scroll-proportion="0.7589852" vertical-offset="344" max-vertical-offset="817">
               <folding />
             </state>
           </provider>
@@ -296,7 +296,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="25" selection-start="684" selection-end="684" vertical-scroll-proportion="0.7589852" vertical-offset="344" max-vertical-offset="817">
+        <state line="37" column="0" selection-start="659" selection-end="684" vertical-scroll-proportion="0.7589852" vertical-offset="344" max-vertical-offset="817">
           <folding />
         </state>
       </provider>
