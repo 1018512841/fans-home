@@ -1,4 +1,4 @@
-## Ruby China
+## Fans Home
 
 This is the source code of [Fans Home](http://***.***) website.
 
@@ -31,8 +31,3 @@ bundle exec rspec spec
 ```
 
 to prepare all the config files and start essential services.
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/1018512841/fans-home.git
-git push -u origin master
