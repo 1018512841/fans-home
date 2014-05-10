@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FansHome</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <title>Fans-Home</title>
+  <meta charset="utf-8">
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <!-- Favicon and touch icons -->
+  <%= favicon_link_tag 'ico/apple-touch-icon-57-precomposed.png' %>
 </head>
 <body>
 
+
 <%= yield %>
+<div class="container">
+  <%= debug(params) if Rails.env.development? %>
+</div>
 
 </body>
 </html>
