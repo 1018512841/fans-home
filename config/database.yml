@@ -22,7 +22,7 @@ test:
   pool: 5
   timeout: 5000
 
-development:
+production:
   adapter: postgresql
   encoding: utf8
   database: fans-home

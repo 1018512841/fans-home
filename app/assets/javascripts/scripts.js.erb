@@ -1,0 +1,21 @@
+jQuery(document).ready(function () {
+    /*
+     Background slideshow
+     */
+    $('.coming-soon').backstretch([
+        "<%= image_path('backgrounds/1.jpg') %>",
+        "<%= image_path('backgrounds/2.jpg') %>",
+        "<%= image_path('backgrounds/3.jpg') %>"
+    ], {duration: 3000, fade: 750});
+
+    $(".item_house").hover(
+            function () {
+                $(this).find('.total_count').find('span').show();
+            },
+            function () {
+                $(this).find('.total_count').find('span').hide();
+            }
+    );
+
+});
+

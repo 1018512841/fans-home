@@ -3,4 +3,7 @@
   <data-source source="LOCAL" name="Rails fans-home: development" uuid="2bc8e074-adf1-4a43-88d4-a8690ed7bb03">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails fans-home: production" uuid="09afb75f-fd4a-4111-a61c-4a9a121c5cb3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

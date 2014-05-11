@@ -9,7 +9,7 @@
  */
 
 body {
-    background: #f8f8f8 url(pattern.jpg);
+    background: url(<%= image_path('pattern.jpg') %>);
     text-align: left;
     font-family: 'Lato', Arial, sans-serif;
     color: #555;
@@ -87,7 +87,7 @@ a:hover {
 
 .inner-bg {
     padding: 55px 0 60px 0;
-    background: url(pattern-3.png);
+    background: url(<%= image_path('pattern-3.png') %>);
     -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
     -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
@@ -130,19 +130,19 @@ a:hover {
     cursor:pointer;
 }
 .item .item_house {
-    background: url(backgrounds/house.jpg);
+    background: url(<%= image_path('backgrounds/house.jpg') %>);
     background-size: 100% 100%;
 }
 .item .item_work {
-    background: url(backgrounds/work.jpg);
+    background: url(<%= image_path('backgrounds/work.jpg') %>);
     background-size: 100% 100%;
 }
 .item .item_happy {
-    background: url(backgrounds/tourist.jpg);
+    background: url(<%= image_path('backgrounds/tourist.jpg') %>);
     background-size: 100% 100%;
 }
 .item .item_research {
-    background: url(backgrounds/research.jpg);
+    background: url(<%= image_path('backgrounds/research.jpg') %>);
     background-size: 100% 100%;
 }
 
@@ -170,11 +170,10 @@ a:hover {
     width: 160px;
     height: 160px;
     margin-top: -110px;
-
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
     border-radius: 80px;
-    background: #666666 url(pattern-2.png);
+    background: #666666 url(<%= image_path('pattern-2.png') %>);
     opacity: 0.8;
     filter: alpha(opacity=20); /* For IE8 and earlier */
 }
@@ -191,7 +190,7 @@ a:hover {
 .item .item_work:hover,
 .item .item_happy:hover,
 .item .item_research:hover {
-    background: #e75967 url(pattern-2.png);
+    background: #e75967 url(<%= image_path('pattern-2.png') %>);
     text-shadow: none;
 }
 
