@@ -9,7 +9,7 @@
  */
 
 body {
-    background: url(<%= image_path('pattern.jpg') %>);
+    background: url(../images/pattern.jpg);
     text-align: left;
     font-family: 'Lato', Arial, sans-serif;
     color: #555;
@@ -86,8 +86,10 @@ a:hover {
 }
 
 .inner-bg {
-    padding: 55px 0 60px 0;
-    background: url(<%= image_path('pattern-3.png') %>);
+    padding: 10px 0 35px 0;
+    overflow:auto;
+    zoom:1;
+    background: url(../images/pattern-3.png);
     -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
     -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
@@ -106,6 +108,31 @@ a:hover {
     line-height: 36px;
     text-shadow: 0 1px 7px rgba(0, 0, 0, .2);
 }
+
+#index_detail_show {
+    margin: 0;
+    padding: 0;
+
+}
+
+.detail_test{
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+
+    background-color: #000000;
+}
+
+.detail_index,
+.detail_life,
+.detail_work,
+.detail_tourist,
+.detail_research {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 300px;}
 
 .item {
     margin-top: 40px;
@@ -130,19 +157,19 @@ a:hover {
     cursor:pointer;
 }
 .item .item_house {
-    background: url(<%= image_path('backgrounds/house.jpg') %>);
+    background: url(../images/backgrounds/house.jpg);
     background-size: 100% 100%;
 }
 .item .item_work {
-    background: url(<%= image_path('backgrounds/work.jpg') %>);
+    background: url(../images/backgrounds/work.jpg);
     background-size: 100% 100%;
 }
 .item .item_happy {
-    background: url(<%= image_path('backgrounds/tourist.jpg') %>);
+    background: url(../images/backgrounds/tourist.jpg);
     background-size: 100% 100%;
 }
 .item .item_research {
-    background: url(<%= image_path('backgrounds/research.jpg') %>);
+    background: url(../images/backgrounds/research.jpg);
     background-size: 100% 100%;
 }
 
@@ -161,7 +188,7 @@ a:hover {
 .item .rectangle {
     width: 160px;
     height: 140px;
-    margin-top: 22px;
+    margin-top: 23px;
     overflow: hidden;
 
 }
@@ -173,7 +200,7 @@ a:hover {
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
     border-radius: 80px;
-    background: #666666 url(<%= image_path('pattern-2.png') %>);
+    background: #666666 url(../images/pattern-2.png);
     opacity: 0.8;
     filter: alpha(opacity=20); /* For IE8 and earlier */
 }
@@ -185,12 +212,20 @@ a:hover {
     font-size: larger;
     font-weight: bolder ;
 }
+.item .title_posts {
+    position: relative;
+    bottom: -120px;
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bolder ;
+    display: none;
+}
 
 .item .item_house:hover,
 .item .item_work:hover,
 .item .item_happy:hover,
 .item .item_research:hover {
-    background: #e75967 url(<%= image_path('pattern-2.png') %>);
+    background: #e75967 url(../images/pattern-2.png);
     text-shadow: none;
 }
 
@@ -322,27 +357,27 @@ a:hover {
 }
 
 .social a.facebook {
-    background: url(social-icons/facebook.png);
+    background: url(../images/social-icons/facebook.png);
 }
 
 .social a.twitter {
-    background: url(social-icons/twitter.png);
+    background: url(../images/social-icons/twitter.png);
 }
 
 .social a.dribbble {
-    background: url(social-icons/dribbble.png);
+    background: url(../images/social-icons/dribbble.png);
 }
 
 .social a.googleplus {
-    background: url(social-icons/googleplus.png);
+    background: url(../images/social-icons/googleplus.png);
 }
 
 .social a.pinterest {
-    background: url(social-icons/pinterest.png);
+    background: url(../images/social-icons/pinterest.png);
 }
 
 .social a.flickr {
-    background: url(social-icons/flickr.png);
+    background: url(../images/social-icons/flickr.png);
 }
 
 /***** Media Queries *****/

@@ -15,57 +15,77 @@
   <div class="inner-bg">
     <div class="container">
       <div class="row">
-        <div class="span12">
-          <div class="detail_index">
-            <h2>We're Coming Soon</h2>
-
-            <p>We are working very hard on the new version of our site. It will bring a lot of new features. Stay
-              tuned!We are working very hard on the new version of our site. It will bring a lot of new features. Stay
-              tuned!We are working very hard on the new version of our site. It will bring a lot of new features. Stay
-              tuned!We are working very hard on the new version of our site. It will bring a lot of new features. Stay
-              tuned!</p>
+        <div id="index_detail_show" class="span12 hero-unit">
+          <div class="detail_index" style="display: block;">
+            <div style="margin: 0 auto;height: 100%">
+              <div style="font-size: xx-large;position:relative;margin-top:10px">hello world</div>
+              <span>
+                Welcome to home of fanxiaopeng!
+              </span>
+            </div>
           </div>
-          <div class="detail_life"></div>
+          <div class="detail_life">
+            <!--<div id="myCarousel" class="carousel slide" style="top: 0">-->
+              <!--<div class="carousel-inner">-->
+                <!--<div class="active item">-->
+                  <!--<img src="../bootstrap/images/html5_logo.png" alt="HTML5 logo" width="500" height="99"/></div>-->
+                <!--<div class="item">-->
+                  <!--<img src="../bootstrap/images/javascript-logo.png" alt="JS logo" width="500" height="99"/></div>-->
+                <!--<div class="item">-->
+                  <!--<img src="../bootstrap/images/schema.png" alt="Schema.org logo" width="500" height="99"/></div>-->
+                <!--<div class="item"><img src="../bootstrap/images/json.gif" alt="JSON logo" width="500" height="99"/>-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--&lt;!&ndash; Carousel nav &ndash;&gt;-->
+              <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>-->
+              <!--<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a></div>-->
+          <!---->
+          </div>
           <div class="detail_work"></div>
           <div class="detail_tourist"></div>
           <div class="detail_research"></div>
 
-          <div class="item">
-            <div class="item_house">
-              <div class="total_count"><span>33</span></div>
-              <div class="rectangle">
-                <div class="circle">
-                  <div class="title">Life</div>
-                </div>
+        </div>
+        <div class="item">
+          <div class="item_house" data-detail_panel="detail_life">
+            <div class="total_count"><span>33</span></div>
+            <div class="rectangle">
+              <div class="circle">
+                <div class="title">Life</div>
+                <div class="title_posts">Posts</div>
               </div>
             </div>
-            <div class="item_work">
-              <div class="total_count"><span>33</span></div>
-              <div class="rectangle">
-                <div class="circle">
-                  <div class="title">Work</div>
-                </div>
+          </div>
+          <div class="item_work" data-detail_panel="detail_work">
+            <div class="total_count"><span>33</span></div>
+            <div class="rectangle">
+              <div class="circle">
+                <div class="title">Work</div>
+                <div class="title_posts">Posts</div>
               </div>
             </div>
-            <div class="item_happy">
-              <div class="total_count"><span>33</span></div>
-                 <div class="rectangle">
-                <div class="circle">
-                  <div class="title">Tourist</div>
-                </div>
+          </div>
+          <div class="item_happy" data-detail_panel="detail_tourist">
+            <div class="total_count"><span>33</span></div>
+            <div class="rectangle">
+              <div class="circle">
+                <div class="title">Tourist</div>
+                <div class="title_posts">Posts</div>
               </div>
             </div>
-            <div class="item_research">
-              <div class="total_count"><span>33</span></div>
-              <div class="rectangle">
-                <div class="circle">
-                  <div class="title">Research</div>
-                </div>
+          </div>
+          <div class="item_research" data-detail_panel="detail_research">
+            <div class="total_count"><span>33</span></div>
+            <div class="rectangle">
+              <div class="circle">
+                <div class="title">Research</div>
+                <div class="title_posts">Posts</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -96,6 +116,5 @@
       <a href="" class="flickr" rel="tooltip" data-placement="top" data-original-title="Flickr"></a>
     </div>
   </div>
-  <div align="center">Collect from <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a></div>
 </div>
-<%= image_path('pattern-2.png') %>
+
