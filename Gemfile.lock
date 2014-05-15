@@ -5,7 +5,7 @@ GIT
     database_cleaner (1.2.0)
 
 GEM
-  remote: https://ruby.taobao.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.0.4)
       actionpack (= 4.0.4)
