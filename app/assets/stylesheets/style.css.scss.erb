@@ -1,13 +1,10 @@
 /*
  *
- * Template Name: Alissa
- * Template URI: http://azmind.com
- * Description: Alissa - Responsive Coming Soon Template
- * Author: Anli Zaimi
- * Author URI: http://azmind.com
  *
  */
 
+
+/***** global start *****/
 body {
     background: url(../images/pattern.jpg);
     text-align: left;
@@ -36,7 +33,9 @@ a:hover {
     color: #fff;
     text-shadow: none;
 }
+/***** global start *****/
 
+/***** header start *****/
 .logo h1 {
     margin-top: 7px;
     padding-left: 50px;
@@ -77,54 +76,75 @@ a:hover {
     color: #888;
 }
 
-/***** Coming Soon *****/
+#navbar_area {
+    float: right;
+}
 
-.coming-soon {
+.dropdown-menu {
+    background: url(../images/pattern.jpg);
+}
+
+.dropdown-menu li{
+    text-align: center;
+}
+/***** header end *****/
+
+
+/***** main board start *****/
+
+.main_board {
     margin: 0 auto;
     text-align: center;
     color: #fff;
 }
 
 .inner-bg {
-    padding: 10px 0 35px 0;
-    overflow:auto;
-    zoom:1;
+    padding: 15px 0 15px 0;
+    overflow: auto;
+    zoom: 1;
     background: url(../images/pattern-3.png);
     -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
     -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3) inset;
 }
 
-.coming-soon h2 {
+.main_board h2 {
     font-size: 40px;
     font-weight: 700;
-    text-transform: uppercase;
     text-shadow: 0 1px 7px rgba(0, 0, 0, .2);
 }
 
-.coming-soon p {
+.main_board p {
     margin-top: 20px;
     font-size: 18px;
     line-height: 36px;
     text-shadow: 0 1px 7px rgba(0, 0, 0, .2);
 }
 
-#index_detail_show {
+#board_detail_show {
     margin: 0;
     padding: 0;
-
 }
 
-.detail_test{
-    display: none;
+#close_detail_show {
+
+}
+.arrow_button {
+    position: relative;
+    display: block;
+    margin-top: 90px;
+    height:50px;
+    width: 50px
+}
+.arrow_button:hover{
+    cursor: pointer;
+}
+.detail_index {
     margin: 0;
     padding: 0;
-    height: 200px;
-
-    background-color: #000000;
+    height: 300px;
 }
 
-.detail_index,
 .detail_life,
 .detail_work,
 .detail_tourist,
@@ -132,10 +152,35 @@ a:hover {
     display: none;
     margin: 0;
     padding: 0;
-    height: 300px;}
+    height: 300px;
+    background: url(../images/pattern.jpg);
+    color: #000000;
+}
+#close_detail_btn {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.left_button {
+    background: none repeat scroll 0 0 #222222;
+    border: 3px solid #FFFFFF;
+    border-radius: 23px;
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 100;
+    height: 40px;
+    left: 15px;
+    line-height: 30px;
+    margin-top: -20px;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 40px;
+}
 
 .item {
-    margin-top: 40px;
+    margin-top: 10px;
     text-shadow: 0 1px 5px rgba(0, 0, 0, .1);
 }
 
@@ -154,20 +199,24 @@ a:hover {
     -moz-border-radius: 80px;
     -webkit-border-radius: 80px;
     border-radius: 80px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .item .item_house {
     background: url(../images/backgrounds/house.jpg);
     background-size: 100% 100%;
 }
+
 .item .item_work {
     background: url(../images/backgrounds/work.jpg);
     background-size: 100% 100%;
 }
+
 .item .item_happy {
     background: url(../images/backgrounds/tourist.jpg);
     background-size: 100% 100%;
 }
+
 .item .item_research {
     background: url(../images/backgrounds/research.jpg);
     background-size: 100% 100%;
@@ -181,6 +230,7 @@ a:hover {
     font-size: 60px;
     overflow: hidden;
 }
+
 .item .total_count span {
     display: none
 }
@@ -210,14 +260,15 @@ a:hover {
     bottom: -120px;
     color: #ffffff;
     font-size: larger;
-    font-weight: bolder ;
+    font-weight: bolder;
 }
+
 .item .title_posts {
     position: relative;
     bottom: -120px;
     color: #ffffff;
     font-size: larger;
-    font-weight: bolder ;
+    font-weight: bolder;
     display: none;
 }
 
@@ -440,12 +491,12 @@ a:hover {
         padding: 45px 0 50px 0;
     }
 
-    .coming-soon h2 {
+    .main_board h2 {
         font-size: 36px;
         padding: 0 20px;
     }
 
-    .coming-soon p {
+    .main_board p {
         padding: 0 20px;
     }
 

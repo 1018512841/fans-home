@@ -1,120 +1,66 @@
-<!-- Header -->
-<div class="container">
-  <div class="header row">
-    <div class="logo span4">
-      <h1><a href="">Fans Home</a> <span>.</span></h1>
-    </div>
-    <div class="call-us span8">
-      <p>Navigation: <span>Show</span> | Login: <span>Customer</span></p>
-    </div>
-  </div>
-</div>
-
-<!-- Coming Soon -->
-<div class="coming-soon">
+<!-- main board -->
+<div class="main_board">
   <div class="inner-bg">
     <div class="container">
       <div class="row">
-        <div id="index_detail_show" class="span12 hero-unit">
-          <div class="detail_index" style="display: block;">
-            <div style="margin: 0 auto;height: 100%">
-              <div style="font-size: xx-large;position:relative;margin-top:10px">hello world</div>
-              <span>
-                Welcome to home of fanxiaopeng!
-              </span>
-            </div>
+        <div id="board_detail_show" class="span12">
+          <div class="detail_index">
+            <%= render 'static_page/default_board' %>
           </div>
-          <div class="detail_life">
-            <!--<div id="myCarousel" class="carousel slide" style="top: 0">-->
-              <!--<div class="carousel-inner">-->
-                <!--<div class="active item">-->
-                  <!--<img src="../bootstrap/images/html5_logo.png" alt="HTML5 logo" width="500" height="99"/></div>-->
-                <!--<div class="item">-->
-                  <!--<img src="../bootstrap/images/javascript-logo.png" alt="JS logo" width="500" height="99"/></div>-->
-                <!--<div class="item">-->
-                  <!--<img src="../bootstrap/images/schema.png" alt="Schema.org logo" width="500" height="99"/></div>-->
-                <!--<div class="item"><img src="../bootstrap/images/json.gif" alt="JSON logo" width="500" height="99"/>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--&lt;!&ndash; Carousel nav &ndash;&gt;-->
-              <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>-->
-              <!--<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a></div>-->
-          <!---->
+          <div class="detail_life hero-unit">
+            <%= render 'static_page/item_detail' %>
           </div>
-          <div class="detail_work"></div>
-          <div class="detail_tourist"></div>
-          <div class="detail_research"></div>
-
+          <div class="detail_work hero-unit">
+            <%= render 'static_page/item_detail' %>
+          </div>
+          <div class="detail_tourist hero-unit">
+            <%= render 'static_page/item_detail' %>
+          </div>
+          <div class="detail_research hero-unit">
+            <%= render 'static_page/item_detail' %>
+          </div>
         </div>
-        <div class="item">
-          <div class="item_house" data-detail_panel="detail_life">
-            <div class="total_count"><span>33</span></div>
-            <div class="rectangle">
-              <div class="circle">
-                <div class="title">Life</div>
-                <div class="title_posts">Posts</div>
-              </div>
+      </div>
+      <div class="item">
+        <div class="item_house" data-detail_panel="detail_life">
+          <div class="total_count"><span>33</span></div>
+          <div class="rectangle">
+            <div class="circle">
+              <div class="title">Life</div>
+              <div class="title_posts">Posts</div>
             </div>
           </div>
-          <div class="item_work" data-detail_panel="detail_work">
-            <div class="total_count"><span>33</span></div>
-            <div class="rectangle">
-              <div class="circle">
-                <div class="title">Work</div>
-                <div class="title_posts">Posts</div>
-              </div>
+        </div>
+        <div class="item_work" data-detail_panel="detail_work">
+          <div class="total_count"><span>33</span></div>
+          <div class="rectangle">
+            <div class="circle">
+              <div class="title">Work</div>
+              <div class="title_posts">Posts</div>
             </div>
           </div>
-          <div class="item_happy" data-detail_panel="detail_tourist">
-            <div class="total_count"><span>33</span></div>
-            <div class="rectangle">
-              <div class="circle">
-                <div class="title">Tourist</div>
-                <div class="title_posts">Posts</div>
-              </div>
+        </div>
+        <div class="item_happy" data-detail_panel="detail_tourist">
+          <div class="total_count"><span>33</span></div>
+          <div class="rectangle">
+            <div class="circle">
+              <div class="title">Tourist</div>
+              <div class="title_posts">Posts</div>
             </div>
           </div>
-          <div class="item_research" data-detail_panel="detail_research">
-            <div class="total_count"><span>33</span></div>
-            <div class="rectangle">
-              <div class="circle">
-                <div class="title">Research</div>
-                <div class="title_posts">Posts</div>
-              </div>
+        </div>
+        <div class="item_research" data-detail_panel="detail_research">
+          <div class="total_count"><span>33</span></div>
+          <div class="rectangle">
+            <div class="circle">
+              <div class="title">Research</div>
+              <div class="title_posts">Posts</div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- Content -->
-<div class="container">
-  <div class="row">
-    <div class="span12 subscribe">
-      <h3>Subscribe to our newsletter</h3>
-
-      <p>Sign up now to our newsletter and you'll be one of the first to know when the site is ready:</p>
-
-      <form class="form-inline" action="assets/sendmail.php" method="post">
-        <input type="text" name="email" placeholder="Enter your email...">
-        <button type="submit" class="btn">Subscribe</button>
-      </form>
-      <div class="success-message"></div>
-      <div class="error-message"></div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="span12 social">
-      <a href="" class="facebook" rel="tooltip" data-placement="top" data-original-title="Facebook"></a>
-      <a href="" class="twitter" rel="tooltip" data-placement="top" data-original-title="Twitter"></a>
-      <a href="" class="dribbble" rel="tooltip" data-placement="top" data-original-title="Dribbble"></a>
-      <a href="" class="googleplus" rel="tooltip" data-placement="top" data-original-title="Google Plus"></a>
-      <a href="" class="pinterest" rel="tooltip" data-placement="top" data-original-title="Pinterest"></a>
-      <a href="" class="flickr" rel="tooltip" data-placement="top" data-original-title="Flickr"></a>
-    </div>
-  </div>
-</div>
-
+<%= render "static_page/foot" %>

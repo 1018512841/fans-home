@@ -10,8 +10,9 @@
   <%= favicon_link_tag 'ico/apple-touch-icon-57-precomposed.png' %>
 </head>
 <body>
-
-
+<header>
+  <%= render 'static_page/header' %>
+</header>
 <%= yield %>
 <div class="container">
   <%= debug(params) if Rails.env.development? %>
