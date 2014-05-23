@@ -26,4 +26,7 @@ FansHome::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  config.gem "mongo_mapper",:source=>"http://gemcutter.org"
+  config.frameworks = [:active_record] # - 代表不加载 active_record
 end

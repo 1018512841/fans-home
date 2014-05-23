@@ -34,6 +34,9 @@ GEM
     arel (4.0.2)
     bootstrap-sass (2.3.2.0)
       sass (~> 3.2)
+    bson (1.10.1)
+    bson_ext (1.10.1)
+      bson (~> 1.10.1)
     builder (3.1.4)
     capybara (2.1.0)
       mime-types (>= 1.16)
@@ -117,12 +120,21 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.3)
     minitest (4.7.5)
+    mongo (1.10.1)
+      bson (~> 1.10.1)
+    mongo_mapper (0.13.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0)
+      mongo (~> 1.8)
+      plucky (~> 0.6.5)
     multi_json (1.10.0)
     multi_test (0.1.1)
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     pg (0.17.1)
+    plucky (0.6.6)
+      mongo (~> 1.5)
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -220,6 +232,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (= 2.3.2.0)
+  bson_ext
   capybara (= 2.1.0)
   childprocess
   coffee-rails (~> 4.0.0)
@@ -232,6 +245,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   libnotify (= 0.8.0)
+  mongo_mapper
   pg (= 0.17.1)
   rails (= 4.0.4)
   rspec-rails (= 2.13.1)

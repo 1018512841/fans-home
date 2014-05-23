@@ -6,6 +6,9 @@ gem 'rails', '4.0.4'
 
 # Use postgres SQL as the database for Active Record
 gem 'pg', '0.17.1'
+gem 'mongo_mapper'
+gem "bson_ext"
+
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
