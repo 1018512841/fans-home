@@ -27,6 +27,4 @@ FansHome::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.gem "mongo_mapper",:source=>"http://gemcutter.org"
-  config.frameworks = [:active_record] # - 代表不加载 active_record
 end
