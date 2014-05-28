@@ -1,2 +1,10 @@
 zh:
+  logo: "Fans Home"
   hello: "你好!"
+  navigation_text: "导航"
+  life_text: "生活"
+  work_text: "工作"
+  tourist_text: "旅游"
+  research_text: "研究"
+  setting: "设置"
+  sign_out: "退出"

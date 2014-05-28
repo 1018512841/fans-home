@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  logo: "Fans Home"
   hello: "Hello world"
+  navigation_text: "Navigation"
+  life_text: "Life"
+  work_text: "Work"
+  tourist_text: "Tourist"
+  research_text: "Research"
+  setting: "Setting"
+  sign_out: "Sign Out"

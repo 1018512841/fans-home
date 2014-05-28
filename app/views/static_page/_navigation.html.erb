@@ -2,22 +2,23 @@
   <div class="container">
     <ul class="nav pull-right" role="navigation">
       <li class="dropdown">
-        <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Navigation
+        <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+          <%= I18n.t "navigation_text" %>
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Life</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Work</a>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "life_text" %></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "work_text" %></a>
           </li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tourist</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Research</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "tourist_text" %></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "research_text" %></a></li>
         </ul>
       </li>
       <li class="dropdown">
         <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">User
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Setting</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Sign out</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "setting" %></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "sign_out" %></a></li>
         </ul>
       </li>
     </ul>
