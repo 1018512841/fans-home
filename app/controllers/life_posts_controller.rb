@@ -1,4 +1,5 @@
 class LifePostsController < ApplicationController
+
   before_action :set_life_post, only: [:show, :edit, :update, :destroy]
 
   # GET /life_posts

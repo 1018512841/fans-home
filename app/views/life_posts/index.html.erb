@@ -1,27 +1,37 @@
-<h1>Listing life_posts</h1>
+<div class="container">
 
-<table>
-  <thead>
+  <h1>Listing life_posts</h1>
+
+  <table>
+    <thead>
     <tr>
       <th>Title</th>
       <th></th>
       <th></th>
       <th></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @life_posts.each do |life_post| %>
-      <tr>
-        <td><%= life_post.title %></td>
-        <td><%= link_to 'Show', life_post %></td>
-        <td><%= link_to 'Edit', edit_life_post_path(life_post) %></td>
-        <td><%= link_to 'Destroy', life_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <tr>
+          <td><%= life_post.title %></td>
+          <td><%= link_to 'Show', life_post %></td>
+          <td><%= link_to 'Edit', edit_life_post_path(life_post) %></td>
+          <td><%= link_to 'Destroy', life_post, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New Life post', new_life_post_path %>
+  <%= link_to 'New Life post', new_life_post_path %>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+    });
+</script>

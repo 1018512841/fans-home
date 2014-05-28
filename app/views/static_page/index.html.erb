@@ -23,40 +23,24 @@
       </div>
       <div class="item">
         <div class="item_house" data-detail_panel="detail_life">
-          <div class="total_count"><span>33</span></div>
-          <div class="rectangle">
-            <div class="circle">
-              <div class="title">Life</div>
-              <div class="title_posts">Posts</div>
-            </div>
-          </div>
+          <%= render partial: "each_item", locals: {total_count: 33,
+                                                    item_name: "Life",
+                                                    total_unit: "Posts"} %>
         </div>
         <div class="item_work" data-detail_panel="detail_work">
-          <div class="total_count"><span>33</span></div>
-          <div class="rectangle">
-            <div class="circle">
-              <div class="title">Work</div>
-              <div class="title_posts">Posts</div>
-            </div>
-          </div>
+          <%= render partial: "each_item", locals: {total_count: 33,
+                                                    item_name: "Work",
+                                                    total_unit: "Posts"} %>
         </div>
         <div class="item_happy" data-detail_panel="detail_tourist">
-          <div class="total_count"><span>33</span></div>
-          <div class="rectangle">
-            <div class="circle">
-              <div class="title">Tourist</div>
-              <div class="title_posts">Posts</div>
-            </div>
-          </div>
+          <%= render partial: "each_item", locals: {total_count: 33,
+                                                    item_name: "Tourist",
+                                                    total_unit: "Posts"} %>
         </div>
         <div class="item_research" data-detail_panel="detail_research">
-          <div class="total_count"><span>33</span></div>
-          <div class="rectangle">
-            <div class="circle">
-              <div class="title">Research</div>
-              <div class="title_posts">Posts</div>
-            </div>
-          </div>
+          <%= render partial: "each_item", locals: {total_count: 33,
+                                                    item_name: "Research",
+                                                    total_unit: "Posts"} %>
         </div>
       </div>
     </div>
@@ -64,6 +48,8 @@
 </div>
 
 <%= render "static_page/foot" %>
+
+
 <script type="text/javascript">
     $(document).ready(function () {
         fans_home.dashboard.init_dashboard();
