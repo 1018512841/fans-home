@@ -1,5 +1,6 @@
 FansHome::Application.routes.draw do
   resources :life_posts
+  resources :users
 
   get "static_page/index"
   get "detail" => 'static_page#detail'

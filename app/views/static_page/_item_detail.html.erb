@@ -1,7 +1,7 @@
 <div class="row">
-  <button id="close_detail_btn" class="close" data-toggle="tooltip" title="Close">
+  <button class="close_detail_btn close" data-toggle="tooltip" title="<%= I18n.t "btn_close_tooltip" %>">
     <i class="icon-remove"></i></button>
-  <button id="show_detail_btn" class="close" data-toggle="tooltip" title="Show List">
+  <button class="show_detail_btn close" data-toggle="tooltip" title="<%= I18n.t "btn_show_tooltip" %>">
     <i class="icon-eject"></i></button>
 
   <h4 class="alert-heading">Oh snap! You got an error!</h4>
@@ -10,13 +10,13 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span1">
-          <div id="left_arrow_button" class="arrow_button">pre</div>
+          <div id="left_arrow_button" class="arrow_button"><%= I18n.t "previous_page" %></div>
         </div>
         <div class="span10 detail_container">
           <span>123456789ss</span>
         </div>
         <div class="span1">
-          <div id="right_arrow_button" class="arrow_button">next</div>
+          <div id="right_arrow_button" class="arrow_button"><%= I18n.t "next_page" %></div>
         </div>
       </div>
     </div>

@@ -24,22 +24,22 @@
       <div class="item">
         <div class="item_house" data-detail_panel="detail_life">
           <%= render partial: "each_item", locals: {total_count: 33,
-                                                    item_name: "Life",
+                                                    item_name: I18n.t("life_text"),
                                                     total_unit: "Posts"} %>
         </div>
         <div class="item_work" data-detail_panel="detail_work">
           <%= render partial: "each_item", locals: {total_count: 33,
-                                                    item_name: "Work",
+                                                    item_name: I18n.t("work_text"),
                                                     total_unit: "Posts"} %>
         </div>
         <div class="item_happy" data-detail_panel="detail_tourist">
           <%= render partial: "each_item", locals: {total_count: 33,
-                                                    item_name: "Tourist",
+                                                    item_name: I18n.t("tourist_text"),
                                                     total_unit: "Posts"} %>
         </div>
         <div class="item_research" data-detail_panel="detail_research">
           <%= render partial: "each_item", locals: {total_count: 33,
-                                                    item_name: "Research",
+                                                    item_name: I18n.t("research_text"),
                                                     total_unit: "Posts"} %>
         </div>
       </div>
