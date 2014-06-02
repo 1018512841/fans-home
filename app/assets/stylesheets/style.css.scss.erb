@@ -14,11 +14,18 @@ body {
     border-top: 2px solid #e75967;
 }
 
+
 strong {
     font-weight: 700;
 }
 
-.container a:hover {
+body a:hover{
+    background: none;
+    text-decoration: underline;
+    color: blue;
+}
+
+header a:hover {
     text-decoration: none;
     background: url(../images/pattern.jpg);
     color: #e75967;
@@ -331,5 +338,33 @@ strong {
 
 .social a.resume {
     background: url(../images/social-icons/resume.png);
+}
+
+
+
+/***** User List *****/
+#user_list_title {
+    text-align: center
+}
+
+#user_table_create_btn {
+    color: #ffffff;
+}
+
+#user_list_container .page-header {
+    text-align: center;
+}
+
+#user_list_container {
+    padding-top: 10px;
+}
+
+#user_operation_message {
+    display: none;
+
+}
+
+#user_detail_container .btn {
+    color: #ffffff;
 }
 

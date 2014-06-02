@@ -9,6 +9,7 @@ gem 'rails-i18n'
 gem 'pg', '0.17.1'
 gem 'mongo_mapper'
 gem "bson_ext"
+gem 'sqlite3'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

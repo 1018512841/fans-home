@@ -1,0 +1,127 @@
+/*
+ * Javascript function for User screen
+ * @author：fanxiaopeng
+ */
+
+fans_home.user_screen = function () {
+    return {
+        /*
+         * @function： init_user_index
+         * @param：none
+         */
+        init_user_index: function () {
+            var selected_row_number = 0;
+            var $user_table_edit_btn = $("#user_table_edit_btn");
+            var $user_table_delete_btn = $("#user_table_delete_btn");
+            var $user_table_list = $('#user_table_list');
+
+            // 使用datatable插件请求数据，POST方式
+            var user_datatable_obj = $user_table_list.dataTable({
+                "ajax": '/users/user_list',
+                "sServerMethod": "POST"
+            });
+
+            var $user_table_body = $user_table_list.find('tbody');
+
+            // 为表格中的每一行添加click事件，切换选中的颜色和button的状态
+            $user_table_body.on('click', 'tr', function () {
+
+                if ($(this).find("td").attr("class") == "dataTables_empty") {
+                    return;
+                }
+
+                $(this).toggleClass('selected');
+                fans_home.user_screen.controle_btn_status(selected_row_number, $user_table_body, $user_table_edit_btn, $user_table_delete_btn);
+            });
+
+            // 点击删除button时，获取选中的记录，并删除选中的记录
+            $user_table_delete_btn.click(function () {
+                var delete_user_id_list = [];
+                $user_table_body.find(".selected").each(function (i) {
+                    delete_user_id_list.push($(this).find(".user_link").attr("user_id"));
+                });
+
+                if(delete_user_id_list.length == 0 ){
+                    return;
+                }
+                fans_home.user_screen.delete_users_by_ajax(delete_user_id_list, $user_table_body, user_datatable_obj);
+            });
+
+            // 点击编辑button时，获取选中的记录的user ID，并跳转到编辑页面
+            $user_table_edit_btn.click(function () {
+                var delete_user_id = $user_table_body
+                    .find(".selected").first()
+                    .find(".user_link").attr("user_id");
+                fans_home.user_screen.jump_to_edit_page(delete_user_id)
+            })
+        },
+
+        /*
+         * controle button status by selected rows
+         * @function： controle_btn_status
+         * @param：{array} selected row list
+         * @param：{object} User table body element of jQuery object
+         * @param：{object} Edit button element of jQuery object
+         * @param：{object} Delete button element of jQuery object
+         * @returns null
+         */
+        controle_btn_status: function (selected_row_number, $user_table_body, $user_table_edit_btn, $user_table_delete_btn) {
+            selected_row_number = $user_table_body.find(".selected").length;
+            if (selected_row_number == 1) {
+                $user_table_edit_btn.removeAttr("disabled");
+            } else {
+                $user_table_edit_btn.attr("disabled", "disabled");
+            }
+
+            if (selected_row_number > 0) {
+                $user_table_delete_btn.removeAttr("disabled");
+            } else {
+                $user_table_delete_btn.attr("disabled", "disabled");
+            }
+        },
+
+        /*
+         * Send selected user IDs to server by ajax, show response message
+         * @function： delete_users_by_ajax
+         * @param：{array} selected User ID list
+         * @param：{object} User table body element of jQuery object
+         * @param：{object} jQuery datatable object of User table
+         * @returns null
+         */
+        delete_users_by_ajax: function (delete_user_id_list, $user_table_body, user_datatable_obj) {
+            var option = {
+                url: "/users/destroy_users",
+                type: "post",
+                data: {
+                    user_ids: delete_user_id_list
+                },
+                success: function (data) {
+                    var row, row_index;
+                    $user_table_body.find(".selected").each(function () {
+                        row = $(this).closest("tr").get(0);
+                        row_index = user_datatable_obj.fnGetPosition(row);
+                        user_datatable_obj.fnDeleteRow(row_index, null, false);
+                    });
+
+                    user_datatable_obj.fnDraw();
+
+                    var message_html = '<div class="alert alert-' + data.status + '">' +
+                        data.message.join("<br>") + '</div>'
+
+                    $("#user_operation_message").html(message_html).show();
+                }
+            };
+            $.ajax(option);
+        },
+
+        /*
+         * Juno to edit page of selected User by javascript Location fucntion
+         * @function： jump_to_edit_page
+         * @param：{string} selected User ID
+         * @returns null
+         */
+        jump_to_edit_page: function (delete_user_id) {
+            window.location = "/users/" + delete_user_id + "/edit";
+        }
+    }
+}();

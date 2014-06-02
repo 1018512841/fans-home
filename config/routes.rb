@@ -1,9 +1,12 @@
 FansHome::Application.routes.draw do
+  post "users/user_list"
+  post "users/destroy_users"
   resources :life_posts
   resources :users
 
-  get "static_page/index"
+
   get "detail" => 'static_page#detail'
+  get "static_page/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

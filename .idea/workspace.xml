@@ -12,8 +12,16 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/fans-home@User__index_should_each__fans_home.coverage" NAME="User :index should each: fans-home Coverage Results" MODIFIED="1401592123904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@Run_spec__user_spec___fans_home.coverage" NAME="Run spec 'user_spec': fans-home Coverage Results" MODIFIED="1401713313875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_email_format_is_not_valid__fans_home.coverage" NAME="User test for attributes when email format is not valid: fans-home Coverage Results" MODIFIED="1401713832332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@Development__fans_home.coverage" NAME="Development: fans-home Coverage Results" MODIFIED="1401109642594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_password_and_password_confirmation__fans_home.coverage" NAME="User test for attributes when password and password_confirmation: fans-home Coverage Results" MODIFIED="1401713925158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User__index__fans_home.coverage" NAME="User :index: fans-home Coverage Results" MODIFIED="1401592080662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_name_is_not_valid__fans_home.coverage" NAME="User test for attributes when name is not valid: fans-home Coverage Results" MODIFIED="1401711043395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@Production__fans_home.coverage" NAME="Production: fans-home Coverage Results" MODIFIED="1400160238141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes__fans_home.coverage" NAME="User test for attributes: fans-home Coverage Results" MODIFIED="1401710917613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_emain_is_not_unique__fans_home.coverage" NAME="User test for attributes when emain is not unique: fans-home Coverage Results" MODIFIED="1401713693234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -27,46 +35,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+      <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="2094" selection-end="2094" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="1178">
+            <state line="70" column="7" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1501">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/life_posts/show.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="589" selection-end="589" vertical-scroll-proportion="0.6975037" vertical-offset="0" max-vertical-offset="703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="6" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1577">
+            <state line="12" column="23" selection-start="341" selection-end="351" vertical-scroll-proportion="0.27322406" vertical-offset="28" max-vertical-offset="1387">
               <folding />
             </state>
           </provider>
@@ -83,7 +64,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/static_page/_navigation.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_header.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_item_detail.erb" />
@@ -91,38 +71,44 @@
         <option value="$PROJECT_DIR$/lib/mongo.rake" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/index.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/scripts.js.erb" />
         <option value="$PROJECT_DIR$/app/models/life_post.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/mongo.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/life_posts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/fw.js.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/detail.erb" />
         <option value="$PROJECT_DIR$/app/views/life_posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/static_page_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_each_item.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/static_page/_default_board.erb" />
         <option value="$PROJECT_DIR$/config/initializers/i18n.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_item_detail.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/dashboard.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/config/locales/zh.yml" />
         <option value="$PROJECT_DIR$/app/views/static_page/_foot.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/views/static_page/_header.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/fw.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/user_screen.js" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/mongo.rb" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
       </list>
     </option>
   </component>
@@ -134,9 +120,28 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="19" />
+    <option name="y" value="1" />
     <option name="width" value="1440" />
-    <option name="height" value="857" />
+    <option name="height" value="875" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Ruby</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>RubyWrongHash</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,6 +169,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
@@ -180,6 +186,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -326,10 +378,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="life_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -368,28 +416,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fans-home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fans-home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concerns" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -469,9 +495,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fans-home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,7 +533,187 @@
       <recent name="$PROJECT_DIR$/app/views/users" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: fans-home">
+  <component name="RunManager" selected="RSpec.User test for attributes when password and password_confirmation: fans-home">
+    <configuration default="false" name="User test for attributes when name is not valid: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="fans-home" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when name is not valid" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Run spec 'user_spec': fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="fans-home" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="User test for attributes when emain is not unique: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="fans-home" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when emain is not unique" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="User test for attributes when email format is not valid: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="fans-home" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when email format is not valid" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="User test for attributes when password and password_confirmation: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="fans-home" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when password and password_confirmation" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -658,12 +881,26 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Rails.Development: fans-home" />
       <item index="1" class="java.lang.String" itemvalue="Rails.Production: fans-home" />
       <item index="2" class="java.lang.String" itemvalue="Rake.spec: fans-home" />
       <item index="3" class="java.lang.String" itemvalue="Rake.test: fans-home" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.User test for attributes when name is not valid: fans-home" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.Run spec 'user_spec': fans-home" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.User test for attributes when emain is not unique: fans-home" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.User test for attributes when email format is not valid: fans-home" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.User test for attributes when password and password_confirmation: fans-home" />
     </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="RSpec.User test for attributes when password and password_confirmation: fans-home" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.User test for attributes when email format is not valid: fans-home" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.User test for attributes when emain is not unique: fans-home" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'user_spec': fans-home" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.User test for attributes when name is not valid: fans-home" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -675,18 +912,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="19" width="1440" height="857" extended-state="0" />
+    <frame x="0" y="1" width="1440" height="875" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2801724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29053086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32712767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32205513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -694,7 +931,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -703,15 +940,15 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32712767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32987013" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27155173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2862267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -737,136 +974,19 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/life_posts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9177" />
+        <state line="0" column="0" selection-start="0" selection-end="85" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="209" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/life_posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="3874" selection-end="3874" vertical-scroll-proportion="0.0" vertical-offset="1835" max-vertical-offset="2280">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/asset_url_helper.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/libv8-3.16.14.3/vendor/v8/test/mjsunit/regress/regress-3252443.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="9" selection-start="13486" selection-end="13486" vertical-scroll-proportion="0.0" vertical-offset="4916" max-vertical-offset="6859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/application-d46b24c972a7c15dff300f3dd7e8af9a.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="6" selection-start="7057" selection-end="7057" vertical-scroll-proportion="0.4729064" vertical-offset="4273" max-vertical-offset="139688" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="596" selection-end="596" vertical-scroll-proportion="0.35945946" vertical-offset="0" max-vertical-offset="740" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/application-cf79f9bc0df884b7a68414de4a9244a1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13635" column="328" selection-start="379866" selection-end="379866" vertical-scroll-proportion="0.33287483" vertical-offset="258595" max-vertical-offset="262219" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.backstretch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/application-3054c139910e3fe1756630ecd9c24da5.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="696" column="0" selection-start="24051" selection-end="24051" vertical-scroll-proportion="0.3319239" vertical-offset="13067" max-vertical-offset="139707" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="652" column="1" selection-start="9757" selection-end="9757" vertical-scroll-proportion="0.0" vertical-offset="12193" max-vertical-offset="117287" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mongo.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="107" selection-end="107" vertical-scroll-proportion="0.15944056" vertical-offset="0" max-vertical-offset="228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="316" selection-end="316" vertical-scroll-proportion="0.23916084" vertical-offset="0" max-vertical-offset="715" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.7189189" vertical-offset="0" max-vertical-offset="740" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="12" selection-start="763" selection-end="763" vertical-scroll-proportion="0.8472973" vertical-offset="0" max-vertical-offset="741" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="591" selection-end="591" vertical-scroll-proportion="0.2947814" vertical-offset="0" max-vertical-offset="709" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/mongo_mapper-0.13.0/lib/mongo_mapper/document.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="9" selection-start="46" selection-end="46" vertical-scroll-proportion="0.053596616" vertical-offset="0" max-vertical-offset="950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/life.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/mongo.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="65" selection-start="90" selection-end="95" vertical-scroll-proportion="0.027259685" vertical-offset="0" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/fw.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="127" selection-end="127" vertical-scroll-proportion="0.19164266" vertical-offset="0" max-vertical-offset="694" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/static_page_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/life_posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="-8.821428" vertical-offset="0" max-vertical-offset="798" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_detail.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="6" selection-start="3159" selection-end="3159" vertical-scroll-proportion="-28.5" vertical-offset="0" max-vertical-offset="912" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/rendering_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1824" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_each_item.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="224" selection-end="224" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="146" selection-end="146" vertical-scroll-proportion="-1.4179105" vertical-offset="0" max-vertical-offset="1368" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/i18n-0.6.9/lib/i18n/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="8" selection-start="873" selection-end="873" vertical-scroll-proportion="0.33333334" vertical-offset="342" max-vertical-offset="2413" />
+        <state line="27" column="4" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.05451937" vertical-offset="0" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/i18n.rb">
@@ -874,138 +994,249 @@
         <state line="6" column="1" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_header.html.erb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="34" selection-start="222" selection-end="222" vertical-scroll-proportion="0.17040358" vertical-offset="0" max-vertical-offset="669" />
+        <state line="17" column="12" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1387" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_navigation.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="76" selection-start="474" selection-end="499" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="589" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1634" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_default_board.erb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="238" selection-end="259" vertical-scroll-proportion="0.17040358" vertical-offset="0" max-vertical-offset="669" />
+        <state line="28" column="0" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="431" selection-end="431" vertical-scroll-proportion="0.35590777" vertical-offset="0" max-vertical-offset="694" />
+        <state line="21" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_item_detail.html.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.4/lib/rails/info.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="659" selection-end="659" vertical-scroll-proportion="0.4185022" vertical-offset="0" max-vertical-offset="681" />
+        <state line="24" column="10" selection-start="475" selection-end="475" vertical-scroll-proportion="0.33333334" vertical-offset="228" max-vertical-offset="2318" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="21" selection-start="2716" selection-end="2716" vertical-scroll-proportion="0.44668588" vertical-offset="2958" max-vertical-offset="6479" />
+        <state line="8" column="20" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dashboard.js.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/activemodel-4.0.4/lib/active_model/validations/validates.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="15" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.47982708" vertical-offset="541" max-vertical-offset="1235" />
+        <state line="15" column="104" selection-start="653" selection-end="747" vertical-scroll-proportion="-1.7014925" vertical-offset="171" max-vertical-offset="3325" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/mongo_mapper-0.13.0/lib/mongo_mapper/plugins/sci.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="928" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/zh.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="268" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/mongo_mapper-0.13.0/lib/mongo_mapper/plugins/protected.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="12" selection-start="452" selection-end="452" vertical-scroll-proportion="0.23684211" vertical-offset="171" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/life_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="68" selection-end="68" vertical-scroll-proportion="0.078947365" vertical-offset="0" max-vertical-offset="722" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/life_posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="124" selection-end="1580" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1539">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_foot.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="23" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/life_posts/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/life_posts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="85" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="209" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="79" selection-end="79" vertical-scroll-proportion="0.05451937" vertical-offset="0" max-vertical-offset="1273">
-          <folding />
-        </state>
+        <state line="75" column="10" selection-start="1973" selection-end="1973" vertical-scroll-proportion="2.0098732" vertical-offset="0" max-vertical-offset="1672" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="496" selection-end="496" vertical-scroll-proportion="0.4743025" vertical-offset="0" max-vertical-offset="681" />
+        <state line="20" column="33" selection-start="604" selection-end="604" vertical-scroll-proportion="-13.571428" vertical-offset="0" max-vertical-offset="627" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/abstract_controller/rendering.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="15" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+        <state line="87" column="20" selection-start="2789" selection-end="2790" vertical-scroll-proportion="0.33225283" vertical-offset="1448" max-vertical-offset="3838" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/kernel.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="525" column="8" selection-start="19845" selection-end="19845" vertical-scroll-proportion="0.33333334" vertical-offset="9747" max-vertical-offset="39653">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.4/lib/active_record/null_relation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="135" selection-end="135" vertical-scroll-proportion="0.21807748" vertical-offset="0" max-vertical-offset="1273" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.4/lib/active_record/relation/calculations.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="18" selection-start="4422" selection-end="4434" vertical-scroll-proportion="0.6111111" vertical-offset="1919" max-vertical-offset="7752" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/static_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="250" column="10" selection-start="6840" selection-end="6840" vertical-scroll-proportion="0.4936351" vertical-offset="4059" max-vertical-offset="4883" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08236994" vertical-offset="0" max-vertical-offset="692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/_each_item.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="224" selection-end="224" vertical-scroll-proportion="0.16473988" vertical-offset="0" max-vertical-offset="692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/_item_detail.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="40" selection-start="58" selection-end="80" vertical-scroll-proportion="0.027982326" vertical-offset="0" max-vertical-offset="679" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/jquery-rails-3.1.0/vendor/assets/javascripts/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8483" column="51" selection-start="232719" selection-end="232729" vertical-scroll-proportion="0.3625" vertical-offset="160717" max-vertical-offset="196289" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/form_tag_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="10" selection-start="9669" selection-end="9669" vertical-scroll-proportion="0.0" vertical-offset="3033" max-vertical-offset="15029" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="116" selection-end="116" vertical-scroll-proportion="0.16426513" vertical-offset="0" max-vertical-offset="694" />
+        <state line="3" column="17" selection-start="67" selection-end="67" vertical-scroll-proportion="0.08236994" vertical-offset="0" max-vertical-offset="692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.027456647" vertical-offset="0" max-vertical-offset="692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="569" selection-end="569" vertical-scroll-proportion="0.2956153" vertical-offset="0" max-vertical-offset="707" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/mongo_mapper-0.13.0/lib/mongo_mapper/plugins/callbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.15302013" vertical-offset="0" max-vertical-offset="745" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3265" column="27" selection-start="54127" selection-end="54127" vertical-scroll-proportion="0.33239037" vertical-offset="61800" max-vertical-offset="72447" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="665" column="24" selection-start="11908" selection-end="11908" vertical-scroll-proportion="0.33239037" vertical-offset="12400" max-vertical-offset="20520" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/url_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="10" selection-start="7894" selection-end="7894" vertical-scroll-proportion="0.63251364" vertical-offset="2824" max-vertical-offset="12160" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="39" selection-end="43" vertical-scroll-proportion="0.025503356" vertical-offset="0" max-vertical-offset="1330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/static_page.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/dashboard.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="0" selection-end="2003" vertical-scroll-proportion="0.13728324" vertical-offset="0" max-vertical-offset="1235" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/life_posts.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="20" selection-start="282" selection-end="282" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="589" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="2094" selection-end="2094" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="1178">
-          <folding />
-        </state>
+        <state line="48" column="0" selection-start="2094" selection-end="2094" vertical-scroll-proportion="-17.107143" vertical-offset="433" max-vertical-offset="1178" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/life_posts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/fw.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
-          <folding />
-        </state>
+        <state line="7" column="15" selection-start="127" selection-end="138" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="266" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.dataTables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="6" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1577">
-          <folding />
-        </state>
+        <state line="5325" column="0" selection-start="152807" selection-end="153390" vertical-scroll-proportion="0.0" vertical-offset="101064" max-vertical-offset="273334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user_screen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.1343284" vertical-offset="0" max-vertical-offset="2527" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
+        <state line="12" column="49" selection-start="417" selection-end="420" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="380" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="589" selection-end="589" vertical-scroll-proportion="0.6975037" vertical-offset="0" max-vertical-offset="703">
+        <state line="2" column="48" selection-start="54" selection-end="73" vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="367" column="4" selection-start="6053" selection-end="6053" vertical-scroll-proportion="-21.321428" vertical-offset="6376" max-vertical-offset="7144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="8" selection-start="855" selection-end="855" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2033" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/object.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="7" selection-start="1127" selection-end="1130" vertical-scroll-proportion="0.33233082" vertical-offset="235" max-vertical-offset="16701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="42" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="912">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.4/lib/rails.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="8" selection-start="1337" selection-end="1337" vertical-scroll-proportion="1.4016393" vertical-offset="0" max-vertical-offset="1881">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/mongo.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="7" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="341" selection-end="351" vertical-scroll-proportion="0.27322406" vertical-offset="28" max-vertical-offset="1387">
           <folding />
         </state>
       </provider>
