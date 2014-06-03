@@ -2,27 +2,27 @@
 <div class="container">
   <div class="hero-unit" id="user_list_container">
     <div class="page-header">
-      <h2>Manager
-        <small>User List</small>
+      <h2><%= I18n.t "user_index_title" %>
+        <small><%= I18n.t "user_index_sub_title" %></small>
       </h2>
     </div>
     <table id="user_table_list" class="display" cellspacing="0" width="100%">
       <thead>
       <tr>
-        <th>Name</th>
-        <th>Email</th>
+        <th><%= I18n.t "user_index_name" %></th>
+        <th><%= I18n.t "user_index_email" %></th>
       </tr>
       </thead>
     </table>
 
-    <%= link_to "New", "/users/new", {id: "user_table_create_btn",
+    <%= link_to I18n.t("new_btn"), "/users/new", {id: "user_table_create_btn",
                                       class: "btn btn-primary"} %>
 
-    <%= button_tag "Delete", {id: "user_table_delete_btn",
+    <%= button_tag I18n.t("delete_btn"), {id: "user_table_delete_btn",
                               class: "btn btn-primary",
                               disabled: true} %>
 
-    <%= button_tag "Edit", {id: "user_table_edit_btn",
+    <%= button_tag I18n.t("edit_btn"), {id: "user_table_edit_btn",
                             class: "btn btn-primary",
                             disabled: true} %>
     <div id="user_operation_message">

@@ -23,7 +23,7 @@ class User
     end
   end
 
-  def User.encrypt_password(password, salt)
+  def self.encrypt_password(password, salt)
     Digest::SHA2.hexdigest(password + "fans-home" + salt)
   end
 
@@ -49,7 +49,7 @@ class User
           message.push("Delete user success, name=#{user.user_name}")
         else
           status = "error"
-          message.push("Delete user failed, ID=#{user.user_name}")
+          message.push("Delete user failed, name=#{user.user_name}")
         end
       else
         status = "error"

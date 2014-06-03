@@ -21,6 +21,11 @@
           <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "sign_out" %></a></li>
         </ul>
       </li>
+      <li>
+        <%= select_tag "i18n_locale",
+                       "<option value='en'>English</option><option value='zh' selected='selected'>中文</option>".html_safe %>
+      </li>
+
     </ul>
   </div>
 </div>

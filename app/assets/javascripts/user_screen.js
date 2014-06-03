@@ -14,11 +14,29 @@ fans_home.user_screen = function () {
             var $user_table_edit_btn = $("#user_table_edit_btn");
             var $user_table_delete_btn = $("#user_table_delete_btn");
             var $user_table_list = $('#user_table_list');
+            var oLanguage = {};
+            if($("#i18n_locale").val() == "zh"){
+                oLanguage = {
+                    "sProcessing": "处理中...",
+                    "sLengthMenu": "显示_MENU_ 项结果",
+                    "sZeroRecords": "没有匹配结果",
+                    "sInfo": "显示第_START_ 至_END_ 项结果，共_TOTAL_ 项",
+                    "sInfoEmpty": "显示第0 至0 项结果，共0 项",
+                    "sInfoFiltered": "(由_MAX_项结果过滤)",
+                    "sSearch": "搜索:",
+                    "oPaginate": {
+                        "sPrevious": "前一页",
+                        "sNext": "后一页"
+                    }
+                };
+            }
 
             // 使用datatable插件请求数据，POST方式
             var user_datatable_obj = $user_table_list.dataTable({
                 "ajax": '/users/user_list',
-                "sServerMethod": "POST"
+                "sServerMethod": "POST",
+                "oLanguage": oLanguage//国际化
+
             });
 
             var $user_table_body = $user_table_list.find('tbody');
@@ -41,7 +59,7 @@ fans_home.user_screen = function () {
                     delete_user_id_list.push($(this).find(".user_link").attr("user_id"));
                 });
 
-                if(delete_user_id_list.length == 0 ){
+                if (delete_user_id_list.length == 0) {
                     return;
                 }
                 fans_home.user_screen.delete_users_by_ajax(delete_user_id_list, $user_table_body, user_datatable_obj);

@@ -12,16 +12,22 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/fans-home@User__index_should_each__fans_home.coverage" NAME="User :index should each: fans-home Coverage Results" MODIFIED="1401592123904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
-    <SUITE FILE_PATH="coverage/fans-home@Run_spec__user_spec___fans_home.coverage" NAME="Run spec 'user_spec': fans-home Coverage Results" MODIFIED="1401713313875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_email_format_is_not_valid__fans_home.coverage" NAME="User test for attributes when email format is not valid: fans-home Coverage Results" MODIFIED="1401713832332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
-    <SUITE FILE_PATH="coverage/fans-home@Development__fans_home.coverage" NAME="Development: fans-home Coverage Results" MODIFIED="1401109642594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
-    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_password_and_password_confirmation__fans_home.coverage" NAME="User test for attributes when password and password_confirmation: fans-home Coverage Results" MODIFIED="1401713925158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@Run_spec__user_spec___fans_home.coverage" NAME="Run spec 'user_spec': fans-home Coverage Results" MODIFIED="1401801311608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@User__index__fans_home.coverage" NAME="User :index: fans-home Coverage Results" MODIFIED="1401592080662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_name_is_not_valid__fans_home.coverage" NAME="User test for attributes when name is not valid: fans-home Coverage Results" MODIFIED="1401711043395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_Test_for_methods_of_User_model_get_user_list__fans_home.coverage" NAME="User Test for methods of User model get_user_list: fans-home Coverage Results" MODIFIED="1401803420399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@Production__fans_home.coverage" NAME="Production: fans-home Coverage Results" MODIFIED="1400160238141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
-    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes__fans_home.coverage" NAME="User test for attributes: fans-home Coverage Results" MODIFIED="1401710917613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
     <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_emain_is_not_unique__fans_home.coverage" NAME="User test for attributes when emain is not unique: fans-home Coverage Results" MODIFIED="1401713693234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_Test_for_methods_of_User_model_destroy_user_by_ids_user_ids_is_not_existing__fans_home.coverage" NAME="User Test for methods of User model destroy_user_by_ids user_ids is not existing: fans-home Coverage Results" MODIFIED="1401802057274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User__index_should_each__fans_home.coverage" NAME="User :index should each: fans-home Coverage Results" MODIFIED="1401592123904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_Test_for_methods_of_User_model_destroy_user_by_ids_user_ids_is_existing_should_return_error_message_and_error__fans_home.coverage" NAME="User Test for methods of User model destroy_user_by_ids user_ids is existing should return error message and error: fans-home Coverage Results" MODIFIED="1401802944583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@Development__fans_home.coverage" NAME="Development: fans-home Coverage Results" MODIFIED="1401109642594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_password_and_password_confirmation__fans_home.coverage" NAME="User test for attributes when password and password_confirmation: fans-home Coverage Results" MODIFIED="1401713925158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_Test_for_methods_of_User_model_destroy_user_by_ids_user_ids_is_blank_should_return_blank_and_success__fans_home.coverage" NAME="User Test for methods of User model destroy_user_by_ids user_ids is blank should return blank and success: fans-home Coverage Results" MODIFIED="1401801948600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes_when_password_is_blank__fans_home.coverage" NAME="User test for attributes when password is blank: fans-home Coverage Results" MODIFIED="1401801512967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_test_for_attributes__fans_home.coverage" NAME="User test for attributes: fans-home Coverage Results" MODIFIED="1401710917613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
+    <SUITE FILE_PATH="coverage/fans-home@User_Test_for_methods_of_User_model_destroy_user_by_ids_user_ids_is_existing__fans_home.coverage" NAME="User Test for methods of User model destroy_user_by_ids user_ids is existing: fans-home Coverage Results" MODIFIED="1401802842582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="fans-home" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,19 +41,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="7" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1501">
+            <state line="54" column="27" selection-start="2216" selection-end="2225" vertical-scroll-proportion="-20.0" vertical-offset="466" max-vertical-offset="1178">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="341" selection-end="351" vertical-scroll-proportion="0.27322406" vertical-offset="28" max-vertical-offset="1387">
+            <state line="35" column="39" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="817">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_screen.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user_screen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="38" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3658872" vertical-offset="0" max-vertical-offset="2812">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="9" selection-start="1126" selection-end="1133" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="988">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zh.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/locales/zh.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="17" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
               <folding />
             </state>
           </provider>
@@ -82,12 +115,9 @@
         <option value="$PROJECT_DIR$/app/views/static_page/_each_item.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_default_board.erb" />
         <option value="$PROJECT_DIR$/config/initializers/i18n.rb" />
-        <option value="$PROJECT_DIR$/app/views/static_page/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_page/_item_detail.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/dashboard.js.erb" />
-        <option value="$PROJECT_DIR$/config/locales/en.yml" />
-        <option value="$PROJECT_DIR$/config/locales/zh.yml" />
         <option value="$PROJECT_DIR$/app/views/static_page/_foot.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -100,15 +130,18 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/fw.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/user_screen.js" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/mongo.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb" />
+        <option value="$PROJECT_DIR$/app/views/static_page/_navigation.html.erb" />
+        <option value="$PROJECT_DIR$/config/locales/zh.yml" />
+        <option value="$PROJECT_DIR$/config/locales/en.yml" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/user_screen.js" />
       </list>
     </option>
   </component>
@@ -169,8 +202,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -533,8 +566,8 @@
       <recent name="$PROJECT_DIR$/app/views/users" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.User test for attributes when password and password_confirmation: fans-home">
-    <configuration default="false" name="User test for attributes when name is not valid: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.User Test for methods of User model get_user_list: fans-home">
+    <configuration default="false" name="User Test for methods of User model destroy_user_by_ids user_ids is blank should return blank and success: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="fans-home" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -558,7 +591,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when name is not valid" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User Test for methods of User model destroy_user_by_ids user_ids is blank should return blank and success" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -570,7 +603,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Run spec 'user_spec': fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="User Test for methods of User model destroy_user_by_ids user_ids is not existing: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="fans-home" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -594,7 +627,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User Test for methods of User model destroy_user_by_ids user_ids is not existing" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -606,7 +639,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="User test for attributes when emain is not unique: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="User Test for methods of User model destroy_user_by_ids user_ids is existing: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="fans-home" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -630,7 +663,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when emain is not unique" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User Test for methods of User model destroy_user_by_ids user_ids is existing" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -642,7 +675,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="User test for attributes when email format is not valid: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="User Test for methods of User model destroy_user_by_ids user_ids is existing should return error message and error: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="fans-home" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -666,7 +699,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when email format is not valid" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User Test for methods of User model destroy_user_by_ids user_ids is existing should return error message and error" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -678,7 +711,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="User test for attributes when password and password_confirmation: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="User Test for methods of User model get_user_list: fans-home" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="fans-home" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -702,7 +735,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/user_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User test for attributes when password and password_confirmation" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="User Test for methods of User model get_user_list" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -886,19 +919,19 @@
       <item index="1" class="java.lang.String" itemvalue="Rails.Production: fans-home" />
       <item index="2" class="java.lang.String" itemvalue="Rake.spec: fans-home" />
       <item index="3" class="java.lang.String" itemvalue="Rake.test: fans-home" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.User test for attributes when name is not valid: fans-home" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.Run spec 'user_spec': fans-home" />
-      <item index="6" class="java.lang.String" itemvalue="RSpec.User test for attributes when emain is not unique: fans-home" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.User test for attributes when email format is not valid: fans-home" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.User test for attributes when password and password_confirmation: fans-home" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is blank should return blank and success: fans-home" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is not existing: fans-home" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is existing: fans-home" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is existing should return error message and error: fans-home" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model get_user_list: fans-home" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.User test for attributes when password and password_confirmation: fans-home" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.User test for attributes when email format is not valid: fans-home" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.User test for attributes when emain is not unique: fans-home" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'user_spec': fans-home" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.User test for attributes when name is not valid: fans-home" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model get_user_list: fans-home" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is existing should return error message and error: fans-home" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is existing: fans-home" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is not existing: fans-home" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.User Test for methods of User model destroy_user_by_ids user_ids is blank should return blank and success: fans-home" />
       </list>
     </recent_temporary>
   </component>
@@ -912,15 +945,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1440" height="875" extended-state="7" />
+    <frame x="0" y="1" width="1440" height="875" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29053086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29885057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32205513" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32077923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -942,10 +975,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32712767" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32077923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2862267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29885057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -970,45 +1003,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/life_posts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="85" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="209" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/life_posts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/libv8-3.16.14.3/vendor/v8/test/mjsunit/regress/regress-3252443.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="1602" selection-end="1602" vertical-scroll-proportion="0.05451937" vertical-offset="0" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/i18n.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="165" selection-end="165" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="359" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1387" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1634" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570" />
@@ -1046,9 +1044,7 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/kernel.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="525" column="8" selection-start="19845" selection-end="19845" vertical-scroll-proportion="0.33333334" vertical-offset="9747" max-vertical-offset="39653">
-          <folding />
-        </state>
+        <state line="525" column="8" selection-start="19845" selection-end="19845" vertical-scroll-proportion="0.33333334" vertical-offset="9747" max-vertical-offset="39653" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.4/lib/active_record/null_relation.rb">
@@ -1076,11 +1072,6 @@
         <state line="250" column="10" selection-start="6840" selection-end="6840" vertical-scroll-proportion="0.4936351" vertical-offset="4059" max-vertical-offset="4883" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="100" selection-end="100" vertical-scroll-proportion="0.08236994" vertical-offset="0" max-vertical-offset="692" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_page/_each_item.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="6" selection-start="224" selection-end="224" vertical-scroll-proportion="0.16473988" vertical-offset="0" max-vertical-offset="692" />
@@ -1094,11 +1085,6 @@
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/jquery-rails-3.1.0/vendor/assets/javascripts/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8483" column="51" selection-start="232719" selection-end="232729" vertical-scroll-proportion="0.3625" vertical-offset="160717" max-vertical-offset="196289" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/form_tag_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="10" selection-start="9669" selection-end="9669" vertical-scroll-proportion="0.0" vertical-offset="3033" max-vertical-offset="15029" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
@@ -1161,44 +1147,14 @@
         <state line="8" column="20" selection-start="282" selection-end="282" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="589" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="2094" selection-end="2094" vertical-scroll-proportion="-17.107143" vertical-offset="433" max-vertical-offset="1178" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/fw.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="15" selection-start="127" selection-end="138" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="266" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.dataTables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5325" column="0" selection-start="152807" selection-end="153390" vertical-scroll-proportion="0.0" vertical-offset="101064" max-vertical-offset="273334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user_screen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="-1.1343284" vertical-offset="0" max-vertical-offset="2527" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="49" selection-start="417" selection-end="420" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="48" selection-start="54" selection-end="73" vertical-scroll-proportion="-1.3571428" vertical-offset="0" max-vertical-offset="817" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="4" selection-start="6053" selection-end="6053" vertical-scroll-proportion="-21.321428" vertical-offset="6376" max-vertical-offset="7144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="8" selection-start="855" selection-end="855" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2033" />
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/object.rb">
@@ -1208,35 +1164,134 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="42" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="912">
-          <folding />
-        </state>
+        <state line="29" column="42" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="912" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.4/lib/rails.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="8" selection-start="1337" selection-end="1337" vertical-scroll-proportion="1.4016393" vertical-offset="0" max-vertical-offset="1881">
-          <folding />
-        </state>
+        <state line="54" column="8" selection-start="1337" selection-end="1337" vertical-scroll-proportion="1.4016393" vertical-offset="0" max-vertical-offset="1881" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/mongo.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/activerecord-4.0.4/lib/active_record/associations/collection_proxy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="420" column="10" selection-start="15337" selection-end="15337" vertical-scroll-proportion="0.41127923" vertical-offset="7681" max-vertical-offset="18810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="7" selection-start="2278" selection-end="2278" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="1501">
+        <state line="121" column="18" selection-start="3819" selection-end="3819" vertical-scroll-proportion="0.0" vertical-offset="2091" max-vertical-offset="2774">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="341" selection-end="351" vertical-scroll-proportion="0.27322406" vertical-offset="28" max-vertical-offset="1387">
+        <state line="29" column="24" selection-start="895" selection-end="908" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1387">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="5" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="2033">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="100" selection-end="100" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/form_tag_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="88" selection-start="4587" selection-end="4644" vertical-scroll-proportion="0.116809115" vertical-offset="1590" max-vertical-offset="15029">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/i18n.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.07972028" vertical-offset="0" max-vertical-offset="715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.4/lib/action_view/helpers/form_options_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="385" column="10" selection-start="20109" selection-end="20109" vertical-scroll-proportion="0.33333334" vertical-offset="7081" max-vertical-offset="16036">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="370" column="12" selection-start="6073" selection-end="6084" vertical-scroll-proportion="-20.464285" vertical-offset="6457" max-vertical-offset="7239">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.dataTables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13674" column="56" selection-start="400740" selection-end="400740" vertical-scroll-proportion="-3.283582" vertical-offset="259548" max-vertical-offset="273334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/_navigation.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="77" selection-start="1489" selection-end="1509" vertical-scroll-proportion="0.6795422" vertical-offset="0" max-vertical-offset="699">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/zh.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="9" selection-start="1126" selection-end="1133" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static_page/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="27" selection-start="2216" selection-end="2225" vertical-scroll-proportion="-20.0" vertical-offset="466" max-vertical-offset="1178">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="39" selection-start="1141" selection-end="1141" vertical-scroll-proportion="-23.75" vertical-offset="0" max-vertical-offset="817">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user_screen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="38" selection-start="549" selection-end="549" vertical-scroll-proportion="0.3658872" vertical-offset="0" max-vertical-offset="2812">
           <folding />
         </state>
       </provider>

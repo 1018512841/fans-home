@@ -16,3 +16,11 @@ zh:
   cnblogs: "博客园"
   email: "邮件"
   resume: "简历"
+
+  user_index_title: "管理"
+  user_index_sub_title: "用户列表"
+  user_index_name: "用户名"
+  user_index_email: "邮箱"
+  new_btn: "新建"
+  edit_btn: "编辑"
+  delete_btn: "删除"
