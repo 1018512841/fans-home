@@ -1,7 +1,12 @@
 <div class="container">
-  <h1>New life_post</h1>
+  <div class="hero-unit" id="user_new_container">
+    <div class="page-header">
+      <h2><%= I18n.t "user_new_title" %>
+        <small><%= I18n.t "user_new_sub_title" %></small>
+      </h2>
+    </div>
+    <%= render 'form' %>
 
-  <%= render 'form' %>
-
-  <%= link_to 'Back', users_path %>
+    <%= link_to 'Back', users_path %>
+  </div>
 </div>

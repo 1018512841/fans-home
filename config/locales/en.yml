@@ -44,3 +44,16 @@ en:
   new_btn: "New"
   edit_btn: "Edit"
   delete_btn: "Delete"
+  back_btn: "Back"
+  show_btn: "Show"
+  user_detail_title: "Detail"
+  user_detail_sub_title: "User information"
+  user_edit_title: "Edit"
+  user_edit_sub_title: "User information"
+  user_new_title: "New"
+  user_new_sub_title: "User information"
+
+  helpers:
+    submit:
+      create: "Create a User"
+      update: "Confirm changes to User"

@@ -24,3 +24,15 @@ zh:
   new_btn: "新建"
   edit_btn: "编辑"
   delete_btn: "删除"
+  back_btn: "返回"
+  show_btn: "显示"
+  user_detail_title: " 详细"
+  user_detail_sub_title: "用户信息"
+  user_edit_title: "编辑"
+  user_edit_sub_title: "用户信息"
+  user_new_title: "新建"
+  user_new_sub_title: "用户信息"
+  helpers:
+    submit:
+      create: "新建一个用户"
+      update: "确认更改"

@@ -34,6 +34,7 @@ class User
           each.user_email
       ]
     end
+
     return users_array
   end
 

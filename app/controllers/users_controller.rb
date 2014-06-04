@@ -35,16 +35,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    #100.times do |i|
-    #  user_params = {user_name:"user_" + i.to_s,
-    #                 user_email:"user_" + i.to_s + "@qq.com",
-    #                 password:"user_" + i.to_s,
-    #                 password_confirmation:"user_" + i.to_s,
-    #
-    #  }
-    #  user = User.new(user_params)
-    #  user.save
-    #end
+    100.times do |i|
+      user_params = {user_name:"user_" + i.to_s,
+                     user_email:"user_" + i.to_s + "@qq.com",
+                     password:"user_" + i.to_s,
+                     password_confirmation:"user_" + i.to_s,
+
+      }
+      user = User.new(user_params)
+      user.save
+    end
 
     respond_to do |format|
       if @user.save
@@ -81,7 +81,8 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to life_posts_url }
+      flash[:notice] = "Delete OK!"
+      format.html { redirect_to users_url }
       format.json { head :no_content }
     end
   end

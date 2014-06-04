@@ -15,7 +15,7 @@ fans_home.user_screen = function () {
             var $user_table_delete_btn = $("#user_table_delete_btn");
             var $user_table_list = $('#user_table_list');
             var oLanguage = {};
-            if($("#i18n_locale").val() == "zh"){
+            if ($("#i18n_locale").val() == "zh") {
                 oLanguage = {
                     "sProcessing": "处理中...",
                     "sLengthMenu": "显示_MENU_ 项结果",
@@ -54,15 +54,18 @@ fans_home.user_screen = function () {
 
             // 点击删除button时，获取选中的记录，并删除选中的记录
             $user_table_delete_btn.click(function () {
-                var delete_user_id_list = [];
-                $user_table_body.find(".selected").each(function (i) {
-                    delete_user_id_list.push($(this).find(".user_link").attr("user_id"));
-                });
+                if (confirm("Are you sure?")) {
+                    var delete_user_id_list = [];
+                    $user_table_body.find(".selected").each(function (i) {
+                        delete_user_id_list.push($(this).find(".user_link").attr("user_id"));
+                    });
 
-                if (delete_user_id_list.length == 0) {
-                    return;
+                    if (delete_user_id_list.length == 0) {
+                        return;
+                    }
+                    fans_home.user_screen.delete_users_by_ajax(delete_user_id_list, $user_table_body, user_datatable_obj);
                 }
-                fans_home.user_screen.delete_users_by_ajax(delete_user_id_list, $user_table_body, user_datatable_obj);
+
             });
 
             // 点击编辑button时，获取选中的记录的user ID，并跳转到编辑页面
@@ -127,6 +130,7 @@ fans_home.user_screen = function () {
                         data.message.join("<br>") + '</div>'
 
                     $("#user_operation_message").html(message_html).show();
+                    $("#user_table_delete_btn").attr("disabled", "disabled");
                 }
             };
             $.ajax(option);
