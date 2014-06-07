@@ -1,7 +1,7 @@
 class User
   include MongoMapper::Document
-  key :user_name, String, :required => true
-  key :user_email, String, :required => true
+  key :user_name, String
+  key :user_email, String
   key :salt, String
   key :encrypted_password, String
   timestamps!
@@ -12,9 +12,7 @@ class User
   validates :user_name, :presence => true, :uniqueness => true
   validates :user_email, :presence => true, :uniqueness => true,
             :format=> { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
-  validates :password, :confirmation => true
-  validates :encrypted_password, :presence => true
-
+  validates :password, :confirmation => true, :presence => true
   def password=(password)
     @password = password
     if @password.present?

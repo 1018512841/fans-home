@@ -21,6 +21,8 @@ zh:
   user_index_sub_title: "用户列表"
   user_index_name: "用户名"
   user_index_email: "邮箱"
+  user_index_password: "密码"
+  user_index_password_confirmation: "确认密码"
   new_btn: "新建"
   edit_btn: "编辑"
   delete_btn: "删除"
@@ -36,3 +38,41 @@ zh:
     submit:
       create: "新建一个用户"
       update: "确认更改"
+  activerecord:
+    attributes:
+      User:
+        user_name: "用户名"
+        user_email: "邮箱"
+        password: "密码"
+        password_confirmation: "确认密码"
+  errors:
+    # The default format to use in full error messages.
+    format: "%{attribute} %{message}"
+    messages:
+      inclusion: "is not included in the list"
+      exclusion: "is reserved"
+      invalid: "是非法的"
+      confirmation: "和%{attribute}不匹配"
+      accepted: "must be accepted"
+      empty: "can't be empty"
+      blank: " 不能为空"
+      present: "must be blank"
+      too_long:
+        one: "is too long (maximum is 1 character)"
+        other: "is too long (maximum is %{count} characters)"
+      too_short:
+        one: "is too short (minimum is 1 character)"
+        other: "is too short (minimum is %{count} characters)"
+      wrong_length:
+        one: "is the wrong length (should be 1 character)"
+        other: "is the wrong length (should be %{count} characters)"
+      not_a_number: "is not a number"
+      not_an_integer: "must be an integer"
+      greater_than: "must be greater than %{count}"
+      greater_than_or_equal_to: "must be greater than or equal to %{count}"
+      equal_to: "must be equal to %{count}"
+      less_than: "must be less than %{count}"
+      less_than_or_equal_to: "must be less than or equal to %{count}"
+      other_than: "must be other than %{count}"
+      odd: "must be odd"
+      even: "must be even"

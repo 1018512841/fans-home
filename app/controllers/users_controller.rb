@@ -35,23 +35,24 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    100.times do |i|
-      user_params = {user_name:"user_" + i.to_s,
-                     user_email:"user_" + i.to_s + "@qq.com",
-                     password:"user_" + i.to_s,
-                     password_confirmation:"user_" + i.to_s,
-
-      }
-      user = User.new(user_params)
-      user.save
-    end
+    #100.times do |i|
+    #  user_params = {user_name:"user_" + i.to_s,
+    #                 user_email:"user_" + i.to_s + "@qq.com",
+    #                 password:"user_" + i.to_s,
+    #                 password_confirmation:"user_" + i.to_s,
+    #
+    #  }
+    #  user = User.new(user_params)
+    #  user.save
+    #end
 
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
-        format.html { render action: 'new' }
+
+        format.html { p "yyyyyyyyyyyyyyyyyy"; render action: 'new' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -65,7 +66,8 @@ class UsersController < ApplicationController
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+
+        format.html {render action: 'edit' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

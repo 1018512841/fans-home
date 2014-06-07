@@ -144,6 +144,28 @@ fans_home.user_screen = function () {
          */
         jump_to_edit_page: function (delete_user_id) {
             window.location = "/users/" + delete_user_id + "/edit";
+        },
+
+        /*
+         * control the submit button for User form
+         * @function： user_new_edit_form_panel
+         * @param：null
+         * @returns null
+         */
+        user_new_edit_form_panel: function () {
+            $("#user_name_field, #user_email_field, #user_password_field, #user_password_confirmation_field").on("keyup",function () {
+                var name_length = $("#user_name_field").val().trim().length;
+                var email_length = $("#user_email_field").val().trim().length;
+                var password_length = $("#user_password_field").val().trim().length;
+                var password_confirmation_length = $("#user_password_confirmation_field").val().trim().length;
+                var $submit_btn = $(".user_new_edit_form .user_form_btn");
+                if (name_length > 0 && email_length > 0 && password_length > 0 && password_confirmation_length > 0) {
+                    $submit_btn.removeAttr("disabled");
+                } else {
+                    $submit_btn.attr("disabled", "disabled");
+                }
+            });
         }
+
     }
 }();
