@@ -4,6 +4,7 @@ class User
   key :user_email, String
   key :salt, String
   key :encrypted_password, String
+  key :role, String
   timestamps!
 
   attr_accessor :password
@@ -11,8 +12,9 @@ class User
 
   validates :user_name, :presence => true, :uniqueness => true
   validates :user_email, :presence => true, :uniqueness => true,
-            :format=> { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
+            :format => {with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create}
   validates :password, :confirmation => true, :presence => true
+
   def password=(password)
     @password = password
     if @password.present?
@@ -41,21 +43,47 @@ class User
     status = "success"
     user_ids.each do |user_id|
       user = self.find(user_id)
+      unless current_user?(user)
+        status = "error"
+        message.push("'#{user_id}' "+I18n.t("delete_self_error"))
+        break
+      end
+
       if user.present?
         user.destroy
         if user
           status = "success"
-          message.push("Delete user success, name=#{user.user_name}")
+          message.push(I18n.t("delete_user_list_success")+ ", name=#{user.user_name}")
         else
           status = "error"
-          message.push("Delete user failed, name=#{user.user_name}")
+          message.push(I18n.t("delete_user_list_failed")+ ", name=#{user.user_name}")
         end
       else
         status = "error"
-        message.push("'#{user_id}' does not existing!")
+        message.push("'#{user_id}' "+I18n.t("delete_user_list_not_existing"))
       end
     end
     return status, message
+  end
+
+  def authenticate_password(password)
+    self.encrypted_password == self.class.encrypt_password(password, self.salt)
+  end
+
+  def self.check_user_login(user, password)
+    message = {:inputPassword => [],
+               :inputEmail => []}
+    if user.nil?
+      status = 'failed'
+      message[:inputEmail].push("User email invalid")
+    elsif user.authenticate_password(password)
+      status = 'success'
+    else
+      status = 'failed'
+      message[:inputPassword].push("Password invalid")
+    end
+    result = {:status => status, :message => message}
+    return result
   end
 
   private

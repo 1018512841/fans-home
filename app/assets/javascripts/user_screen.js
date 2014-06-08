@@ -129,7 +129,7 @@ fans_home.user_screen = function () {
                     var message_html = '<div class="alert alert-' + data.status + '">' +
                         data.message.join("<br>") + '</div>'
 
-                    $("#user_operation_message").html(message_html).show();
+                    $(".user_operation_message").html(message_html);
                     $("#user_table_delete_btn").attr("disabled", "disabled");
                 }
             };
@@ -153,18 +153,77 @@ fans_home.user_screen = function () {
          * @returns null
          */
         user_new_edit_form_panel: function () {
-            $("#user_name_field, #user_email_field, #user_password_field, #user_password_confirmation_field").on("keyup",function () {
-                var name_length = $("#user_name_field").val().trim().length;
-                var email_length = $("#user_email_field").val().trim().length;
-                var password_length = $("#user_password_field").val().trim().length;
-                var password_confirmation_length = $("#user_password_confirmation_field").val().trim().length;
-                var $submit_btn = $(".user_new_edit_form .user_form_btn");
-                if (name_length > 0 && email_length > 0 && password_length > 0 && password_confirmation_length > 0) {
-                    $submit_btn.removeAttr("disabled");
-                } else {
-                    $submit_btn.attr("disabled", "disabled");
-                }
+            $("#user_name_field, #user_email_field, #user_password_field, #user_password_confirmation_field")
+                .on("keyup change", function () {
+                    var name_length = $("#user_name_field").val().trim().length;
+                    var email_length = $("#user_email_field").val().trim().length;
+                    var password_length = $("#user_password_field").val().trim().length;
+                    var password_confirmation_length = $("#user_password_confirmation_field").val().trim().length;
+                    var $submit_btn = $(".user_new_edit_form .user_form_btn");
+                    if (name_length > 0 && email_length > 0 && password_length > 0 && password_confirmation_length > 0) {
+                        $submit_btn.removeAttr("disabled");
+                    } else {
+                        $submit_btn.attr("disabled", "disabled");
+                    }
+                });
+        },
+
+        init_user_login_screen: function () {
+            fans_home.user_screen.init_status_of_login_form();
+            $("#inputEmail, #inputPassword").on("keyup change", function () {
+                fans_home.user_screen.init_status_of_login_form();
             });
+
+            $("#user_login_btn").click(function () {
+                var validation_valid = true;
+                var $email = $("#inputEmail");
+                var $password = $("#inputPassword");
+                if ($.trim($email.val()).length == 0) {
+                    $email.parents(".control-group").addClass("error");
+                    $email.siblings("span").text($("#i18n_can_not_be_blank").val());
+                    validation_valid = false;
+                }
+                if ($.trim($password.val()).length == 0) {
+                    $password.parents(".control-group").addClass("error");
+                    $password.siblings("span").text($("#i18n_can_not_be_blank").val());
+                    validation_valid = false;
+                }
+                if (validation_valid) {
+                    fans_home.user_screen.check_user_login_by_ajax();
+                }
+            })
+        },
+
+        init_status_of_login_form: function () {
+            var email_length = $("#inputEmail").val().trim().length;
+            var password_length = $("#inputPassword").val().trim().length;
+            var $submit_btn = $("#user_login_btn");
+            if (email_length > 0 && password_length > 0) {
+                $submit_btn.removeAttr("disabled");
+            } else {
+                $submit_btn.attr("disabled", "disabled");
+            }
+        },
+
+        check_user_login_by_ajax: function () {
+            var options = {
+                url: "/users/check_login",
+                type: "POST",
+                data: $("#user_login_form").serialize(),
+                success: function (data) {
+                    var back_url = $("#login_success_jump_url").val();
+                    if (data.status == "success") {
+                        window.location = back_url;
+                    } else {
+                        $.each(data.message, function (id, message) {
+                            $("#" + id).next().text(message);
+                        })
+                    }
+
+                }
+
+            };
+            $.ajax(options);
         }
 
     }

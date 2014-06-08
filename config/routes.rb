@@ -1,4 +1,9 @@
 FansHome::Application.routes.draw do
+  get "users/logout"
+  get "users/login"
+  get "login" => "users#login"
+  post "users/check_login"
+
   post "sessions/change_locale"
   post "users/user_list"
   post "users/destroy_users"

@@ -6,8 +6,7 @@
         <small><%= I18n.t "user_index_sub_title" %></small>
       </h2>
     </div>
-    <p id="notice"><%= notice %></p>
-    <div id="user_operation_message"></div>
+    <p id="notice" class="user_operation_message"><%= notice %></p>
     <table id="user_table_list" class="display" cellspacing="0" width="100%">
       <thead>
       <tr>
@@ -27,8 +26,6 @@
     <%= button_tag I18n.t("edit_btn"), {id: "user_table_edit_btn",
                             class: "btn btn-primary",
                             disabled: true} %>
-
-
   </div>
 </div>
 

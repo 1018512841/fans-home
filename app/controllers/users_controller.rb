@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
 
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :check_manager_user, :only => [:index, :user_list, :destroy_users]
+  before_action :check_current_user, :only => [:show, :edit, :update, :destroy]
 
 
   # GET /users
@@ -48,11 +50,12 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        set_logout
+        set_session_cookie(@user, "")
+        format.html { redirect_to @user, notice: I18n.t("create_user_success") }
         format.json { render action: 'show', status: :created, location: @user }
       else
-
-        format.html { p "yyyyyyyyyyyyyyyyyy"; render action: 'new' }
+        format.html { render action: 'new' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -63,11 +66,10 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to @user, notice: I18n.t("update_user_success") }
         format.json { head :no_content }
       else
-
-        format.html {render action: 'edit' }
+        format.html { render action: 'edit' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -81,12 +83,38 @@ class UsersController < ApplicationController
 
 
   def destroy
+    if current_user?(@user)
+      redirect_to @user, notice: I18n.t("delete_self_error")
+    end
+
     @user.destroy
     respond_to do |format|
-      flash[:notice] = "Delete OK!"
+      flash[:notice] = I18n.t("delete_ok")
       format.html { redirect_to users_url }
       format.json { head :no_content }
     end
+  end
+
+  def login
+    @back_url = params[:back_url].blank? ? root_url : params[:back_url]
+  end
+
+  def check_login
+    user = User.where(:user_email => params[:user_email]).first
+    result = User.check_user_login(user, params[:user_password])
+    if result[:status] == "success"
+      set_session_cookie(user, params[:remember_me])
+    end
+    render :json => result
+  end
+
+  def logout
+    set_logout
+    redirect_to root_url
+  end
+
+  def permission_required
+
   end
 
 
@@ -99,6 +127,20 @@ class UsersController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
-    params.require(:user).permit(:user_name, :password, :user_email, :password_confirmation)
+    params.require(:user).permit(:user_name,
+                                 :password,
+                                 :user_email,
+                                 :password_confirmation,
+                                 :role)
+  end
+
+  def check_manager_user
+    render "permission_required" unless current_is_admin_role
+  end
+
+  def check_current_user
+    if session[:user] != params[:id] && !current_is_admin_role
+      render "permission_required"
+    end
   end
 end

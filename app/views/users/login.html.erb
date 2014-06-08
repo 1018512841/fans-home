@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="hero-unit" id="user_login_container">
+    <%= form_tag "", {:id => "user_login_form",
+                      :class => "form-horizontal"} do %>
+        <div class="control-group">
+          <%= label_tag "inputEmail",
+                        I18n.t("user_index_email"),
+                        {:class => "control-label"} %>
+          <div class="controls">
+            <%= text_field_tag "user_email",
+                               nil,
+                               {:id => "inputEmail",
+                                :placeholder => I18n.t("user_index_email")} %>
+            <span class="help-inline alert-error"></span>
+          </div>
+        </div>
+        <div class="control-group">
+          <%= label_tag "inputPassword",
+                        I18n.t("user_index_password"),
+                        {:class => "control-label"} %>
+          <div class="controls">
+            <%= password_field_tag "user_password",
+                                   nil,
+                                   {:id => "inputPassword",
+                                    :placeholder => I18n.t("user_index_password")} %>
+            <span class="help-inline alert-error"></span>
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <label class="checkbox">
+              <%= check_box_tag "remember_me", "yes", false %><%= I18n.t("remember_me") %>
+            </label>
+            <%= button_tag I18n.t("login_btn"),
+                           {:class => "btn",
+                            :id => 'user_login_btn',
+                            :name => nil,
+                            :type => "button"} %>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+<%= hidden_field_tag '', I18n.t("i18n_can_not_be_blank"), {:id => "i18n_can_not_be_blank"} %>
+
+<%= hidden_field_tag '', @back_url, {:id => "login_success_jump_url"} %>
+<script>
+    $(Document).ready(function () {
+        fans_home.user_screen.init_user_login_screen();
+    })
+</script>
