@@ -1,4 +1,5 @@
 FansHome::Application.routes.draw do
+  post "sessions/change_locale"
   post "users/user_list"
   post "users/destroy_users"
   resources :life_posts

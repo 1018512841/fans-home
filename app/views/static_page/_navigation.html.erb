@@ -22,10 +22,31 @@
         </ul>
       </li>
       <li>
-        <%= select_tag "i18n_locale",
-                       "<option value='en'>English</option><option value='zh' selected='selected'>中文</option>".html_safe %>
+        <%= select_tag "i18n_locale", options_for_select(
+                {"English" => "en", "中文" => "zh"}, session[:default_locale]) %>
       </li>
-
     </ul>
   </div>
 </div>
+
+<script>
+    $(Document).ready(function () {
+        $("#i18n_locale").change(function () {
+            var params = {
+                locale: $(this).val(),
+                back_url: window.location.href
+            };
+            var options = {
+                url: "sessions/change_locale",
+                type: "POST",
+                data: params,
+                success: function(){
+                    location.reload()
+                }
+
+            };
+            $.ajax(options);
+        })
+
+    })
+</script>
