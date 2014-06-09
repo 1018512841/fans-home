@@ -55,6 +55,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user?(user)
-    session[:user] == user.id
+    session[:user] == user.id.to_s
   end
 end

@@ -18,12 +18,25 @@
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
           <% if current_is_login? %>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="<%= edit_user_url(get_current_user) %>"><%= I18n.t "setting" %></a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="<%= users_logout_url %>"><%= I18n.t "sign_out" %></a>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="<%= user_url(get_current_user) %>"><%= I18n.t "show_btn" %></a>
+              </li>
+              <% if current_is_admin? %>
+                  <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="<%= users_url %>"><%= I18n.t "user_index_title" %></a>
+                  </li>
+              <% end %>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="<%= edit_user_url(get_current_user) %>"><%= I18n.t "setting" %></a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="<%= users_logout_url %>"><%= I18n.t "sign_out" %></a>
               </li>
           <% else %>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="<%= login_url %>"><%= I18n.t "visitor_login" %></a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="<%= new_user_url %>"><%= I18n.t "visitor_signin" %></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="<%= login_url %>"><%= I18n.t "visitor_login" %></a></li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="<%= new_user_url %>"><%= I18n.t "visitor_signin" %></a></li>
           <% end %>
         </ul>
       </li>

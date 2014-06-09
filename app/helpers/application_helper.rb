@@ -11,4 +11,8 @@ module ApplicationHelper
   def current_is_login?
     return User.find(session[:user]).present?
   end
+
+  def current_is_admin?
+    return get_current_user.role == "admin"
+  end
 end

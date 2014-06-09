@@ -38,14 +38,14 @@ class User
     return users_array
   end
 
-  def self.destroy_user_by_ids(user_ids)
+  def self.destroy_user_by_ids(user_ids, current_user_id)
     message = []
     status = "success"
     user_ids.each do |user_id|
       user = self.find(user_id)
-      unless current_user?(user)
+      if current_user_id == user.id.to_s
         status = "error"
-        message.push("'#{user_id}' "+I18n.t("delete_self_error"))
+        message.push("'#{user.user_name}' "+I18n.t("delete_self_error"))
         break
       end
 
