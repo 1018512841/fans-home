@@ -168,6 +168,12 @@ fans_home.user_screen = function () {
                 });
         },
 
+        /*
+         * initialize user login screen
+         * @function： init_user_login_screen
+         * @param：null
+         * @returns null
+         */
         init_user_login_screen: function () {
             fans_home.user_screen.init_status_of_login_form();
             $("#inputEmail, #inputPassword").on("keyup change", function () {
@@ -194,6 +200,12 @@ fans_home.user_screen = function () {
             })
         },
 
+        /*
+         * controle the status og login form
+         * @function： init_status_of_login_form
+         * @param：null
+         * @returns null
+         */
         init_status_of_login_form: function () {
             var email_length = $("#inputEmail").val().trim().length;
             var password_length = $("#inputPassword").val().trim().length;
@@ -205,6 +217,12 @@ fans_home.user_screen = function () {
             }
         },
 
+        /*
+         * check login status by ajax
+         * @function： check_user_login_by_ajax
+         * @param：null
+         * @returns null
+         */
         check_user_login_by_ajax: function () {
             var options = {
                 url: "/users/check_login",
@@ -225,6 +243,5 @@ fans_home.user_screen = function () {
             };
             $.ajax(options);
         }
-
     }
 }();

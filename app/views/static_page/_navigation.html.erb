@@ -6,11 +6,10 @@
           <%= I18n.t "navigation_text" %>
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "life_text" %></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "work_text" %></a>
-          </li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "tourist_text" %></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><%= I18n.t "research_text" %></a></li>
+          <%= sanitize generate_navbar_item '#', I18n.t("life_text") %>
+          <%= sanitize generate_navbar_item '#', I18n.t("work_text") %>
+          <%= sanitize generate_navbar_item '#', I18n.t("tourist_text") %>
+          <%= sanitize generate_navbar_item '#', I18n.t("research_text") %>
         </ul>
       </li>
       <li class="dropdown">
@@ -18,25 +17,15 @@
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
           <% if current_is_login? %>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="<%= user_url(get_current_user) %>"><%= I18n.t "show_btn" %></a>
-              </li>
+              <%= sanitize generate_navbar_item user_url(get_current_user), I18n.t("show_btn") %>
               <% if current_is_admin? %>
-                  <li role="presentation">
-                    <a role="menuitem" tabindex="-1" href="<%= users_url %>"><%= I18n.t "user_index_title" %></a>
-                  </li>
+                  <%= sanitize generate_navbar_item users_url, I18n.t("user_index_title") %>
               <% end %>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="<%= edit_user_url(get_current_user) %>"><%= I18n.t "setting" %></a>
-              </li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="<%= users_logout_url %>"><%= I18n.t "sign_out" %></a>
-              </li>
+              <%= sanitize generate_navbar_item edit_user_url(get_current_user), I18n.t("setting") %>
+              <%= sanitize generate_navbar_item users_logout_url, I18n.t("sign_out") %>
           <% else %>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="<%= login_url %>"><%= I18n.t "visitor_login" %></a></li>
-              <li role="presentation">
-                <a role="menuitem" tabindex="-1" href="<%= new_user_url %>"><%= I18n.t "visitor_signin" %></a></li>
+              <%= sanitize generate_navbar_item login_url, I18n.t("visitor_login") %>
+              <%= sanitize generate_navbar_item new_user_url, I18n.t("visitor_signin") %>
           <% end %>
         </ul>
       </li>
@@ -50,22 +39,6 @@
 
 <script>
     $(Document).ready(function () {
-        $("#i18n_locale").change(function () {
-            var params = {
-                locale: $(this).val(),
-                back_url: window.location.href
-            };
-            var options = {
-                url: "/sessions/change_locale",
-                type: "POST",
-                data: params,
-                success: function () {
-                    location.reload()
-                }
-
-            };
-            $.ajax(options);
-        })
-
+        fans_home.dashboard.init_navigation_locale_change();
     })
 </script>

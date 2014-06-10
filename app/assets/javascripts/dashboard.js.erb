@@ -54,6 +54,30 @@ fans_home.dashboard = function () {
             $('.social a.email').tooltip();
             $('.social a.resume').tooltip();
 
+        },
+
+        /*
+         * change I18n default locale by ajax
+         * @function： init_navigation_locale_change
+         * @param：null
+         * @returns null
+         */
+        init_navigation_locale_change: function () {
+            $("#i18n_locale").change(function () {
+                var params = {
+                    locale: $(this).val(),
+                    back_url: window.location.href
+                };
+                var options = {
+                    url: "/sessions/change_locale",
+                    type: "POST",
+                    data: params,
+                    success: function () {
+                        location.reload()
+                    }
+                };
+                $.ajax(options);
+            })
         }
     }
 }();
