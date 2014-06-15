@@ -135,7 +135,29 @@ describe User do
         end
       end
     end
-
+    describe "check_user_login" do
+      describe " user email is blank" do
+        it "should return error" do
+          expected_result = {:status=>"failed", :message=>{:inputPassword=>[], :inputEmail=>["User email invalid"]}}
+          result = User.check_user_login(nil, "password")
+          result.should == expected_result
+        end
+      end
+      describe " user password is right" do
+        it "should return OK" do
+          expected_result = {:status=>"success", :message=>{:inputPassword=>[], :inputEmail=>[]}}
+          result = User.check_user_login(@user, "123456")
+          result.should == expected_result
+        end
+      end
+      describe " user password is wrong" do
+        it "should return OK" do
+          expected_result = {:status=>"failed", :message=>{:inputPassword=>["Password invalid"], :inputEmail=>[]}}
+          result = User.check_user_login(@user, "error")
+          result.should == expected_result
+        end
+      end
+    end
   end
 
 end
