@@ -44,6 +44,7 @@ fans_home.dashboard = function () {
             //Show panel of it, then hide other
             $(".close_detail_btn").click(function () {
                 $(this).parents(".hero-unit").hide().siblings(".detail_index").show();
+                $('.main_board').backstretch("resize");
             });
 
              //Tooltips

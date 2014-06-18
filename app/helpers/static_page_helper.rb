@@ -11,7 +11,7 @@ EOS
   def generate_tooltip_link(url, tooltip_text, class_name)
     html_text = <<EOS
     <a href="#{url}" class="#{class_name}" rel="tooltip"
-data-placement="top" data-original-title=#{tooltip_text}"></a>
+data-placement="top" data-original-title=#{tooltip_text}></a>
 EOS
     return html_text
   end
