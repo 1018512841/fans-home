@@ -18,4 +18,3 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
-var fans_home;

@@ -28,7 +28,7 @@ production:
   database: fans-home
   username: postgres
   password: postgres
-  schema_search_path: fanxp
+  schema_search_path: public
   pool: 100
   host: localhost
   port: 5432
