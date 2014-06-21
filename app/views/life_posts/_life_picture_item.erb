@@ -1,0 +1,11 @@
+<% life_item_list.each do |item| %>
+    <div class="item <%= item.status %>">
+      <img src="<%= item.picture_url %>" alt="">
+
+      <div class="carousel-caption">
+        <h4><%= item.title %></h4>
+
+        <p><%= item.body %></p>
+      </div>
+    </div>
+<% end %>

@@ -1,58 +1,23 @@
-<div class="bs-docs-example">
+<div class="bs-docs-life">
+  <div id="loading"></div>
   <div id="myCarousel" class="carousel slide">
+    <div class="life_detail_btn"><span type="button" class="btn">详细列表</span></div>
     <div class="carousel-indicators">
-        <span type="button" class="btn disabled">5 / 12</span>
+      <span type="button" class="btn disabled">
+        <span class="current-number">1</span> /
+        <span class="total-number"><%= LifePost.count %></span></span>
     </div>
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="/images/life/bootstrap-mdo-sfmoma-01.jpg" alt="">
 
-        <div class="carousel-caption">
-          <h4>First Thumbnail label</h4>
-
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-            metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="/images/life/bootstrap-mdo-sfmoma-02.jpg" alt="">
-
-        <div class="carousel-caption">
-          <h4>Second Thumbnail label</h4>
-
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-            metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="/images/life/bootstrap-mdo-sfmoma-03.jpg" alt="">
-
-        <div class="carousel-caption">
-          <h4>Third Thumbnail label</h4>
-
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-            metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
-      <div class="item">
-        <img src="/images/life/bootstrap-mdo-sfmoma-04.jpg" alt="">
-
-        <div class="carousel-caption">
-          <h4>Third Thumbnail label</h4>
-
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-            metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-        </div>
-      </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    <a class="left carousel-control" data-toggle="tooltip" title="第一页">‹</a>
+    <a class="right carousel-control" data-toggle="tooltip" title="最后一页">›</a>
   </div>
 </div>
 
 
 <script type="text/javascript">
     $(document).ready(function () {
-        $('#myCarousel').carousel()
+//        fans_home.life_post.life_picture_item_screen();
     });
 </script>

@@ -11,7 +11,6 @@
 // about supported directives.
 
 
-
 //= require fw
 //= require jquery
 //= require jquery_ujs

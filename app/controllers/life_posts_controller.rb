@@ -62,6 +62,15 @@ class LifePostsController < ApplicationController
     end
   end
 
+  def display_life_item_picture
+    life_item_list = LifePost.get_life_post_by(params[:start], 3)
+    if (params[:first_active] == "active" && life_item_list.length>0)
+      life_item_list[0].status = "active"
+    end
+    render :partial => "life_posts/life_picture_item",
+           :locals => {:life_item_list => life_item_list}
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_life_post
