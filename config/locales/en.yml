@@ -70,6 +70,9 @@ en:
   new_user_error_message: "Create a new user will logout current user"
   permission_required: "Required admin permission!"
   delete_self_error: "can not delete yourself"
+  life_detail_list: "detail list"
+  life_detail_first: "first"
+  life_detail_last: "last"
 
   helpers:
     submit:

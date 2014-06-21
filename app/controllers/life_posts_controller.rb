@@ -5,7 +5,7 @@ class LifePostsController < ApplicationController
   # GET /life_posts
   # GET /life_posts.json
   def index
-    @life_posts = LifePost.all
+    @life_posts = LifePost.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /life_posts/1

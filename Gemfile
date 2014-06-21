@@ -7,9 +7,13 @@ gem 'rails-i18n'
 
 # Use postgres SQL as the database for Active Record
 gem 'pg', '0.17.1'
-gem 'mongo_mapper'
-gem "bson_ext"
-gem 'sqlite3'
+gem 'mongo_mapper', '0.13.0'
+gem "bson_ext", '1.10.1'
+gem 'sqlite3', '1.3.9'
+
+gem "will_paginate", "3.0.5"
+gem "bootstrap-will_paginate"
+
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

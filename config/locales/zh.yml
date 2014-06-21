@@ -50,7 +50,9 @@ zh:
   new_user_error_message: "注册一个新用户会退出当前用户"
   permission_required: "需要管理员权限!"
   delete_self_error: "不能删除自己"
-
+  life_detail_list: "詳細列表"
+  life_detail_first: "第一頁"
+  life_detail_last: "最後一頁"
 
   helpers:
     submit:

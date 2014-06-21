@@ -1,7 +1,7 @@
 <div class="bs-docs-life">
   <div id="loading"></div>
   <div id="myCarousel" class="carousel slide">
-    <div class="life_detail_btn"><span type="button" class="btn">详细列表</span></div>
+    <div class="life_detail_btn"><a class="btn" href="<%= life_posts_url %>"><%= I18n.t "life_detail_list" %></a></div>
     <div class="carousel-indicators">
       <span type="button" class="btn disabled">
         <span class="current-number">1</span> /
@@ -10,8 +10,8 @@
     <div class="carousel-inner">
 
     </div>
-    <a class="left carousel-control" data-toggle="tooltip" title="第一页">‹</a>
-    <a class="right carousel-control" data-toggle="tooltip" title="最后一页">›</a>
+    <a class="left carousel-control" data-toggle="tooltip" title="<%= I18n.t "life_detail_first" %>">‹</a>
+    <a class="right carousel-control" data-toggle="tooltip" title="<%= I18n.t "life_detail_last" %>">›</a>
   </div>
 </div>
 
