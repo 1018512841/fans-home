@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container life_post_index_wrapper">
 
-  <h1>Listing life posts</h1>
+  <h1 class="text-center">Listing life posts</h1>
 
   <table class="table table-striped table-bordered table-hover">
     <thead>
@@ -22,8 +22,8 @@
     </tbody>
   </table>
   <%= will_paginate @life_posts, {previous_label: "Pre", next_label: "Next", :style => 'color:blue'} %>
-  <br>
-  <%= link_to 'New Life post', new_life_post_path %>
+  <%= link_to("New Life post", new_life_post_path,
+              {class: " btn btn-primary"}) %>
 </div>
 
 <script type="text/javascript">

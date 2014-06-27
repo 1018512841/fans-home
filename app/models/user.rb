@@ -1,25 +1,28 @@
 class User
-  include MongoMapper::Document
-  key :user_name, String
-  key :user_email, String
-  key :salt, String
-  key :encrypted_password, String
-  key :role, String
-  timestamps!
+  include Mongoid::Document
+  include Mongoid::Timestamps
+
+  field :user_name, type: String
+  field :user_email, type: String
+  field :salt, type: String
+  field :encrypted_password, type: String
+  field :role, type: String
+
 
   attr_accessor :password
   attr_reader :password_confirmation
 
-  validates :user_name, :presence => true, :uniqueness => true
-  validates :user_email, :presence => true, :uniqueness => true,
-            :format => {with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create}
-  validates :password, :confirmation => true, :presence => true
+  validates_presence_of :user_name,:user_email
+  validates_uniqueness_of :user_email
+  validates_format_of :user_email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
+  validates_confirmation_of :password
 
   def password=(password)
     @password = password
     if @password.present?
       generate_salt
-      @encrypted_password = self.class.encrypt_password(self.password, self.salt)
+      self.encrypted_password = self.class.encrypt_password(self.password, self.salt)
+      p "@encrypted_password:#{self.encrypted_password}"
     end
   end
 
@@ -79,6 +82,8 @@ class User
     elsif user.authenticate_password(password)
       status = 'success'
     else
+      p '----------------'
+      p user
       status = 'failed'
       message[:inputPassword].push("Password invalid")
     end

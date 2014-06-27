@@ -25,6 +25,29 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
+    # 100.times do |i|
+    # user_params = {user_name:"user_" + i.to_s,
+    #                 user_email:"user_" + i.to_s + "@qq.com",
+    #                 password:"user_" + i.to_s,
+    #                 password_confirmation:"user_" + i.to_s,
+    #                 role:"normal"
+    #
+    # }
+    # user = User.new(user_params)
+    # user.save
+    # end
+    # user_input = {user_name:"admin",
+    #                 user_email:"admin@qq.com",
+    #                 password:"admin",
+    #                 password_confirmation:"admin",
+    #                 role:"admin"
+    #
+    # }
+    # p '--------controller-----------'
+    # user = User.new(user_input)
+    # # p user
+    # p user.save
+    # p user.errors
     @user = User.new
   end
 
@@ -65,7 +88,7 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
-      if @user.update(user_params)
+      if @user.set(user_params)
         format.html { redirect_to @user, notice: I18n.t("update_user_success") }
         format.json { head :no_content }
       else
@@ -88,7 +111,11 @@ class UsersController < ApplicationController
 
     @user.destroy
     respond_to do |format|
+
       flash[:notice] = I18n.t("delete_ok")
+      if !current_is_admin_role
+        format.html { redirect_to root_url }
+      end
       format.html { redirect_to users_url }
       format.json { head :no_content }
     end
@@ -137,7 +164,7 @@ class UsersController < ApplicationController
   end
 
   def check_current_user
-    if session[:user] != params[:id] && !current_is_admin_role
+    if session[:user].to_s != params[:id] && !current_is_admin_role
       render "permission_required"
     end
   end

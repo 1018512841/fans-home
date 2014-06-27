@@ -1,6 +1,13 @@
-<h1>Editing life_post</h1>
+<div class="container">
+  <div class="hero-unit" id="life_detail_container">
+    <p id="notice"><%= notice %></p>
 
-<%= render 'form' %>
+    <h2 class="text-center span8 offset1">Editing life post</h2>
+    <%= render 'form' %>
+    <div class="span2 offset2">
+      <%= link_to I18n.t("show_btn"), @life_post, {class: "btn btn-primary"} %>
+      <%= link_to I18n.t("back_btn"), life_posts_path, {class: "btn btn-primary"} %>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Show', @life_post %> |
-<%= link_to 'Back', life_posts_path %>

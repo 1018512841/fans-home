@@ -5,12 +5,13 @@ class LifePostsController < ApplicationController
   # GET /life_posts
   # GET /life_posts.json
   def index
-    @life_posts = LifePost.paginate(:page => params[:page], :per_page => 5)
+    @life_posts = LifePost.all.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /life_posts/1
   # GET /life_posts/1.json
   def show
+    p @life_post
   end
 
   # GET /life_posts/new
@@ -42,11 +43,12 @@ class LifePostsController < ApplicationController
   # PATCH/PUT /life_posts/1.json
   def update
     respond_to do |format|
-      if @life_post.update(life_post_params)
+      if @life_post.set(life_post_params)
         format.html { redirect_to @life_post, notice: 'Life post was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
+
         format.json { render json: @life_post.errors, status: :unprocessable_entity }
       end
     end
@@ -63,8 +65,8 @@ class LifePostsController < ApplicationController
   end
 
   def display_life_item_picture
-    life_item_list = LifePost.get_life_post_by(params[:start], 3)
-    if (params[:first_active] == "active" && life_item_list.length>0)
+    life_item_list = LifePost.get_life_post_by(params[:start], 3).to_a
+    if params[:first_active] == "active" && life_item_list.size>0
       life_item_list[0].status = "active"
     end
     render :partial => "life_posts/life_picture_item",
@@ -79,6 +81,6 @@ class LifePostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def life_post_params
-      params.require(:life_post).permit(:title)
+      params.require(:life_post).permit(:title,:body,:picture_url)
     end
 end

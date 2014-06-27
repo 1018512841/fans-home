@@ -56,7 +56,7 @@ zh:
 
   helpers:
     submit:
-      create: "新建一个用户"
+      create: "新建"
       update: "确认更改"
   activerecord:
     attributes:

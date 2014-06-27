@@ -1,21 +1,58 @@
-<%= form_for(@life_post) do |f| %>
-  <% if @life_post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@life_post.errors.count, "error") %> prohibited this life_post from being saved:</h2>
+<div class="row life_new_edit_form">
+  <div>
+    <%= form_for(@life_post, :html => {:multipart => true}) do |f| %>
+        <% if @life_post.errors.any? %>
+            <div class="alert alert-warning">
+              <button class="close" data-dismiss="alert" type="button"> ×</button>
+              <div>
+                <div>
+                  <ul>
+                    <% @life_post.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        <% end %>
 
-      <ul>
-      <% @life_post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+        <div class="span10">
+          <div class="field form-horizontal">
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+            <div class="control-group">
+              <%= f.label :title, "title", {:class => "control-label"} %>
+              <div class="controls">
+                <%= f.text_field :title,
+                                 {:id => "title_field",
+                                  :class => "span6"} %>
+                <span></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <%= f.label :body, "body", {:class => "control-label"} %>
+              <div class="controls">
+                <%= f.text_area :body,
+                                 {:id => "body_field",
+                                 :class => "span6",
+                                 :rows=>"8"} %>
+                <span></span>
+              </div>
+            </div>
+            <div class="control-group">
+              <%= f.label :picture_url, "picture url", {:class => "control-label"} %>
+              <div class="controls">
+                <%= f.text_field :picture_url,
+                                {:id => "picture_url_field",
+                                 :class => "span6"} %>
+                <span></span>
+              </div>
+            </div>
+
+            <div class="span2 offset2">
+              <%= f.submit(nil, {:class => "user_form_btn btn btn-primary span2 offset5"}) %>
+            </div>
+          </div>
+        </div>
+    <% end %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

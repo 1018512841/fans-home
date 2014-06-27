@@ -50,8 +50,10 @@
             <div class="control-group <%= @user.errors.messages[:role].blank? ? "" : "error" %>">
               <%= f.label :role, I18n.t("user_index_role"), {:class => "control-label"} %>
               <div class="controls">
-                <%= select_tag "role", options_for_select(
-                        {"Admin" => "amin", "Normal" => "user"}, current_is_admin? ? 'admin': 'user'),{:disabled => !current_is_admin? } %>
+                <%= select_tag "role", options_for_select({"Admin" => "amin", "Normal" => "user"},
+                        current_is_admin? ? 'admin': 'user'),
+
+                               {:disabled => !current_is_admin? } %>
               </div>
             </div>
             <div class="span2 offset2">
