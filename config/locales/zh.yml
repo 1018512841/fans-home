@@ -96,3 +96,16 @@ zh:
       other_than: "must be other than %{count}"
       odd: "must be odd"
       even: "must be even"
+
+  errors:
+    messages:
+      extension_white_list_error: "file error"
+
+
+  life_post:
+    index_title: "生活照片"
+    life_new: "上传图片"
+    life_edit: "修改"
+    life_title: "标题"
+    life_body: "描述"
+    life_picture: "上传照片"

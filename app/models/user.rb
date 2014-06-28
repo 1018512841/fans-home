@@ -22,7 +22,6 @@ class User
     if @password.present?
       generate_salt
       self.encrypted_password = self.class.encrypt_password(self.password, self.salt)
-      p "@encrypted_password:#{self.encrypted_password}"
     end
   end
 
@@ -82,8 +81,6 @@ class User
     elsif user.authenticate_password(password)
       status = 'success'
     else
-      p '----------------'
-      p user
       status = 'failed'
       message[:inputPassword].push("Password invalid")
     end

@@ -1,12 +1,14 @@
+require 'carrierwave/mongoid'
 class LifePost
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  attr_accessor :status
-
   field :title, type: String
   field :body, type: String
-  field :picture_url, type: String
+  field :avatar
+  attr_accessor :status
+  attr_accessor :avatar_cache
+  mount_uploader :avatar, AvatarUploader
 
   def self.get_life_post_by(start, length)
     self.offset(start).limit(length)

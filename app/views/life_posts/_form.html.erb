@@ -20,7 +20,7 @@
           <div class="field form-horizontal">
 
             <div class="control-group">
-              <%= f.label :title, "title", {:class => "control-label"} %>
+              <%= f.label :title, I18n.t("life_post.life_title"), {:class => "control-label"} %>
               <div class="controls">
                 <%= f.text_field :title,
                                  {:id => "title_field",
@@ -29,7 +29,7 @@
               </div>
             </div>
             <div class="control-group">
-              <%= f.label :body, "body", {:class => "control-label"} %>
+              <%= f.label :body, I18n.t("life_post.life_body"), {:class => "control-label"} %>
               <div class="controls">
                 <%= f.text_area :body,
                                  {:id => "body_field",
@@ -38,12 +38,14 @@
                 <span></span>
               </div>
             </div>
+
             <div class="control-group">
-              <%= f.label :picture_url, "picture url", {:class => "control-label"} %>
+              <%= f.label :file, I18n.t("life_post.life_picture"), {:class => "control-label"} %>
               <div class="controls">
-                <%= f.text_field :picture_url,
-                                {:id => "picture_url_field",
-                                 :class => "span6"} %>
+                <%= f.file_field :avatar,
+                                {:id => "avatar_field",
+                                 :class => "span6",
+                                 :rows=>"8"} %>
                 <span></span>
               </div>
             </div>

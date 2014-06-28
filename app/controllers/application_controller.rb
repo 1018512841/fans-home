@@ -46,9 +46,9 @@ class ApplicationController < ActionController::Base
   end
 
   def current_is_admin_role
-    user = User.find(session[:user])
+    user = User.find(session[:user]) if session[:user]
     is_admin_user = false
-    if user
+    if user.present?
       is_admin_user = user.role == "admin"
     end
     return is_admin_user

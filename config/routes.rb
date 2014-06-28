@@ -9,9 +9,10 @@ FansHome::Application.routes.draw do
   post "sessions/change_locale"
   post "users/user_list"
   post "users/destroy_users"
-  resources :life_posts
   resources :users
-
+  resources :life_posts do
+    get :avatar, on: :member
+  end
 
   get "detail" => 'static_page#detail'
   get "static_page/index"

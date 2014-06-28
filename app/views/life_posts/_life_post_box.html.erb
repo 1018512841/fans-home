@@ -1,0 +1,16 @@
+<li class="span3">
+  <div class="thumbnail">
+    <div class="life_index_image_wrapper">
+      <%= link_to image_tag(life_post.avatar.thumb.url, {class: "img-rounded img-polaroid life_index_image"}), life_post %>
+    </div>
+    <div class="caption">
+      <h3 class="life_index_title"><%= link_to life_post.title, life_post %></h3>
+
+      <p class="life_index_body"><%= link_to life_post.body, life_post %></p>
+      <% if current_is_admin? %>
+          <p><%= link_to I18n.t("edit_btn"), edit_life_post_path(life_post), class: "btn btn-primary" %>
+            <%= link_to I18n.t("delete_btn"), life_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-primary" %></p>
+      <% end %>
+    </div>
+  </div>
+</li>

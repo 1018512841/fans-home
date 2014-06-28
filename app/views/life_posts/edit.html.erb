@@ -1,8 +1,9 @@
 <div class="container">
   <div class="hero-unit" id="life_detail_container">
     <p id="notice"><%= notice %></p>
-
-    <h2 class="text-center span8 offset1">Editing life post</h2>
+    <div class="row">
+      <h2 class="text-center span8 offset1"><%= I18n.t "life_post.life_edit" %></h2>
+    </div>
     <%= render 'form' %>
     <div class="span2 offset2">
       <%= link_to I18n.t("show_btn"), @life_post, {class: "btn btn-primary"} %>

@@ -6,7 +6,7 @@
           <%= I18n.t "navigation_text" %>
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-          <%= sanitize generate_navbar_item '#', I18n.t("life_text") %>
+          <%= sanitize generate_navbar_item life_posts_url, I18n.t("life_text") %>
           <%= sanitize generate_navbar_item '#', I18n.t("work_text") %>
           <%= sanitize generate_navbar_item '#', I18n.t("tourist_text") %>
           <%= sanitize generate_navbar_item '#', I18n.t("research_text") %>

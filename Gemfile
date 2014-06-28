@@ -17,7 +17,13 @@ gem "bootstrap-will_paginate", "0.0.10"
 
 
 gem "mongoid", "~> 4.0.0"
-gem 'kaminari'
+# gem 'kaminari'
+
+gem 'carrierwave', '0.10.0'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
+gem 'mini_magick', :git => 'git://github.com/probablycorey/mini_magick.git'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'

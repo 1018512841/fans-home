@@ -43,11 +43,7 @@ class UsersController < ApplicationController
     #                 role:"admin"
     #
     # }
-    # p '--------controller-----------'
     # user = User.new(user_input)
-    # # p user
-    # p user.save
-    # p user.errors
     @user = User.new
   end
 

@@ -3,34 +3,32 @@
 
     <p id="notice"><%= notice %></p>
 
-    <h2 class="text-center"> <%= @life_post.title %></h2>
+    <h2 class="text-center life_detail_page_title"> <%= @life_post.title %></h2>
 
-    <p class="lead"> <%= @life_post.body %></p>
+    <p class="lead text-center"> <%= @life_post.body %></p>
 
-
-    <%= image_tag @life_post.picture_url, {class: "img-rounded img-polaroid"} %>
-
-
+    <p class="text-center"> <%= image_tag @life_post.avatar.url, {class: "img-rounded img-polaroid"} %></p>
 
     <div class="row">
       <div class="span7 offset1">
         <div class="row">
-          <%= link_to I18n.t("edit_btn"), edit_life_post_path(@life_post), {id: "life_detail_edit_btn",
-                                                                            class: "btn btn-primary"} %>
-          <%= link_to I18n.t("delete_btn"), life_post_path(@life_post), {id: "life_detail_delete_btn",
-                                                                         method: "delete",
-                                                                         data: {confirm: "Are you sure?"},
-                                                                         class: "btn btn-primary"} %>
-
+          <% if current_is_admin? %>
+              <%= link_to I18n.t("edit_btn"), edit_life_post_path(@life_post), {id: "life_detail_edit_btn",
+                                                                                class: "btn btn-primary"} %>
+              <%= link_to I18n.t("delete_btn"), life_post_path(@life_post), {id: "life_detail_delete_btn",
+                                                                             method: "delete",
+                                                                             data: {confirm: "Are you sure?"},
+                                                                             class: "btn btn-primary"} %>
+          <% end %>
           <%= link_to I18n.t("back_btn"), life_posts_path, {class: "btn btn-primary"} %>
         </div>
       </div>
       <div class="span2">
         <div class="row">
-          <%= link_to("Previous", @life_post.previous_one_path,
+          <%= link_to(I18n.t("previous_page"), @life_post.previous_one_path,
                       {class: "btn btn-primary",
                        disabled: @life_post.previous_one.nil?}) %>
-          <%= link_to("Next", @life_post.next_one_path,
+          <%= link_to(I18n.t("next_page"), @life_post.next_one_path,
                       {class: "btn btn-primary",
                        disabled: @life_post.next_one.nil?}) %>
         </div>
