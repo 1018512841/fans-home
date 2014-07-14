@@ -1,5 +1,10 @@
 FansHome::Application.routes.draw do
 
+
+  post "tourist_posts/upload_image"
+  post "tourist_posts/destroy_image"
+  post "tourist_posts/tourist_city"
+
   get "users/logout"
   get "users/login"
   get "login" => "users#login"
@@ -9,6 +14,7 @@ FansHome::Application.routes.draw do
   post "sessions/change_locale"
   post "users/user_list"
   post "users/destroy_users"
+  resources :tourist_posts
   resources :users
   resources :life_posts do
     get :avatar, on: :member

@@ -1,0 +1,13 @@
+<div class="container tourist_post_index_wrapper">
+  <h1 class="text-center"><%= I18n.t "life_post.index_title" %></h1>
+  <ul class="thumbnails">
+    <% @tourist_posts.each do |tourist_post| %>
+        <%= render :partial => "tourist_post_box", :locals => {:tourist_post => tourist_post} %>
+    <% end %>
+  </ul>
+  <%= will_paginate @tourist_posts, {previous_label: "Pre", next_label: "Next", :style => 'color:blue'} %>
+  <% if current_is_admin? %>
+      <%= link_to(I18n.t("new_btn"), new_tourist_post_path, {class: " btn btn-primary"}) %>
+  <% end %>
+
+</div>

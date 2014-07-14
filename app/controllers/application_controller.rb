@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     else
       language = 'en'
     end
-    return language
+    language
   end
 
   def set_locale(locale)
@@ -51,10 +51,17 @@ class ApplicationController < ActionController::Base
     if user.present?
       is_admin_user = user.role == "admin"
     end
-    return is_admin_user
+    is_admin_user
   end
 
   def current_user?(user)
     session[:user] == user.id.to_s
+  end
+
+
+  def user_admin_check
+    unless current_is_admin_role
+      redirect_to root_url
+    end
   end
 end

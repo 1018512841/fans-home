@@ -127,7 +127,7 @@ fans_home.user_screen = function () {
                     user_datatable_obj.fnDraw();
 
                     var message_html = '<div class="alert alert-' + data.status + '">' +
-                        data.message.join("<br>") + '</div>'
+                        data.message.join("<br>") + '</div>';
 
                     $(".user_operation_message").html(message_html);
                     $("#user_table_delete_btn").attr("disabled", "disabled");

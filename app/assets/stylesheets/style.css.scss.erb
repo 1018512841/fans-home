@@ -348,10 +348,6 @@ header a:hover {
     text-align: center
 }
 
-#user_table_create_btn {
-    color: #ffffff;
-}
-
 #user_table_list a {
     color: blue;
     text-decoration: underline;
@@ -366,18 +362,6 @@ header a:hover {
 
 #user_list_container {
     padding-top: 10px;
-}
-
-#user_detail_container .btn {
-    color: #ffffff;
-}
-
-#user_edit_container .btn {
-    color: #ffffff;
-}
-
-#user_new_container .btn {
-    color: #ffffff;
 }
 
 #i18n_locale {
@@ -456,10 +440,6 @@ header a:hover {
 }
 
 #life_detail_container a,
-.life_post_index_wrapper .btn {
-    color: #ffffff;
-}
-
 #life_detail_container.hero-unit {
     padding-top: 10px;
 }
@@ -472,10 +452,10 @@ header a:hover {
 .carousel-control:hover, .life_post_index_wrapper.carousel-control:focus {
     border: 3px solid #808080;
     color: white;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
-.main_board .carousel-inner > .item > img{
+.main_board .carousel-inner > .item > img {
     display: inline;
 }
 
@@ -484,27 +464,89 @@ header a:hover {
     vertical-align: middle;
     height: 100%;
 }
-.life_index_image{
+
+.index_image_round {
     width: 200px;
 }
-.life_index_image_wrapper{
+
+.index_image_wrapper {
     height: 130px;
+    overflow: hidden;
 }
 
-.life_index_body, .life_index_title{
+.image_index_body, .image_index_title {
     overflow: hidden;
     display: inline-block;
     width: 100%;
     height: 15px;
-    margin: 5,0,0,0;
+    margin: 5, 0, 0, 0;
     padding: 0;
 }
 
-.life_index_title{
+.image_index_title {
     height: 35px;
     margin: 0;
 }
 
-.life_detail_container .life_detail_page_title{
+.life_detail_container .life_detail_page_title {
     float: none;
+}
+
+#fans-map {
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#board_detail_show > .hero-unit > .row {
+    margin: 0;
+}
+
+#board_detail_show .detail_tourist {
+    background: rgb(80, 80, 80);
+}
+
+#board_detail_show .jvectormap-zoomin,
+#board_detail_show .jvectormap-zoomout {
+    background: none repeat scroll 0 0 #000000;
+}
+
+#fans-home .btn-primary {
+    color: #ffffff;
+}
+
+#jvectormap-label {
+    display: none;
+    left: 129px;
+    top: 64px;
+}
+
+#my-awesome-dropzone {
+    display: none;
+}
+
+.image_wrapper_manage {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.image_wrapper_remove {
+    border: 1px solid;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: #ffffff;
+    display: none;
+}
+
+.image_wrapper_remove:hover {
+    cursor: pointer;
+    width: 15px;
+    height:15px;
+    background-color: #808080;
 }

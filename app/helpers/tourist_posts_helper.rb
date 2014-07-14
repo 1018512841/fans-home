@@ -1,0 +1,2 @@
+module TouristPostsHelper
+end

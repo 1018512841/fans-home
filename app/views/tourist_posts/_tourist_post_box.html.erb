@@ -1,0 +1,17 @@
+<li class="span3">
+  <div class="thumbnail">
+    <div class="index_image_wrapper">
+      <%= link_to image_tag(tourist_post.get_image_cover_url, {class: "img-rounded img-polaroid index_image_round"}),
+                  tourist_post %>
+    </div>
+    <div class="caption">
+      <h3 class="image_index_title"><%= link_to tourist_post.city, tourist_post %></h3>
+
+      <p class="image_index_body"><%= link_to tourist_post.description, tourist_post %></p>
+      <% if current_is_admin? %>
+          <p><%= link_to I18n.t("edit_btn"), edit_tourist_post_path(tourist_post), class: "btn btn-primary" %>
+            <%= link_to I18n.t("delete_btn"), tourist_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-primary" %></p>
+      <% end %>
+    </div>
+  </div>
+</li>

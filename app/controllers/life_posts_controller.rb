@@ -1,13 +1,13 @@
 class LifePostsController < ApplicationController
 
   before_action :set_life_post, only: [:show, :edit, :update, :destroy]
-  before_action :post_user_admin_check, only: [:new, :create, :edit, :update, :destroy]
+  before_action :user_admin_check, only: [:new, :create, :edit, :update, :destroy]
 
 
   # GET /life_posts
   # GET /life_posts.json
   def index
-    @life_posts = LifePost.all.paginate(:page => params[:page], :per_page => 8)
+    @life_posts = LifePost.asc(:id).paginate(:page => params[:page], :per_page => 8)
   end
 
   # GET /life_posts/1
@@ -88,9 +88,4 @@ class LifePostsController < ApplicationController
       params.require(:life_post).permit(:title, :body, :avatar, :avatar_cache)
     end
 
-    def post_user_admin_check
-      unless current_is_admin_role
-        redirect_to root_url
-      end
-    end
 end
