@@ -26,17 +26,11 @@ class TouristPostsController < ApplicationController
   # POST /tourist_posts.json
   def create
     @tourist_post = TouristPost.new(tourist_post_params)
-    @tourist_post.tourist_images = []
     image = TouristImage.new({avatar: params[:avatar]})
     image.avatar.read
     image.tourist_post = @tourist_post
-    if image.save
-      # @tourist_post.tourist_images.push(image)
-    end
     respond_to do |format|
       if @tourist_post.save
-        image0_id = @tourist_post.tourist_images[0]
-        image0 = TouristImage.find(image0_id.to_s)
         format.html { redirect_to @tourist_post, notice: 'Tourist post was successfully created.' }
       else
         format.html { render action: 'new' }
@@ -47,6 +41,10 @@ class TouristPostsController < ApplicationController
   # PATCH/PUT /tourist_posts/1
   # PATCH/PUT /tourist_posts/1.json
   def update
+    image = @tourist_post.tourist_images[0]
+    image.avatar = params[:avatar]
+    image.avatar.read
+    image.save
     respond_to do |format|
       if @tourist_post.update(tourist_post_params)
         format.html { redirect_to @tourist_post, notice: 'Tourist post was successfully updated.' }
@@ -67,6 +65,7 @@ class TouristPostsController < ApplicationController
     images = tourist.tourist_images.select { |e| e.id.to_s == params[:image_id] }
     if images.length > 0
       images[0].destroy_image
+      images[0].destroy
     end
     render :json => {}
   end
@@ -84,15 +83,10 @@ class TouristPostsController < ApplicationController
   end
 
   def tourist_city
-    city = [
-        {latLng: [34.62, 112.45], name: '河南 - 洛阳  家'},
-        {latLng: [34.74, 113.66], name: '河南 - 郑州  2010,2011,2012'},
-
-        {latLng: [34.261792, 117.184811], name: '徐州市  2010-2014'},
-        {latLng: [38.97, 121.53], name: '辽宁 - 大连  2010-2014'},
-        {latLng: [29.88, 121.64], name: '浙江 - 宁波  2014.04'}
-    ]
-    render :json => city
+    map = TouristPost.all.map do |post|
+      {latLng: post.get_coordinate, name: post.get_map_title, tourist_post_id:post.id.to_s}
+    end
+    render :json => map
   end
 
   private

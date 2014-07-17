@@ -73,7 +73,9 @@
                                   :class => "span6",
                                   :rows => "8"} %>
                 <span></span>
+                <%= image_tag(@tourist_post.get_image_cover_url, size: "300") unless @tourist_post.new_record? %>
               </div>
+
             </div>
 
             <div class="span2 offset2">
@@ -88,8 +90,11 @@
 
     //插件调用代码
     $(function () {
-        $( "#tourist_post_start_time" ).datepicker();
-        $( "#tourist_post_end_time" ).datepicker();
+        var dateOption = {
+            dateFormat: "yy/m/d"
+        };
+        $( "#tourist_post_start_time" ).datepicker(dateOption);
+        $( "#tourist_post_end_time" ).datepicker(dateOption);
         fans_home.tourist_post.init_city_select();
         $("#generate_coordinate_btn").click(function () {
             $(this).attr('disabled',true);
@@ -121,7 +126,6 @@
                         alert(data.message)
                     }
                     $("#generate_coordinate_btn").removeAttr('disabled');
-                    console.log(data);
                 }
             };
             $.ajax(options);

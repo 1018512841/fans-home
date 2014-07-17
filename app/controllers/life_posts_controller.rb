@@ -33,10 +33,8 @@ class LifePostsController < ApplicationController
     respond_to do |format|
       if @life_post.save && stale?(etag: content, last_modified: @life_post.updated_at.utc, public: true)
         format.html { redirect_to @life_post, notice: 'Life post was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @life_post }
       else
         format.html { render action: 'new' }
-        format.json { render json: @life_post.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -50,10 +48,8 @@ class LifePostsController < ApplicationController
       respond_to do |format|
         if @life_post.save && stale?(etag: content, last_modified: @life_post.updated_at.utc, public: true)
           format.html { redirect_to @life_post, notice: 'Life post was successfully created.' }
-          format.json { render action: 'show', status: :created, location: @life_post }
         else
           format.html { render action: 'edit' }
-          format.json { render json: @life_post.errors, status: :unprocessable_entity }
         end
       end
   end
@@ -64,7 +60,6 @@ class LifePostsController < ApplicationController
     @life_post.destroy
     respond_to do |format|
       format.html { redirect_to life_posts_url }
-      format.json { head :no_content }
     end
   end
 

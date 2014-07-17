@@ -48,7 +48,10 @@ fans_home.tourist_post = function () {
                         stroke: '#fff'
                     }
                 },
-                markers: data
+                markers: data,
+                onMarkerClick: function(event, index){
+                    window.location.href = "/tourist_posts/" + data[index].tourist_post_id;
+                }
             });
         },
 

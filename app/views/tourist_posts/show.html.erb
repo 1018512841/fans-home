@@ -37,12 +37,14 @@
         </div>
       </div>
     </div>
+    <% if current_is_admin? %>
     <div class="row text-center">
       <%= button_tag "管理相册", {id: "tourist_image_manage_btn", class: "btn btn-primary"} do %>
           管理相册
           <i class="icon-chevron-down"> </i>
       <% end %>
     </div>
+    <% end %>
     <p class="text-center">
       <%= form_tag "/tourist_posts/upload_image", {class: "dropzone", id: "my-awesome-dropzone"} do %>
           <%= hidden_field_tag "tourist_post_id", @tourist_post.id %>
