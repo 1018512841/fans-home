@@ -4,15 +4,11 @@
         <% if @tourist_post.errors.any? %>
             <div class="alert alert-warning">
               <button class="close" data-dismiss="alert" type="button"> ×</button>
-              <div>
-                <div>
-                  <ul>
-                    <% @tourist_post.errors.full_messages.each do |msg| %>
-                        <li><%= msg %></li>
-                    <% end %>
-                  </ul>
-                </div>
-              </div>
+              <ul>
+                <% @tourist_post.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
             </div>
         <% end %>
 
@@ -20,7 +16,7 @@
           <div class="field form-horizontal">
 
             <div class="control-group">
-              <%= f.label :city, I18n.t("life_post.life_title"), {:class => "control-label"} %>
+              <%= f.label :city, I18n.t("tourist_post.tourist_title"), {:class => "control-label"} %>
               <div class="controls">
                 <%= f.text_field :city,
                                  {:id => "city_field",
@@ -30,25 +26,25 @@
             </div>
 
             <div class="control-group">
-              <%= f.label :coordinate, "坐标", {:class => "control-label"} %>
+              <%= f.label :coordinate, I18n.t("tourist_post.tourist_coordinate"), {:class => "control-label"} %>
               <div class="controls">
                 <select id="province">
-                  <option value="载入中">载入中</option>
+                  <option value="载入中"><%= I18n.t("tourist_post.tourist_loading") %> </option>
                 </select> --
                 <select id="city">
-                  <option value="载入中">载入中</option>
+                  <option value="载入中"><%= I18n.t("tourist_post.tourist_loading") %> </option>
                 </select>
 
                 <span></span>
               </div>
               <div class="controls">
-                <%= text_field_tag :detail_location, nil, :class => "input-small span2", :placeholder => "详细位置…" %>
-                <%= button_tag '生成坐标->', {:type => 'button', :id => "generate_coordinate_btn"} %>
+                <%= text_field_tag :detail_location, nil, :class => "input-small span2", :placeholder => I18n.t("tourist_post.detail_location") %>
+                <%= button_tag I18n.t("tourist_post.detail_location"), {:type => 'button', :id => "generate_coordinate_btn"} %>
                 <%= f.text_field :coordinate %>
               </div>
             </div>
             <div class="control-group">
-              <%= f.label :time_area, "时间", {:class => "control-label"} %>
+              <%= f.label :time_area, I18n.t("tourist_post.time"), {:class => "control-label"} %>
               <div class="controls">
                 <%= f.text_field :start_time %> ~
                 <%= f.text_field :end_time %>
@@ -56,7 +52,7 @@
               </div>
             </div>
             <div class="control-group">
-              <%= f.label :description, "描述", {:class => "control-label"} %>
+              <%= f.label :description, I18n.t("tourist_post.tourist_body"), {:class => "control-label"} %>
               <div class="controls">
                 <%= f.text_area :description,
                                 {:id => "description_field",
@@ -69,9 +65,9 @@
               <%= f.label :avatar, I18n.t("life_post.life_picture"), {:class => "control-label"} %>
               <div class="controls">
                 <%= file_field_tag :avatar,
-                                 {:id => "avatar_field",
-                                  :class => "span6",
-                                  :rows => "8"} %>
+                                   {:id => "avatar_field",
+                                    :class => "span6",
+                                    :rows => "8"} %>
                 <span></span>
                 <%= image_tag(@tourist_post.get_image_cover_url, size: "300") unless @tourist_post.new_record? %>
               </div>
@@ -93,11 +89,11 @@
         var dateOption = {
             dateFormat: "yy/m/d"
         };
-        $( "#tourist_post_start_time" ).datepicker(dateOption);
-        $( "#tourist_post_end_time" ).datepicker(dateOption);
+        $("#tourist_post_start_time").datepicker(dateOption);
+        $("#tourist_post_end_time").datepicker(dateOption);
         fans_home.tourist_post.init_city_select();
         $("#generate_coordinate_btn").click(function () {
-            $(this).attr('disabled',true);
+            $(this).attr('disabled', true);
             var region, address;
             if ($("#detail_location").val().length > 0) {
                 region = $("#province").val() + $("#city").val();
@@ -118,11 +114,11 @@
                 dataType: 'jsonp',
                 data: data,
                 success: function (data) {
-                    if(data.status == 0){
+                    if (data.status == 0) {
                         var coordinate = data.result.location.lng.toString() +
                                 ' , ' + data.result.location.lat.toString();
                         $("#tourist_post_coordinate").val(coordinate);
-                    }else {
+                    } else {
                         alert(data.message)
                     }
                     $("#generate_coordinate_btn").removeAttr('disabled');

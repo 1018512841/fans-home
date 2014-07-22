@@ -569,6 +569,41 @@ fans_home.tourist_post = function () {
 
         init_tourist_form: function(){
 
+        },
+
+        init_tourist_show_screen: function(){
+            var $dropzone = $("#my-awesome-dropzone");
+            if (!$dropzone[0].dropzone) {
+                var drop = $dropzone.dropzone({
+                        addRemoveLinks: true
+                    }
+                );
+                drop.on("selectedfiles", function(files) {
+                    drop.removeAllFiles(files);
+                });
+
+            }
+            $("#tourist_image_manage_btn").click(function () {
+                $dropzone.toggle();
+                $(this).children("i").toggleClass("icon-chevron-down icon-chevron-up");
+                $(".image_wrapper").toggleClass("image_wrapper_manage");
+                $(".image_wrapper_remove").toggle();
+            });
+            $(".image_wrapper_remove").click(function(){
+                var $this = $(this);
+                var options = {
+                    url: "/tourist_posts/destroy_image",
+                    data: {
+                        image_id: $(this).data("imageId"),
+                        tourist_id: $("#tourist_post_id").val()
+                    },
+                    type: "post",
+                    success: function(){
+                        $this.parents(".image_wrapper").remove();
+                    }
+                };
+                $.ajax(options);
+            });
         }
     }
 }();

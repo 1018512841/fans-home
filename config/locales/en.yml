@@ -76,8 +76,8 @@ en:
 
   helpers:
     submit:
-      create: "Create a User"
-      update: "Confirm changes to User"
+      create: "Create"
+      update: "Confirm changes"
   activerecord:
     attributes:
       User:
@@ -136,3 +136,16 @@ en:
     life_title: "title"
     life_body: "body"
     life_picture: "upload image"
+  tourist_post:
+    index_title: "Listing tourist posts"
+    tourist_new: "New tourist post"
+    tourist_edit: "Modify"
+    tourist_title: "title"
+    tourist_body: "body"
+    tourist_coordinate: "coordinate"
+    tourist_loading: "loading"
+    detail_location: "detail location..."
+    generate_coordinate: "generate coordinate->"
+    time: "Time"
+    tourist_picture: "upload image"
+    manage_image: "Manage image"
