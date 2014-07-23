@@ -5,6 +5,13 @@ fans_home.tourist_post = function () {
     return{
 
         init_fans_tourist_detail_screen: function () {
+
+            //Set click event for every item circle.
+            //Show panel of it, then hide other
+            $(".detail_tourist .show_detail_btn").click(function () {
+                $('.main_board').backstretch("resize");
+            });
+
             $(".item_happy").click(function () {
                 if ($(".detail_tourist").css("display") == "none" && $('#fans-map').data("init_vectorMap") != true) {
                     var options = {
@@ -568,6 +575,46 @@ fans_home.tourist_post = function () {
         },
 
         init_tourist_form: function(){
+            var dateOption = {
+                dateFormat: "yy/m/d"
+            };
+            $("#tourist_post_start_time").datepicker(dateOption);
+            $("#tourist_post_end_time").datepicker(dateOption);
+            fans_home.tourist_post.init_city_select();
+            $("#generate_coordinate_btn").click(function () {
+                $(this).attr('disabled', true);
+                var region, address;
+                if ($("#detail_location").val().length > 0) {
+                    region = $("#province").val() + $("#city").val();
+                    address = $("#detail_location").val();
+                } else {
+                    region = $("#province").val();
+                    address = $("#city").val();
+                }
+                var data = {
+                    region: region,
+                    address: address,
+                    key: "OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77",
+                    output: "jsonp"
+                };
+                var options = {
+                    url: 'http://apis.map.qq.com/ws/geocoder/v1',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    data: data,
+                    success: function (data) {
+                        if (data.status == 0) {
+                            var coordinate = data.result.location.lng.toString() +
+                                ' , ' + data.result.location.lat.toString();
+                            $("#tourist_post_coordinate").val(coordinate);
+                        } else {
+                            alert(data.message)
+                        }
+                        $("#generate_coordinate_btn").removeAttr('disabled');
+                    }
+                };
+                $.ajax(options);
+            });
 
         },
 

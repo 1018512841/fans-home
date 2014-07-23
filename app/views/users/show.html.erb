@@ -21,14 +21,14 @@
     </table>
 
     <%= link_to I18n.t("edit_btn"), edit_user_path(@user), {id: "user_detail_edit_btn",
-                                                            class: "btn btn-primary"} %>
+                                                            class: "btn btn-default"} %>
     <%= link_to I18n.t("delete_btn"), user_path(@user), {id: "user_detail_delete_btn",
                                                          method: "delete",
                                                          data: {confirm: "Are you sure?"},
-                                                         class: "btn btn-primary"} %>
+                                                         class: "btn btn-default"} %>
 
     <% if current_is_admin? %>
-        <%= link_to I18n.t("back_btn"), users_path, {class: "btn btn-primary"} %>
+        <%= link_to I18n.t("back_btn"), users_path, {class: "btn btn-default"} %>
     <% end %>
   </div>
 </div>

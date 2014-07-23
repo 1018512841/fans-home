@@ -25,21 +25,21 @@
               <%= link_to I18n.t("edit_btn"),
                           edit_tourist_post_path(@tourist_post),
                           {id: "tourist_detail_edit_btn",
-                           class: "btn btn-primary"} %>
+                           class: "btn btn-default"} %>
               <%= link_to I18n.t("delete_btn"),
                           tourist_post_path(@tourist_post),
                           {id: "tourist_detail_delete_btn",
                            method: "delete",
                            data: {confirm: "Are you sure?"},
-                           class: "btn btn-primary"} %>
+                           class: "btn btn-default"} %>
           <% end %>
-          <%= link_to I18n.t("back_btn"), tourist_posts_path, {class: "btn btn-primary"} %>
+          <%= link_to I18n.t("back_btn"), tourist_posts_path, {class: "btn btn-default"} %>
         </div>
       </div>
     </div>
     <% if current_is_admin? %>
     <div class="row text-center">
-      <%= button_tag "", {id: "tourist_image_manage_btn", class: "btn btn-primary"} do %>
+      <%= button_tag "", {id: "tourist_image_manage_btn", class: "btn btn-default"} do %>
           <%= I18n.t "tourist_post.manage_image" %>
           <i class="icon-chevron-down"> </i>
       <% end %>
