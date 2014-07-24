@@ -47,7 +47,7 @@ fans_home.dashboard = function () {
 
             //Set click event for every item circle.
             //Show panel of it, then hide other
-            $(".detail_life .close_detail_btn").click(function () {
+            $(".close_detail_btn").click(function () {
                 $(this).parents(".hero-unit").hide().siblings(".detail_index").show();
                 $('.main_board').backstretch("resize");
             });

@@ -6,12 +6,6 @@ fans_home.tourist_post = function () {
 
         init_fans_tourist_detail_screen: function () {
 
-            //Set click event for every item circle.
-            //Show panel of it, then hide other
-            $(".detail_tourist .show_detail_btn").click(function () {
-                $('.main_board').backstretch("resize");
-            });
-
             $(".item_happy").click(function () {
                 if ($(".detail_tourist").css("display") == "none" && $('#fans-map').data("init_vectorMap") != true) {
                     var options = {
