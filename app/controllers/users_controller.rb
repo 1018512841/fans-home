@@ -25,25 +25,6 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    # 100.times do |i|
-    # user_params = {user_name:"user_" + i.to_s,
-    #                 user_email:"user_" + i.to_s + "@qq.com",
-    #                 password:"user_" + i.to_s,
-    #                 password_confirmation:"user_" + i.to_s,
-    #                 role:"normal"
-    #
-    # }
-    # user = User.new(user_params)
-    # user.save
-    # end
-    # user_input = {user_name:"admin",
-    #                 user_email:"admin@qq.com",
-    #                 password:"admin",
-    #                 password_confirmation:"admin",
-    #                 role:"admin"
-    #
-    # }
-    # user = User.new(user_input)
     @user = User.new
   end
 
