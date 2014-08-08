@@ -9,7 +9,7 @@ development:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - localhost:27017
+        - 0.0.0.0:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -82,3 +82,22 @@ test:
         # low amounts for fast failures.
         max_retries: 1
         retry_interval: 0
+production:
+  sessions:
+    default:
+      database: fans_home_production
+      hosts:
+        - 0.0.0.0:27017
+      options:
+  options:
+    include_root_in_json: true
+    include_type_for_serialization: true
+    preload_models:
+      - Canvas
+      - Browser
+      - Firefox
+    scope_overwrite_exception: true
+    raise_not_found_error: false
+    use_activesupport_time_zone: false
+    use_utc: true
+

@@ -17,6 +17,8 @@ gem "bootstrap-will_paginate", "0.0.10"
 
 
 gem "mongoid", "~> 4.0.0"
+gem 'actionpack-page_caching'
+gem 'actionpack-action_caching'
 # gem 'kaminari'
 
 gem 'carrierwave', '0.10.0'
