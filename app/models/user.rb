@@ -29,7 +29,7 @@ class User
     Digest::SHA2.hexdigest(password + "fans-home" + salt)
   end
 
-  def self.get_user_list
+  def self.user_list
     users_array = self.all.map do |each|
       [
           "<a href='/users/#{each._id}' user_id='#{each._id}'  class='user_link'>#{each.user_name}</a>",

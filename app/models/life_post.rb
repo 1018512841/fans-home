@@ -10,7 +10,7 @@ class LifePost
   attr_accessor :avatar_cache
   mount_uploader :avatar, AvatarUploader
 
-  def self.get_life_post_by(start, length)
+  def self.life_posts_with(start, length)
     self.offset(start).limit(length)
   end
 
@@ -24,12 +24,12 @@ class LifePost
 
   def next_one_path
     result = "/life_posts/"+self.next_one.id.to_s if self.next_one
-    return result || "####"
+    result || "####"
   end
 
   def previous_one_path
     result = "/life_posts/"+self.previous_one.id.to_s if self.previous_one
-    return result || "####"
+    result || "####"
   end
 
 end

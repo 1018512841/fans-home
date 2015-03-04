@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
 
   def user_list
-    users_array = User.get_user_list
+    users_array = User.user_list
     render :json => {data: users_array}
   end
 

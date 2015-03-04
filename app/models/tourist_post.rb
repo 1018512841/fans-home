@@ -36,7 +36,7 @@ class TouristPost
     self.coordinate.split(/,/).map(&:to_f).reverse
   end
 
-  def get_map_title
+  def map_title
     "#{self.city} (#{self.start_time}-#{self.end_time})"
   end
 end

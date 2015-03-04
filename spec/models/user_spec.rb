@@ -118,7 +118,7 @@ describe User do
       describe "users db table is blank" do
         it "should return []" do
           User.delete_all
-          result = User.get_user_list
+          result = User.user_list
           result.should == []
         end
 
@@ -129,7 +129,7 @@ describe User do
                            password: "123456",
                            password_conformation: "123456"})
           user.save
-          result = User.get_user_list
+          result = User.user_list
           result.length.should == 1
           result[0].length.should == 2
         end

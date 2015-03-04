@@ -5,7 +5,7 @@ describe LifePost do
   describe 'get_life_post_by' do
     describe 'LifePost in database is blank' do
       it 'return a blank array' do
-        result = LifePost.get_life_post_by(0, 3)
+        result = LifePost.life_posts_with(0, 3)
         result.should == []
       end
     end
@@ -20,13 +20,13 @@ describe LifePost do
         end
       end
       it 'return first three record' do
-        result = LifePost.get_life_post_by(0, 3)
+        result = LifePost.life_posts_with(0, 3)
         result.length.should == 3
         result[0].title.should == "0"
         result[2].title.should == "2"
       end
       it 'return secondary three record' do
-        result = LifePost.get_life_post_by(3, 3)
+        result = LifePost.life_posts_with(3, 3)
         result.length.should == 3
         result[0].title.should == "3"
         result[2].title.should == "5"

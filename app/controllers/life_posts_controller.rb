@@ -64,7 +64,7 @@ class LifePostsController < ApplicationController
   end
 
   def display_life_item_picture
-    life_item_list = LifePost.get_life_post_by(params[:start], 3).to_a
+    life_item_list = LifePost.life_posts_with(params[:start], 3).to_a
     if params[:first_active] == "active" && life_item_list.size>0
       life_item_list[0].status = "active"
     end
