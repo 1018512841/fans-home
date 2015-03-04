@@ -82,3 +82,4 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'execjs'
 gem 'bootstrap-sass', '2.3.2.0'
+gem 'jquery-ui-rails'

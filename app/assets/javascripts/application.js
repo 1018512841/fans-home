@@ -10,10 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 
-
-//= require fw
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-//= require_tree .
+//= require jquery.backstretch
+//= require jquery.countdown
+//= require jquery.dataTables
+
+//= require fw
+//= require life_posts
+//= require tourist_post
+//= require tourist_posts
+//= require user_screen
+//= require dashboard
+
+
