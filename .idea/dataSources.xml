@@ -5,16 +5,12 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/fans-home</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails fans-home: production" uuid="09afb75f-fd4a-4111-a61c-4a9a121c5cb3">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/fans-home</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails fans-home: test" uuid="3c34ca4f-255c-43a9-a30b-539fe7881ee5">
@@ -25,4 +21,3 @@
     </data-source>
   </component>
 </project>
-

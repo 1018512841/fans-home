@@ -20,7 +20,7 @@ GIT
       subexec (~> 0.2.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: https://ruby.taobao.org/
   specs:
     actionmailer (4.0.4)
       actionpack (= 4.0.4)
@@ -164,7 +164,6 @@ GEM
       mini_portile (~> 0.5.0)
     optionable (0.2.0)
     origin (2.1.1)
-    pg (0.17.1)
     polyglot (0.3.4)
     pry (0.9.12.6)
       coderay (~> 1.0)
@@ -287,7 +286,6 @@ DEPENDENCIES
   mini_magick!
   mongoid (~> 4.0.0)
   mongoid-grid_fs!
-  pg (= 0.17.1)
   rails (= 4.0.4)
   rails-i18n
   rspec-rails (= 2.13.1)
