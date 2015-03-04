@@ -16,7 +16,7 @@ class TouristPost
     result
   end
 
-  def get_image_cover_url
+  def image_cover_url
     if self.tourist_images.length > 0
       self.tourist_images[0].avatar.thumb.url
     else
@@ -24,7 +24,7 @@ class TouristPost
     end
   end
 
-  def get_normal_images
+  def normal_images
     if self.tourist_images.length > 0
       self.tourist_images[1..-1]
     else
@@ -32,7 +32,7 @@ class TouristPost
     end
   end
 
-  def get_coordinate
+  def format_coordinate
     self.coordinate.split(/,/).map(&:to_f).reverse
   end
 

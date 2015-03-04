@@ -84,7 +84,7 @@ class TouristPostsController < ApplicationController
 
   def tourist_city
     map = TouristPost.all.map do |post|
-      {latLng: post.get_coordinate, name: post.get_map_title, tourist_post_id:post.id.to_s}
+      {latLng: post.format_coordinate, name: post.get_map_title, tourist_post_id:post.id.to_s}
     end
     render :json => map
   end

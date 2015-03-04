@@ -7,7 +7,7 @@
 
     <div class="row">
       <div class="span3">
-        <%= image_tag(@tourist_post.get_image_cover_url,
+        <%= image_tag(@tourist_post.image_cover_url,
                       {class: "img-rounded img-polaroid index_image_round",
                        width: "60%"}) %>
       </div>
@@ -52,7 +52,7 @@
     </p>
 
     <p class="lead">
-      <% @tourist_post.get_normal_images.each do |image| %>
+      <% @tourist_post.normal_images.each do |image| %>
           <span class="image_wrapper">
             <%= image_tag(image.avatar.url,
                           {class: "img-rounded img-polaroid"}) %>

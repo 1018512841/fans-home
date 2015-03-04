@@ -69,7 +69,7 @@
                                     :class => "span6",
                                     :rows => "8"} %>
                 <span></span>
-                <%= image_tag(@tourist_post.get_image_cover_url, size: "300") unless @tourist_post.new_record? %>
+                <%= image_tag(@tourist_post.image_cover_url, size: "300") unless @tourist_post.new_record? %>
               </div>
 
             </div>
