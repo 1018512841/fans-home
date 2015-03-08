@@ -8,4 +8,10 @@ module StaticPageHelper
   def generate_tooltip_link(url, tooltip_text, class_name)
     link_to '', url, class: class_name, rel: 'tooltip', data: {placement: 'top', original_title: tooltip_text}
   end
+
+  def banner_data
+    [asset_path('backgrounds/1.jpg'),
+     asset_path('backgrounds/2.jpg'),
+     asset_path('backgrounds/3.jpg')].to_json
+  end
 end

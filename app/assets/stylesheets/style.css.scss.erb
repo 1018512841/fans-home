@@ -227,22 +227,22 @@ header a:hover {
 }
 
 .item .item_house {
-    background: url(../images/backgrounds/house.jpg);
+    background: url(<%= asset_path 'backgrounds/house.jpg' %>);
     background-size: 100% 100%;
 }
 
 .item .item_work {
-    background: url(../images/backgrounds/work.jpg);
+    background: url(<%= asset_path 'backgrounds/work.jpg' %>);
     background-size: 100% 100%;
 }
 
 .item .item_happy {
-    background: url(../images/backgrounds/tourist.jpg);
+    background: url(<%= asset_path 'backgrounds/tourist.jpg' %>);
     background-size: 100% 100%;
 }
 
 .item .item_research {
-    background: url(../images/backgrounds/research.jpg);
+    background: url(<%= asset_path 'backgrounds/research.jpg' %>);
     background-size: 100% 100%;
 }
 
@@ -328,19 +328,19 @@ header a:hover {
 }
 
 .social a.github {
-    background: url(../images/social-icons/github.png);
+    background: url(<%= asset_path 'social-icons/github.png' %>);
 }
 
 .social a.cnblogs {
-    background: url(../images/social-icons/cnblogs.png);
+    background: url(<%= asset_path 'social-icons/cnblogs.png' %>);
 }
 
 .social a.email {
-    background: url(../images/social-icons/email.png);
+    background: url(<%= asset_path 'social-icons/email.png' %>);
 }
 
 .social a.resume {
-    background: url(../images/social-icons/resume.png);
+    background: url(<%= asset_path 'social-icons/resume.png' %>);
 }
 
 /***** User List *****/
@@ -434,7 +434,7 @@ header a:hover {
     width: 124px;
     height: 124px;
     overflow: hidden;
-    background: url(/images/loaderc.gif) no-repeat;
+    background: url(<%= asset_path 'loaderc.gif' %>) no-repeat;
     z-index: 7;
     margin: -62px 0 0 -62px;
 }
