@@ -22,5 +22,6 @@ FansHome::Application.routes.draw do
 
   get "detail" => 'static_page#detail'
   get "static_page/index"
+  get "static_page/admin"
 
 end
