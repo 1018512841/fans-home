@@ -9,7 +9,17 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *= require bootstrap
  *= require jquery-ui
- *= require style.css.scss.erb
- *= require_self
- *= require_tree .
+ *= require style.css
+ *= require dropzone
+ *= require jquery.dataTables
+ *= require jquery.dataTables
+ *= require jvetor-map/jquery-jvectormap-1.2.2
+
+
+ *= require life_posts
+ *= require sessions
+ *= require scaffolds
+ *= require tourist
+ *= require tourist_posts
+ *= require users
  */
