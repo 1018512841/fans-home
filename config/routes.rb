@@ -1,5 +1,9 @@
 FansHome::Application.routes.draw do
 
+  namespace :admin do
+    resources :panels
+  end
+
   root 'static_page#index'
   post "tourist_posts/upload_image"
   post "tourist_posts/destroy_image"

@@ -1,0 +1,31 @@
+<h1>Listing admin_panels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Desc</th>
+      <th>Weight</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_panels.each do |admin_panel| %>
+      <tr>
+        <td><%= admin_panel.title %></td>
+        <td><%= admin_panel.desc %></td>
+        <td><%= admin_panel.weight %></td>
+        <td><%= link_to 'Show', admin_panel %></td>
+        <td><%= link_to 'Edit', edit_admin_panel_path(admin_panel) %></td>
+        <td><%= link_to 'Destroy', admin_panel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Panel', new_admin_panel_path %>
