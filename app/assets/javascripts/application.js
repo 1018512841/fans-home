@@ -17,6 +17,11 @@
 //= require jquery.backstretch
 //= require jquery.countdown
 //= require jquery.dataTables
+//= require dropzone
+//= require jvetor-map/jquery-jvectormap-1.2.2.min
+//= require jvetor-map/jquery-jvectormap-cn-merc-cn
+//= require city-select/prettify
+//= require city-select/jquery.city.select
 
 //= require fw
 //= require life_posts
