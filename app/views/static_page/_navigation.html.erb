@@ -6,10 +6,10 @@
           <%= I18n.t "navigation_text" %>
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-          <%= sanitize generate_navbar_item life_posts_path, I18n.t("life_text") %>
-          <%= sanitize generate_navbar_item '#', I18n.t("work_text") %>
-          <%= sanitize generate_navbar_item tourist_posts_path, I18n.t("tourist_text") %>
-          <%= sanitize generate_navbar_item '#', I18n.t("research_text") %>
+          <%= generate_navbar_item life_posts_path, I18n.t("life_text") %>
+          <%= generate_navbar_item '#', I18n.t("work_text") %>
+          <%= generate_navbar_item tourist_posts_path, I18n.t("tourist_text") %>
+          <%= generate_navbar_item '#', I18n.t("research_text") %>
         </ul>
       </li>
       <li class="dropdown">
@@ -17,15 +17,15 @@
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
           <% if current_is_login? %>
-              <%= sanitize generate_navbar_item user_url(get_current_user), I18n.t("show_btn") %>
+              <%= generate_navbar_item user_url(get_current_user), I18n.t("show_btn") %>
               <% if current_is_admin? %>
-                  <%= sanitize generate_navbar_item users_url, I18n.t("user_index_title") %>
+                  <%= generate_navbar_item users_url, I18n.t("user_index_title") %>
               <% end %>
-              <%= sanitize generate_navbar_item edit_user_url(get_current_user), I18n.t("setting") %>
-              <%= sanitize generate_navbar_item users_logout_url, I18n.t("sign_out") %>
+              <%= generate_navbar_item edit_user_url(get_current_user), I18n.t("setting") %>
+              <%= generate_navbar_item users_logout_url, I18n.t("sign_out") %>
           <% else %>
-              <%= sanitize generate_navbar_item login_url, I18n.t("visitor_login") %>
-              <%= sanitize generate_navbar_item new_user_url, I18n.t("visitor_signin") %>
+              <%= generate_navbar_item login_url, I18n.t("visitor_login") %>
+              <%= generate_navbar_item new_user_url, I18n.t("visitor_signin") %>
           <% end %>
         </ul>
       </li>
@@ -38,7 +38,7 @@
 </div>
 
 <script>
-    $(document).ready(function () {
+    $(function () {
         fans_home.dashboard.init_navigation_locale_change();
     })
 </script>
