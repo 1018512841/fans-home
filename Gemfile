@@ -83,3 +83,15 @@ end
 gem 'execjs'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'jquery-ui-rails'
+
+group :development do
+  # 更好的错误显示页面
+  gem 'better_errors'
+  # 隐藏 asset log
+  # Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-20 17:05:52 +0800
+  gem "quiet_assets", "~> 1.0.2"
+  # 调试
+  gem 'pry'
+  gem 'pry-byebug'
+  gem 'pry-rails'
+end

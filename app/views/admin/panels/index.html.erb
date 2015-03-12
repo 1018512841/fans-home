@@ -1,31 +1,42 @@
-<h1>Listing admin_panels</h1>
+<h1 class="page-header"><%= '设置首页的欢迎信息' %></h1>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">
+    <p class="bg-info">
+    <strong>信息：</strong>
+  </p>
+  </div>
+  <div class="col-xs-6 col-md-4">
+    <%= link_to '新建一个pannel', new_admin_panel_path, class: 'btn btn-success pull-right' %>
+  </div>
+</div>
 
-<table>
+
+<table class="table table-striped table-bordered table-condensed table-hover">
   <thead>
-    <tr>
-      <th>Title</th>
-      <th>Desc</th>
-      <th>Weight</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <th>标题</th>
+    <th>描述</th>
+    <th>权重</th>
+    <th>创建时间</th>
+    <th>操作</th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @admin_panels.each do |admin_panel| %>
+  <% @admin_panels.each do |admin_panel| %>
       <tr>
         <td><%= admin_panel.title %></td>
         <td><%= admin_panel.desc %></td>
         <td><%= admin_panel.weight %></td>
-        <td><%= link_to 'Show', admin_panel %></td>
-        <td><%= link_to 'Edit', edit_admin_panel_path(admin_panel) %></td>
-        <td><%= link_to 'Destroy', admin_panel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= admin_time admin_panel.created_at %></td>
+        <td>
+          <%= link_to '显示详情', admin_panel, class: 'btn btn-info' %>
+          <%= link_to '编辑', edit_admin_panel_path(admin_panel), class: 'btn btn-info' %>
+          <%= link_to '删除', admin_panel, method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-info' %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 
-<br>
+<%= will_paginate @admin_panels %>
 
-<%= link_to 'New Panel', new_admin_panel_path %>

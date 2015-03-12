@@ -4,7 +4,7 @@ class Admin::PanelsController < AdminController
   # GET /admin/panels
   # GET /admin/panels.json
   def index
-    @admin_panels = Admin::Panel.all
+    @admin_panels = Admin::Panel.all.paginate(page: params[:page], per_page: 1)
   end
 
   # GET /admin/panels/1
@@ -62,13 +62,13 @@ class Admin::PanelsController < AdminController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_admin_panel
-      @admin_panel = Admin::Panel.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_admin_panel
+    @admin_panel = Admin::Panel.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def admin_panel_params
-      params.require(:admin_panel).permit(:title, :desc, :weight)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def admin_panel_params
+    params.require(:admin_panel).permit(:title, :desc, :weight)
+  end
 end
