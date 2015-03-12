@@ -94,4 +94,5 @@ group :development do
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
+  gem 'bootstrap-generators', '~> 3.3.1'
 end
