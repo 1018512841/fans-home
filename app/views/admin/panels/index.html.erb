@@ -1,11 +1,13 @@
 <h1 class="page-header"><%= '设置首页的欢迎信息' %></h1>
 <div class="row">
-  <div class="col-xs-12 col-sm-6 col-md-8">
-    <p class="bg-info">
-    <strong>信息：</strong>
-  </p>
+  <div class="col-xs-12 col-sm-6 col-md-9">
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+      <strong>信息!</strong> 这是展示在首页滚动banner中的信息
+    </div>
   </div>
-  <div class="col-xs-6 col-md-4">
+  <div class="col-xs-6 col-md-3">
     <%= link_to '新建一个pannel', new_admin_panel_path, class: 'btn btn-success pull-right' %>
   </div>
 </div>

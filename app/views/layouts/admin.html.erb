@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
+  <%= yield :head %>
 
   <title>fans-home 后台管理</title>
   <%= favicon_link_tag 'ico/apple-touch-icon-57-precomposed.png' %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag 'admin/dashboard' %>
+  <%= stylesheet_link_tag 'admin' %>
 </head>
 
 <body>
@@ -31,6 +32,12 @@
 
   </div>
 </div>
-<%= javascript_include_tag 'admin/dashboard' %>
+<%= javascript_include_tag 'admin' %>
 </body>
 </html>
+<script>
+$(function(){
+})
+</script>
+
+<%= yield :script %>

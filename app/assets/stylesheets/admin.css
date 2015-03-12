@@ -104,3 +104,12 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+.detail-title{
+    text-align: center;
+}
+
+#wrapper{ width:100%; height:auto; margin:100px auto 0 auto; overflow:hidden;}
+#content p{ color:#999; line-height:180%;}
+
+/* 以下是主要的css样式 */
+
