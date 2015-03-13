@@ -108,8 +108,13 @@ body {
     text-align: center;
 }
 
-#wrapper{ width:100%; height:auto; margin:100px auto 0 auto; overflow:hidden;}
-#content p{ color:#999; line-height:180%;}
-
-/* 以下是主要的css样式 */
-
+.show-sidebar {
+    padding: 10px;
+    background: #eee;
+    float: right;
+    height: 400px;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    bottom: 0;
+}

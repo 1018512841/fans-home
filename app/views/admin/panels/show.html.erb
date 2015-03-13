@@ -1,10 +1,11 @@
+<div id="wrapper" class="row">
+  <div id="content" class="col-sm-8">
 
     <div class="page-header">
       <h1 class="detail-title">首页面板的详细</h1>
     </div>
 
     <p id="notice"><%= notice %></p>
-
 
     <div class="panel panel-info">
       <div class="panel-heading">
@@ -63,49 +64,18 @@
         <%= admin_time @admin_panel.updated_at %>
       </div>
     </div>
+  </div>
 
-    <%= link_to 'Edit', edit_admin_panel_path(@admin_panel) %> |
-    <%= link_to 'Back', admin_panels_path %>
-    <style>
-        #wrapper {overflow: hidden;}
-        #content {width:486px; margin-right:10px; float:left; min-height:1200px;}
-        #sidebar {width:284px; padding:10px; background: #eee; float:right; height:400px;}
-
-        #portamento_container {float:right; position:relative;} /* take the positioning of the sidebar, and become the start point for the sidebar positioning */
-        #portamento_container #sidebar {float:none; position:absolute;} /* no need to float anymore, become absolutely positoned */
-        #portamento_container #sidebar.fixed {position:fixed;} /* if the panel is sliding, it needs position:fixed */
-    </style>
-
-    <div id="wrapper">
-      <div id="content">
-        <p>This shows <a href="http://simianstudios.com/portamento/">Portamento</a>'s default behaviour - no bottom boundary and a 10px gap from the top of the viewport.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-        <p>Bacon ipsum dolor sit amet do t-bone laborum, ad ground round turkey ball tip. Veniam aliqua jowl, duis in t-bone sint tongue fugiat. Pork loin tenderloin ad, veniam chicken meatloaf.</p>
-
-      </div>
-
-      <div id="sidebar">
-        <p>Hello, I'm a sliding panel - unless the viewport is too small to contain my full glory, in which case I will stay right here so users can see all of me.</p>
-      </div>
-    </div>
-    <% content_for :script do %>
+  <div class="col-sm-3 show-sidebar">
+    <h1>操作:</h1>
+    <%= link_to '编辑', edit_admin_panel_path(@admin_panel), class: 'btn btn-primary btn-lg btn-block' %>
+    <%= link_to '返回列表', admin_panels_path, class: 'btn btn-primary btn-lg btn-block'  %>
+  </div>
+</div>
+<% content_for :script do %>
     <script>
         $(function () {
-            $('#sidebar').portamento();
+
         })
     </script>
-    <% end %>
+<% end %>
