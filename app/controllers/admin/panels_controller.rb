@@ -3,7 +3,7 @@ class Admin::PanelsController < AdminController
   # GET /admin/panels
   # GET /admin/panels.json
   def index
-    @admin_panels = Admin::Panel.all.paginate(page: params[:page], per_page: 1)
+    @admin_panels = Admin::Panel.order(weight: :desc).paginate(page: params[:page], per_page: 1)
   end
 
   # GET /admin/panels/1

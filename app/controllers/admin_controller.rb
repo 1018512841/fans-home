@@ -8,7 +8,8 @@ class AdminController < ApplicationController
       if request.xhr?
         render status: :unauthorized
       else
-        redirect_to :root, status: :unauthorized
+        redirect_to :root#, status: 401
+        #TODO You are being redirected.
       end
     end
   end
