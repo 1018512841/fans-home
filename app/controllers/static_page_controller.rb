@@ -6,8 +6,4 @@ class StaticPageController < ApplicationController
     @counts[2] = TouristPost.count
   end
 
-  def admin
-    render 'admin', layout: 'admin'
-  end
-
 end
