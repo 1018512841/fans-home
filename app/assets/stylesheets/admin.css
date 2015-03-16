@@ -1,6 +1,7 @@
 /*
  * Base structure
  *= require 'bootstrap-3.3.2.min.css'
+ *= require jquery.dataTables
  */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
