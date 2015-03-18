@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    render 'index', layout: 'admin'
   end
 
 
@@ -21,6 +22,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    render 'show', layout: 'admin'
   end
 
   # GET /users/new
@@ -36,17 +38,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
-    #100.times do |i|
-    #  user_params = {user_name:"user_" + i.to_s,
-    #                 user_email:"user_" + i.to_s + "@qq.com",
-    #                 password:"user_" + i.to_s,
-    #                 password_confirmation:"user_" + i.to_s,
-    #
-    #  }
-    #  user = User.new(user_params)
-    #  user.save
-    #end
 
     respond_to do |format|
       if @user.save

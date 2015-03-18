@@ -1,81 +1,16 @@
 <div id="wrapper" class="row">
   <div id="content" class="col-sm-8">
-
-    <div class="page-header">
-      <h1 class="detail-title">首页面板的详细</h1>
-    </div>
-
+    <%= detail_title_tag '首页面板的详细' %>
     <p id="notice"><%= notice %></p>
-
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">id:</h3>
-      </div>
-      <div class="panel-body">
-        <%= @admin_panel.id %>
-      </div>
-    </div>
-
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">标题:</h3>
-      </div>
-      <div class="panel-body">
-        <%= @admin_panel.title %>
-      </div>
-    </div>
-
-
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">描述:</h3>
-      </div>
-      <div class="panel-body">
-        <%= @admin_panel.desc %>
-      </div>
-    </div>
-
-
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">权重:</h3>
-      </div>
-      <div class="panel-body">
-        <%= @admin_panel.weight %>
-      </div>
-    </div>
-
-
-    <div class="panel panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">创建时间:</h3>
-      </div>
-      <div class="panel-body">
-        <%= admin_time @admin_panel.created_at %>
-      </div>
-    </div>
-
-
-    <div class="panel  panel-info">
-      <div class="panel-heading">
-        <h3 class="panel-title">修改时间:</h3>
-      </div>
-      <div class="panel-body">
-        <%= admin_time @admin_panel.updated_at %>
-      </div>
-    </div>
+    <%= detail_panel_tag 'id:', @admin_panel.id %>
+    <%= detail_panel_tag '标题:', @admin_panel.title %>
+    <%= detail_panel_tag '描述:', @admin_panel.desc %>
+    <%= detail_panel_tag '权重:', @admin_panel.weight %>
+    <%= detail_panel_tag '创建时间:', admin_time(@admin_panel.created_at) %>
+    <%= detail_panel_tag '修改时间:', admin_time(@admin_panel.updated_at) %>
   </div>
-
-  <div class="col-sm-3 show-sidebar">
-    <h1>操作:</h1>
-    <%= link_to '编辑', edit_admin_panel_path(@admin_panel), class: 'btn btn-primary btn-lg btn-block' %>
-    <%= link_to '返回列表', admin_panels_path, class: 'btn btn-primary btn-lg btn-block'  %>
-  </div>
+  <%= right_operation_tag do %>
+      <%= link_to '编辑', edit_admin_panel_path(@admin_panel), class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to '返回列表', admin_panels_path, class: 'btn btn-primary btn-lg btn-block' %>
+  <% end %>
 </div>
-<% content_for :script do %>
-    <script>
-        $(function () {
-
-        })
-    </script>
-<% end %>
