@@ -56,7 +56,9 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
-      if @user.set(user_params)
+      p user_params
+      p @user
+      if @user.update(user_params)
         format.html { redirect_to @user, notice: I18n.t("update_user_success") }
         format.json { head :no_content }
       else

@@ -24,4 +24,5 @@ module AdminHelper
       concat(capture &option)
     end
   end
+
 end
