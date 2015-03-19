@@ -95,3 +95,6 @@ group :development do
   gem 'pry-byebug'
   gem 'pry-rails'
 end
+
+gem 'tabs_on_rails'
+

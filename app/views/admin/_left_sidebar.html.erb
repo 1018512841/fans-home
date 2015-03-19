@@ -1,10 +1,11 @@
 <ul class="nav nav-sidebar">
-  <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+  <li><a href="#">Overview <span class="sr-only">(current)</span></a></li>
   <li><a href="#">Reports</a></li>
   <li><a href="#">Analytics</a></li>
   <li><a href="#">Export</a></li>
 </ul>
-<ul class="nav nav-sidebar">
-  <li><%= link_to '用户管理', admin_users_path %></li>
-  <li><%= link_to '首页面板', admin_panels_path %></li>
-</ul>
+
+<%= tabs_tag :builder => AdminTabBuilder,:open_tabs => {:class => "nav nav-sidebar"} do |tab| %>
+    <%= tab.user '用户管理', admin_users_path %>
+    <%= tab.panel '首页面板', admin_panels_path %>
+<% end %>

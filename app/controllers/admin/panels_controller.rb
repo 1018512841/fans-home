@@ -1,5 +1,7 @@
 class Admin::PanelsController < AdminController
   before_action :set_admin_panel, only: [:show, :edit, :update, :destroy]
+  set_tab :panel
+
   # GET /admin/panels
   # GET /admin/panels.json
   def index
