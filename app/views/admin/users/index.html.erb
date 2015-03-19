@@ -16,22 +16,19 @@
       </tr>
       </thead>
     </table>
-
-
   </div>
-  <div class="col-sm-3 show-sidebar">
-    <h1>操作:</h1>
-    <%= link_to I18n.t("new_btn"), "/users/new", {id: "user_table_create_btn",
-                                                  class: "btn btn-primary btn-lg btn-block"} %>
+  <%= right_operation_tag do %>
+      <%= link_to I18n.t("new_btn"), "/users/new", {id: "user_table_create_btn",
+                                                    class: "btn btn-primary btn-lg btn-block"} %>
 
-    <%= button_tag I18n.t("delete_btn"), {id: "user_table_delete_btn",
+      <%= button_tag I18n.t("delete_btn"), {id: "user_table_delete_btn",
+                                            class: "btn btn-primary btn-lg btn-block",
+                                            disabled: true} %>
+
+      <%= button_tag I18n.t("edit_btn"), {id: "user_table_edit_btn",
                                           class: "btn btn-primary btn-lg btn-block",
                                           disabled: true} %>
-
-    <%= button_tag I18n.t("edit_btn"), {id: "user_table_edit_btn",
-                                        class: "btn btn-primary btn-lg btn-block",
-                                        disabled: true} %>
-  </div>
+  <% end %>
 </div>
 
 <% content_for :script do %>

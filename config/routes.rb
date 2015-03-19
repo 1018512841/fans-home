@@ -3,7 +3,7 @@ FansHome::Application.routes.draw do
   get "users/index"
   namespace :admin do
     resources :panels
-    resources :users, only:[:index]
+    resources :users
   end
 
   root 'static_page#index'

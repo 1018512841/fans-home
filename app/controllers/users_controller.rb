@@ -9,7 +9,6 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    render 'index', layout: 'admin'
   end
 
 
@@ -22,7 +21,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    render 'show', layout: 'admin'
   end
 
   # GET /users/new
