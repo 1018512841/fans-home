@@ -2,7 +2,7 @@
 
   <h1 class="text-center"><%= I18n.t "life_post.index_title" %>
     <% if current_is_admin? %>
-        <%= link_to("新建", new_life_post_path, {class: " btn",style: "float:right"}) %>
+        <%= link_to(I18n.t("new_btn"), new_life_post_path, {class: " btn",style: "float:right"}) %>
     <% end %>
   </h1>
 

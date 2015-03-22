@@ -1,6 +1,6 @@
 <div id="wrapper" class="row">
   <div id="content" class="col-sm-8">
-    <%= detail_title_tag " 详细", I18n.t("user_detail_sub_title") %>
+    <%= detail_title_tag I18n.t("user_detail_title"), I18n.t("user_detail_sub_title") %>
     <p id="notice"><%= notice %></p>
     <%= detail_panel_tag 'ID', @user.id %>
     <%= detail_panel_tag I18n.t("user_index_name"), @user.user_name %>
@@ -11,12 +11,12 @@
   </div>
 
   <%= right_operation_tag do %>
-      <%= link_to "编辑", edit_user_path(@user), {id: "user_detail_edit_btn",
+      <%= link_to I18n.t("edit_btn"), edit_user_path(@user), {id: "user_detail_edit_btn",
                                                               class: "btn btn-primary btn-lg btn-block"} %>
-      <%= link_to "删除", user_path(@user), {id: "user_detail_delete_btn",
+      <%= link_to I18n.t("delete_btn"), user_path(@user), {id: "user_detail_delete_btn",
                                                            method: "delete",
                                                            data: {confirm: "Are you sure?"},
                                                            class: "btn btn-primary btn-lg btn-block"} %>
-      <%= link_to "返回", users_path, {class: "btn btn-primary btn-lg btn-block"} %>
+      <%= link_to I18n.t("back_btn"), users_path, {class: "btn btn-primary btn-lg btn-block"} %>
   <% end %>
 </div>

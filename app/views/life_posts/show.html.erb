@@ -22,14 +22,14 @@
       <div class="span7 offset1">
         <div class="row">
           <% if current_is_admin? %>
-              <%= link_to "编辑", edit_life_post_path(@life_post), {id: "life_detail_edit_btn",
+              <%= link_to I18n.t("edit_btn"), edit_life_post_path(@life_post), {id: "life_detail_edit_btn",
                                                                                 class: "btn"} %>
-              <%= link_to "删除", life_post_path(@life_post), {id: "life_detail_delete_btn",
+              <%= link_to I18n.t("delete_btn"), life_post_path(@life_post), {id: "life_detail_delete_btn",
                                                                              method: "delete",
                                                                              data: {confirm: "Are you sure?"},
                                                                              class: "btn"} %>
           <% end %>
-          <%= link_to "返回", life_posts_path, {class: "btn"} %>
+          <%= link_to I18n.t("back_btn"), life_posts_path, {class: "btn"} %>
         </div>
       </div>
 

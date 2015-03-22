@@ -8,8 +8,8 @@
 
       <p class="image_index_body"><%= link_to life_post.body, life_post %></p>
       <% if current_is_admin? %>
-          <p><%= link_to "编辑", edit_life_post_path(life_post), class: "btn" %>
-            <%= link_to "删除", life_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn" %></p>
+          <p><%= link_to I18n.t("edit_btn"), edit_life_post_path(life_post), class: "btn" %>
+            <%= link_to I18n.t("delete_btn"), life_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn" %></p>
       <% end %>
     </div>
   </div>
