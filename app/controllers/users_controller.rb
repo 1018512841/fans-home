@@ -41,7 +41,7 @@ class UsersController < ApplicationController
       if @user.save
         set_logout
         set_session_cookie(@user, "")
-        format.html { redirect_to @user, notice: I18n.t("create_user_success") }
+        format.html { redirect_to @user, notice: '创建用户成功.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
         format.html { render action: 'new' }
@@ -57,7 +57,7 @@ class UsersController < ApplicationController
       p user_params
       p @user
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: I18n.t("update_user_success") }
+        format.html { redirect_to @user, notice: "更新用户成功." }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -74,13 +74,13 @@ class UsersController < ApplicationController
 
   def destroy
     if current_user?(@user)
-      redirect_to @user, notice: I18n.t("delete_self_error")
+      redirect_to @user, notice: "不能删除自己"
     end
 
     @user.destroy
     respond_to do |format|
 
-      flash[:notice] = I18n.t("delete_ok")
+      flash[:notice] = "删除成功"
       if !current_is_admin_role
         format.html { redirect_to root_url }
       end
