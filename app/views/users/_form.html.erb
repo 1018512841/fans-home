@@ -1,21 +1,7 @@
 <div class="row user_new_edit_form">
   <div>
     <%= form_for(@user, class: "form-horizontal") do |f| %>
-        <% if @user.errors.any? %>
-            <div class="alert alert-warning">
-              <button class="close" data-dismiss="alert" type="button"> ×</button>
-              <div>
-                <div>
-                  <ul>
-                    <% @user.errors.full_messages.each do |msg| %>
-                        <li><%= msg %></li>
-                    <% end %>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        <% end %>
-
+    <%= render partial:'admin/common/form_errors', locals:{errors:@user.errors } %>
         <div class="span6 offset1">
           <div class="field form-horizontal">
             <div class="control-group <%= "error" if @user.errors.messages[:user_name].present? %>">

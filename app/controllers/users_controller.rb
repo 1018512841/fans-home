@@ -37,17 +37,6 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    #100.times do |i|
-    #  user_params = {user_name:"user_" + i.to_s,
-    #                 user_email:"user_" + i.to_s + "@qq.com",
-    #                 password:"user_" + i.to_s,
-    #                 password_confirmation:"user_" + i.to_s,
-    #
-    #  }
-    #  user = User.new(user_params)
-    #  user.save
-    #end
-
     respond_to do |format|
       if @user.save
         set_logout
@@ -65,7 +54,9 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
-      if @user.set(user_params)
+      p user_params
+      p @user
+      if @user.update(user_params)
         format.html { redirect_to @user, notice: I18n.t("update_user_success") }
         format.json { head :no_content }
       else

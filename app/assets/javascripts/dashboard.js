@@ -8,13 +8,10 @@ fans_home.dashboard = function () {
          @param：none
          */
         init_dashboard: function () {
-
+            var $board = $('.main_board');
+            var imgList =$board.data('img');
             //Background slideshow
-            $('.main_board').backstretch([
-                "../images/backgrounds/1.jpg",
-                "../images/backgrounds/2.jpg",
-                "../images/backgrounds/3.jpg"
-            ], {duration: 3000, fade: 750});
+            $board.backstretch(imgList, {duration: 3000, fade: 750});
 
             //Set hover event for every item circle.
             var $item_list = $(".item").children().filter('div');

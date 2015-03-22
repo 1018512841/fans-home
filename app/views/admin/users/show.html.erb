@@ -1,0 +1,22 @@
+<div id="wrapper" class="row">
+  <div id="content" class="col-sm-8">
+    <%= detail_title_tag I18n.t("user_detail_title"), I18n.t("user_detail_sub_title") %>
+    <p id="notice"><%= notice %></p>
+    <%= detail_panel_tag 'ID', @user.id %>
+    <%= detail_panel_tag I18n.t("user_index_name"), @user.user_name %>
+    <%= detail_panel_tag I18n.t("user_index_email"), @user.user_email %>
+    <%= detail_panel_tag '权限', @user.id %>
+    <%= detail_panel_tag '创建时间', admin_time(@user.created_at) %>
+    <%= detail_panel_tag '修改时间', admin_time(@user.updated_at) %>
+  </div>
+
+  <%= right_operation_tag do %>
+      <%= link_to I18n.t("edit_btn"), edit_user_path(@user), {id: "user_detail_edit_btn",
+                                                              class: "btn btn-primary btn-lg btn-block"} %>
+      <%= link_to I18n.t("delete_btn"), user_path(@user), {id: "user_detail_delete_btn",
+                                                           method: "delete",
+                                                           data: {confirm: "Are you sure?"},
+                                                           class: "btn btn-primary btn-lg btn-block"} %>
+      <%= link_to I18n.t("back_btn"), users_path, {class: "btn btn-primary btn-lg btn-block"} %>
+  <% end %>
+</div>

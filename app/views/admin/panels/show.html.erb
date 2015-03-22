@@ -1,0 +1,16 @@
+<div id="wrapper" class="row">
+  <div id="content" class="col-sm-8">
+    <%= detail_title_tag '首页面板的详细' %>
+    <p id="notice"><%= notice %></p>
+    <%= detail_panel_tag 'id:', @admin_panel.id %>
+    <%= detail_panel_tag '标题:', @admin_panel.title %>
+    <%= detail_panel_tag '描述:', @admin_panel.desc %>
+    <%= detail_panel_tag '权重:', @admin_panel.weight %>
+    <%= detail_panel_tag '创建时间:', admin_time(@admin_panel.created_at) %>
+    <%= detail_panel_tag '修改时间:', admin_time(@admin_panel.updated_at) %>
+  </div>
+  <%= right_operation_tag do %>
+      <%= link_to '编辑', edit_admin_panel_path(@admin_panel), class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to '返回列表', admin_panels_path, class: 'btn btn-primary btn-lg btn-block' %>
+  <% end %>
+</div>

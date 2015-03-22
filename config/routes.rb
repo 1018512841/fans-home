@@ -1,5 +1,11 @@
 FansHome::Application.routes.draw do
 
+  get "users/index"
+  namespace :admin do
+    resources :panels
+    resources :users
+  end
+
   root 'static_page#index'
   post "tourist_posts/upload_image"
   post "tourist_posts/destroy_image"
@@ -22,5 +28,6 @@ FansHome::Application.routes.draw do
 
   get "detail" => 'static_page#detail'
   get "static_page/index"
+  get "static_page/admin"
 
 end
