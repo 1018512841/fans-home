@@ -12,7 +12,7 @@
   <%= will_paginate @tourist_posts, {previous_label: "Pre", next_label: "Next", :style => 'color:blue'} %>
 
   <% if current_is_admin? %>
-      <%= link_to(I18n.t("new_btn"), new_tourist_post_path, {class: " btn btn-default"}) %>
+      <%= link_to("新建", new_tourist_post_path, {class: " btn btn-default"}) %>
   <% end %>
 
 </div>
