@@ -1,0 +1,140 @@
+<%= stylesheet_link_tag 'blogs' %>
+<div class="table-responsive" style="display: none">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Title</th>
+      <th>User</th>
+      <th>Body</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <%= content_tag_for(:tr, @blogs) do |blog| %>
+        <td><%= blog.title %></td>
+        <td><%= blog.user %></td>
+        <td><%= blog.body %></td>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Destroy', blog, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+<div id="content" class="right_sidebar">
+  <div class="inner" style="padding-bottom: 447px;">
+    <div class="general_content">
+      <div class="main_content">
+
+        <div class="block_blog_1">
+          <% 3.times.each do %>
+              <article class="blog_post">
+                <div class="tail"></div>
+                <div class="f_pic">
+                  <a href="content.html"><img src="http://marry.qiniudn.com/o_19hqi0tok43j18isdjsvfj17r67.jpg" alt=""></a>
+                </div>
+
+                <h4 class="title"><a href="content.html">html个人博客模版之黑色绚丽</a></h4>
+
+                <div class="info">
+                  <div class="date"><p>15 July, 2012</p></div>
+                  <div class="author"><p>作者: <a href="#">osblog</a></p></div>
+
+                  <div class="r_part">
+                    <div class="category">
+                      <p class="text">目录:</p>
+                      <ul>
+                        <li><a href="#">个人博客模版</a></li>
+                      </ul>
+                    </div>
+
+                    <a href="#" class="views">650</a>
+                    <a href="#" class="comments">25</a>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <p>osblog个人博客模版分享又有新作品了，此作品来自于国外模版修改，功能页面齐全，演示中如果没有的话可以下载使用看看效果，如果要全部模版可以在本站留言提供整套模版带门户等等</p>
+                </div>
+
+              </article>
+
+        <% end %>
+        </div>
+
+        <div class="line_2" style="margin:24px 0px 25px;"></div>
+
+      </div>
+
+      <div class="sidebar">
+
+
+        <div class="separator" style="height:31px;"></div>
+
+        <div class="block_popular_posts">
+          <h4>热门文章</h4>
+          <% 3.times.each do %>
+              <div class="article">
+                <div class="pic">
+                  <a href="#" class="w_hover">
+                    <img src="http://marry.qiniudn.com/o_19hqit76j1ok51gvmd4nh6drbc.jpg" alt="">
+                    <span></span>
+                  </a>
+                </div>
+
+                <div class="text">
+                  <p class="title"><a href="http://www.osblog.net/template/476.html">个人博客之图片博客模版</a></p>
+
+                  <div class="date"><p>11 July, 2012</p></div>
+                  <div class="icons">
+                    <ul>
+                      <li><a href="#" class="views">41</a></li>
+                      <li><a href="#" class="comments">22</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="line_3"></div>
+              <% end %>
+
+        </div>
+
+        <div class="separator" style="height:31px;"></div>
+
+        <div class="block_popular_stuff">
+          <h4>视频推荐 </h4>
+
+          <div class="content">
+            <a href="#" class="view_all">全部视频</a>
+
+            <div class="media">
+              <a href="http://www.youtube.com/watch?v=ySIvism2af8" class="general_pic_hover play no_fx initialized" data-rel="prettyPhoto" title="Popular Video"><img src="http://marry.qiniudn.com/o_19hqj9li126fv0t12qg1nk58bph.jpg" alt=""><span class="hover"><span class="icon"></span></span></a>
+            </div>
+            <p><a href="blog_post_w_video.html">快来看看美女的视频吧，看看性感的视频，看看美女</a></p>
+
+            <p class="date">11 July, 2012</p>
+          </div>
+
+          <div class="info">
+            <ul>
+              <li class="comments"><a href="#">115</a></li>
+              <li class="views"><a href="#">220</a></li>
+            </ul>
+          </div>
+
+          <div class="clearboth"></div>
+
+          <div class="line_2"></div>
+        </div>
+
+        <div class="separator" style="height:31px;"></div>
+
+      </div>
+
+      <div class="clearboth"></div>
+    </div>
+  </div>
+</div>

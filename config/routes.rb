@@ -1,5 +1,7 @@
 FansHome::Application.routes.draw do
 
+  resources :blogs
+
   get "users/index"
   namespace :admin do
     resources :panels
