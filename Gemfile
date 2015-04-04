@@ -11,7 +11,7 @@ gem 'rails-i18n'
 
 gem 'sqlite3', '1.3.9'
 
-gem "will_paginate", "3.0.5"
+# gem "will_paginate", "3.0.5"
 # gem "will_paginate_mongoid", '2.0.1'
 gem "bootstrap-will_paginate", "0.0.10"
 
@@ -94,6 +94,7 @@ group :development do
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
+  gem 'binding_of_caller'
 end
 
 gem 'tabs_on_rails'

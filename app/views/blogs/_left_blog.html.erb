@@ -1,0 +1,32 @@
+<article class="blog_post">
+  <div class="tail"></div>
+  <h4 class="title"><%= link_to left_blog.title, blog_path(left_blog) %></h4>
+
+  <div class="f_pic">
+    <a href="content.html">
+      <img src="http://marry.qiniudn.com/o_19hqi0tok43j18isdjsvfj17r67.jpg" alt="">
+    </a>
+  </div>
+
+
+  <div class="info">
+    <div class="date"><p><%= time_format(left_blog.created_at) %></p></div>
+    <div class="author"><p>作者: <%= link_to left_blog.user.user_name, user_path(left_blog.user) %></p></div>
+
+    <div class="r_part">
+      <div class="category">
+        <p class="text">目录:</p>
+        <ul>
+          <li><a href="#">个人博客模版</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="views">650</a>
+      <a href="#" class="comments">25</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <p><%= simple_format truncate(left_blog.body, length: 100).squish %></p>
+  </div>
+</article>

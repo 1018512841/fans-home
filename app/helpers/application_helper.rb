@@ -19,4 +19,8 @@ module ApplicationHelper
   def admin_time(time)
     time.strftime '%Y-%m-%d %H:%M:%S'
   end
+
+  def time_format(time)
+    time.strftime '%Y年 %_m月 %_d日'
+  end
 end

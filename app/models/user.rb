@@ -17,6 +17,8 @@ class User
   validates_format_of :user_email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
   validates_confirmation_of :password
 
+  has_many :blogs
+
   def password=(password)
     @password = password
     if @password.present?

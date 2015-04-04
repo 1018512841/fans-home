@@ -1,0 +1,23 @@
+<div class="article">
+  <div class="pic">
+    <a href="#" class="w_hover">
+      <img src="http://marry.qiniudn.com/o_19hqit76j1ok51gvmd4nh6drbc.jpg" alt="">
+      <span></span>
+    </a>
+  </div>
+
+  <div class="text">
+    <p class="title">
+      <%= link_to right_blog.title, blog_path(right_blog) %>
+    </p>
+
+    <div class="date"><p><%= time_format(right_blog.created_at) %></p></div>
+    <div class="icons">
+      <ul>
+        <li><a href="#" class="views">41</a></li>
+        <li><a href="#" class="comments">22</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="line_3"></div>
