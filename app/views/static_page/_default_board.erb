@@ -1,7 +1,7 @@
 <div class="row">
-  <h2><%= @panel.title || "还没设置一个标题" %></h2>
+  <h2><%= @panel.try(:title) || "还没设置一个标题" %></h2>
 
   <div class="span12" style="max-height: 250px">
-    <%= simple_format(@panel.desc || "还没设置一个描述") %>
+    <%= simple_format(@panel.try(:desc) || "还没设置一个描述") %>
   </div>
 </div>
