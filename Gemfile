@@ -14,8 +14,8 @@ gem 'sqlite3', '1.3.9'
 # gem "will_paginate", "3.0.5"
 # gem "will_paginate_mongoid", '2.0.1'
 gem "bootstrap-will_paginate", "0.0.10"
-
-
+gem 'simple_form'
+gem 'bootstrap_form'
 gem "mongoid", "~> 4.0.0"
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
@@ -81,7 +81,9 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'execjs'
-gem 'bootstrap-sass', '2.3.2.0'
+# gem 'bootstrap-sass', '3.3.3'#, '2.3.2.0'
+gem 'bootstrap-sass', '~> 3.3.4'
+# gem 'sass-rails', '>= 3.2'
 gem 'jquery-ui-rails'
 
 group :development do
