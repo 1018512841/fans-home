@@ -1,52 +1,21 @@
 <div class="row user_new_edit_form">
-  <div>
-    <%= form_for(@user, class: "form-horizontal") do |f| %>
-    <%= render partial:'admin/common/form_errors', locals:{errors:@user.errors } %>
-        <div class="span6 offset1">
-          <div class="field form-horizontal">
-            <div class="control-group <%= "error" if @user.errors.messages[:user_name].present? %>">
-              <%= f.label :user_name, I18n.t("user_index_name"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.text_field :user_name,
-                                 {:id => "user_name_field"} %>
-                <span></span>
-              </div>
-            </div>
-            <div class="control-group <%= @user.errors.messages[:user_email].blank? ? "" : "error" %>">
-              <%= f.label :user_email, I18n.t("user_index_email"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.text_field :user_email,
-                                 {:id => "user_email_field"} %>
-              </div>
-            </div>
-            <div class="control-group <%= @user.errors.messages[:password].blank? ? "" : "error" %>">
-              <%= f.label :password, I18n.t("user_index_password"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.password_field :password,
-                                     {:id => "user_password_field"} %>
-              </div>
-            </div>
-            <div class="control-group <%= @user.errors.messages[:password_confirmation].blank? ? "" : "error" %>">
-              <%= f.label :password_confirmation, I18n.t("user_index_password_confirmation"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.password_field :password_confirmation,
-                                     {:id => "user_password_confirmation_field"} %>
-              </div>
-            </div>
-            <div class="control-group <%= @user.errors.messages[:role].blank? ? "" : "error" %>">
-              <%= f.label :role, I18n.t("user_index_role"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= select_tag "role", options_for_select({"Admin" => "amin", "Normal" => "user"},
-                        current_is_admin? ? 'admin': 'user'),
+  <div class="form-wrapper">
+    <%= bootstrap_form_for(@user, :html => {class: "bootstrap-form"}) do |f| %>
+        <%= render partial: 'admin/common/form_errors', locals: {errors: @user.errors} %>
 
-                               {:disabled => !current_is_admin? } %>
-              </div>
-            </div>
-            <div class="span2 offset2">
-              <%= f.submit(nil, {:class => "user_form_btn btn btn-default span2 offset5", :disabled => "disabled"}) %>
-            </div>
-          </div>
-        </div>
+        <%= f.text_field :user_name,
+                         {:id => "user_name_field", :label => '用户名'} %>
+        <%= f.text_field :user_email,
+                         {:id => "user_email_field", :label => '邮箱'} %>
+        <%= f.password_field :password,
+                             {:id => "user_password_field", :label => '密码'} %>
+        <%= f.password_field :password_confirmation,
+                             {:id => "user_password_confirmation_field", :label => '密码'} %>
+        <%= f.select :role, options_for_select({"Admin" => "amin", "Normal" => "user"},
+                                               current_is_admin? ? 'admin' : 'user'),
+                     {:disabled => !current_is_admin?, :label => '权限'} %>
+        <%= f.submit(nil, {:class => "user_form_btn btn btn-default"}) %>
+
     <% end %>
   </div>
 </div>
