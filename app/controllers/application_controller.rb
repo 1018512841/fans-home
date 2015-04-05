@@ -54,6 +54,10 @@ class ApplicationController < ActionController::Base
     is_admin_user
   end
 
+  def current_user
+    @c_user || @c_user = User.find(session[:user])
+  end
+
   def current_user?(user)
     session[:user] == user.id.to_s
   end
