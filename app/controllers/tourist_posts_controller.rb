@@ -46,6 +46,7 @@ class TouristPostsController < ApplicationController
     image.avatar.read
     image.save
     respond_to do |format|
+      p tourist_post_params
       if @tourist_post.update(tourist_post_params)
         format.html { redirect_to @tourist_post, notice: 'Tourist post was successfully updated.' }
       else

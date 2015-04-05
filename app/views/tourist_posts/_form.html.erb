@@ -24,7 +24,7 @@
               </select>
               <%= text_field_tag :detail_location, nil, :class => "input-small span2", :inline => true, :placeholder => I18n.t("tourist_post.detail_location") %>
               <%= button_tag '生成坐标->', {:type => 'button', :id => "generate_coordinate_btn", :class => 'btn btn-default'} %>
-              <%= text_field_tag :coordinate, @tourist_post.coordinate, :id => 'tourist_post_coordinate', :class => "input-small span2", :inline => true %>
+              <%= text_field_tag 'tourist_post[coordinate]', @tourist_post.coordinate, :id => 'tourist_post_coordinate', :class => "input-small span2", :inline => true %>
             </div>
           </div>
         </div>
