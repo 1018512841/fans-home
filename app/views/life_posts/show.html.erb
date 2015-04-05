@@ -2,34 +2,34 @@
   <div class="hero-unit" id="life_detail_container" style="border: 1px solid">
 
     <p id="notice"><%= notice %></p>
-      <div class="row text-center">
+      <div class="row text-center col-lg-12">
         <%= link_to(I18n.t("previous_page"), @life_post.previous_one_path,
-                    {class: "btn",
+                    {class: "btn btn-default",
                      style: "float:left",
                      disabled: @life_post.previous_one.nil?}) %>
         <span class="life_detail_page_title" style="font-size: xx-large"> <%= @life_post.title %></span>
         <%= link_to(I18n.t("next_page"), @life_post.next_one_path,
-                    {class: "btn",
+                    {class: "btn btn-default",
                      style: "float:right",
                      disabled: @life_post.next_one.nil?}) %>
       </div>
 
-    <p class="lead text-center"> <%= @life_post.body %></p>
+    <p class="lead text-center row col-lg-12"> <%= @life_post.body %></p>
 
     <p class="text-center"> <%= image_tag @life_post.avatar.url, {class: "img-rounded img-polaroid"} %></p>
 
     <div class="row">
-      <div class="span7 offset1">
+      <div class="span7 offset1 text-center">
         <div class="row">
           <% if current_is_admin? %>
               <%= link_to I18n.t("edit_btn"), edit_life_post_path(@life_post), {id: "life_detail_edit_btn",
-                                                                                class: "btn"} %>
+                                                                                class: "btn btn-default"} %>
               <%= link_to I18n.t("delete_btn"), life_post_path(@life_post), {id: "life_detail_delete_btn",
                                                                              method: "delete",
                                                                              data: {confirm: "Are you sure?"},
-                                                                             class: "btn"} %>
+                                                                             class: "btn btn-default"} %>
           <% end %>
-          <%= link_to I18n.t("back_btn"), life_posts_path, {class: "btn"} %>
+          <%= link_to I18n.t("back_btn"), life_posts_path, {class: "btn btn-default"} %>
         </div>
       </div>
 

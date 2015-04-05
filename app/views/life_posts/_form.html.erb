@@ -1,6 +1,6 @@
 <div class="row life_new_edit_form">
-  <div>
-    <%= form_for(@life_post, :html => {:multipart => true}) do |f| %>
+  <div class="form-wrapper">
+    <%= bootstrap_form_for(@life_post, :html => {:class=>'bootstrap-form',:multipart => true}) do |f| %>
         <% if @life_post.errors.any? %>
             <div class="alert alert-warning">
               <button class="close" data-dismiss="alert" type="button"> ×</button>
@@ -16,45 +16,15 @@
             </div>
         <% end %>
 
-        <div class="span10">
-          <div class="field form-horizontal">
+            <%= f.text_field :title,label:'标题',
+                             :id => "title_field" %>
+        <%= f.text_field :title,label:'描述',
+                         :id => "body_field", :rows=>'8' %>
 
-            <div class="control-group">
-              <%= f.label :title, I18n.t("life_post.life_title"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.text_field :title,
-                                 {:id => "title_field",
-                                  :class => "span6"} %>
-                <span></span>
-              </div>
-            </div>
-            <div class="control-group">
-              <%= f.label :body, I18n.t("life_post.life_body"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.text_area :body,
-                                 {:id => "body_field",
-                                 :class => "span6",
-                                 :rows=>"8"} %>
-                <span></span>
-              </div>
-            </div>
+        <%= f.file_field :avatar,label:'上传图片',
+                         :id => "avatar_field", :rows=>'8' %>
+        <%= f.submit(nil, {:class => "user_form_btn btn btn-default"}) %>
 
-            <div class="control-group">
-              <%= f.label :file, I18n.t("life_post.life_picture"), {:class => "control-label"} %>
-              <div class="controls">
-                <%= f.file_field :avatar,
-                                {:id => "avatar_field",
-                                 :class => "span6",
-                                 :rows=>"8"} %>
-                <span></span>
-              </div>
-            </div>
-
-            <div class="span2 offset2">
-              <%= f.submit(nil, {:class => "user_form_btn btn btn-default span2 offset5"}) %>
-            </div>
-          </div>
-        </div>
     <% end %>
   </div>
 </div>

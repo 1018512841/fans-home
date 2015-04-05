@@ -1,11 +1,12 @@
-<div class="container">
+<div class="container jumbotron">
   <div class="hero-unit" id="life_detail_container">
     <p id="notice"><%= notice %></p>
+
     <div class="row">
       <h2 class="text-center span8 offset1"><%= I18n.t "life_post.life_new" %></h2>
     </div>
     <%= render 'form' %>
-    <div class="span2 offset2">
+    <div class="text-center">
       <%= link_to I18n.t("back_btn"), life_posts_path, {class: "btn btn-default"} %>
     </div>
   </div>

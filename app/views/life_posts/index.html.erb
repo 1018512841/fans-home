@@ -1,17 +1,18 @@
-<div class="container life_post_index_wrapper hero-unit">
+<div class="container life_post_index_wrapper jumbotron">
 
   <h1 class="text-center"><%= I18n.t "life_post.index_title" %>
     <% if current_is_admin? %>
-        <%= link_to(I18n.t("new_btn"), new_life_post_path, {class: " btn",style: "float:right"}) %>
+        <%= link_to(I18n.t("new_btn"), new_life_post_path, {class: " btn btn-default",style: "float:right"}) %>
     <% end %>
   </h1>
 
   <hr style="border: 1px solid">
-  <ul class="thumbnails">
-    <% @life_posts.each do |life_post| %>
-        <%= render :partial => "life_post_box", :locals => {:life_post => life_post} %>
-    <% end %>
-  </ul>
+
+
+      <% @life_posts.each do |life_post| %>
+          <%= render :partial => "life_post_box", :locals => {:life_post => life_post} %>
+      <% end %>
+
   <%= will_paginate @life_posts, {previous_label: "Pre", next_label: "Next", :style => 'color:blue'} %>
 
 </div>
