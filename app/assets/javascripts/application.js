@@ -12,11 +12,12 @@
 
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require jquery.backstretch
 //= require jquery.countdown
 //= require jquery.dataTables
+//= require bootstrap-datepicker
 //= require dropzone
 //= require jvetor-map/jquery-jvectormap-1.2.2.min
 //= require jvetor-map/jquery-jvectormap-cn-merc-cn

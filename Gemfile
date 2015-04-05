@@ -85,6 +85,7 @@ gem 'execjs'
 gem 'bootstrap-sass', '~> 3.3.4'
 # gem 'sass-rails', '>= 3.2'
 gem 'jquery-ui-rails'
+gem 'bootstrap-datepicker-rails'
 
 group :development do
   # 更好的错误显示页面

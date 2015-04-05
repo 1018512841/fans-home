@@ -13,7 +13,7 @@
  *= require dropzone
  *= require jquery.dataTables
  *= require jvetor-map/jquery-jvectormap-1.2.2
-
+ *= require bootstrap-datepicker
 
  *= require life_posts
  *= require sessions

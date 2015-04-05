@@ -588,7 +588,7 @@ fans_home.tourist_post = function () {
                 var data = {
                     region: region,
                     address: address,
-                    key: "OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77",
+                    key: "OF5BZ-SLWRV-YWUPD-UOP3K-UN4BS-H6F5K",
                     output: "jsonp"
                 };
                 var options = {
@@ -601,6 +601,7 @@ fans_home.tourist_post = function () {
                             var coordinate = data.result.location.lng.toString() +
                                 ' , ' + data.result.location.lat.toString();
                             $("#tourist_post_coordinate").val(coordinate);
+                            console.log(data)
                         } else {
                             alert(data.message)
                         }

@@ -6,12 +6,12 @@
     </p>
 
     <div class="row">
-      <div class="span3">
+      <div class="col-sm-3 thumbnail col-sm-offset-1">
         <%= image_tag(@tourist_post.image_cover_url,
                       {class: "img-rounded img-polaroid index_image_round",
-                       width: "60%"}) %>
+                       width: "100%"}) %>
       </div>
-      <div class="span7">
+      <div class="col-sm-7">
         <div class="row">
             <span style="font-size: xx-large">
              <%= @tourist_post.city %>

@@ -1,6 +1,6 @@
 <div class="row life_new_edit_form">
   <div class="form-wrapper">
-    <%= bootstrap_form_for(@life_post, :html => {:class=>'bootstrap-form',:multipart => true}) do |f| %>
+    <%= bootstrap_form_for(@life_post, :html => {:class => 'bootstrap-form', :multipart => true}) do |f| %>
         <% if @life_post.errors.any? %>
             <div class="alert alert-warning">
               <button class="close" data-dismiss="alert" type="button"> ×</button>
@@ -16,13 +16,13 @@
             </div>
         <% end %>
 
-            <%= f.text_field :title,label:'标题',
-                             :id => "title_field" %>
-        <%= f.text_field :title,label:'描述',
-                         :id => "body_field", :rows=>'8' %>
+        <%= f.text_field :title, label: '标题',
+                         :id => "title_field" %>
+        <%= f.text_area :title, label: '描述',
+                        :id => "body_field", :rows => '8' %>
 
-        <%= f.file_field :avatar,label:'上传图片',
-                         :id => "avatar_field", :rows=>'8' %>
+        <%= f.file_field :avatar, label: '上传图片',
+                         :id => "avatar_field" %>
         <%= f.submit(nil, {:class => "user_form_btn btn btn-default"}) %>
 
     <% end %>

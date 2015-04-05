@@ -1,9 +1,6 @@
-<li class="span3">
+<div class="col-sm-6 col-md-4">
   <div class="thumbnail">
-    <div class="index_image_wrapper">
-      <%= link_to image_tag(tourist_post.image_cover_url, {class: "img-rounded img-polaroid index_image_round"}),
-                  tourist_post %>
-    </div>
+    <%= link_to image_tag(tourist_post.image_cover_url), tourist_post %>
     <div class="caption">
       <h3 class="image_index_title"><%= link_to tourist_post.city, tourist_post %></h3>
 
@@ -14,4 +11,4 @@
       <% end %>
     </div>
   </div>
-</li>
+</div>
