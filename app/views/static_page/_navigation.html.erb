@@ -1,7 +1,7 @@
 <div id="navbar_area" class="navbar navbar-static">
   <div class="container">
     <ul class="nav pull-right" role="navigation">
-      <li class="dropdown">
+      <li class="dropdown header-li">
         <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
           <%= I18n.t "navigation_text" %>
           <b class="caret"></b></a>
@@ -12,7 +12,7 @@
           <%= generate_navbar_item '#', I18n.t("research_text") %>
         </ul>
       </li>
-      <li class="dropdown">
+      <li class="dropdown header-li">
         <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown"><%= get_current_user_name %>
           <b class="caret"></b></a>
         <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
@@ -29,7 +29,7 @@
           <% end %>
         </ul>
       </li>
-      <li>
+      <li class="header-li">
         <%= select_tag "i18n_locale", options_for_select(
                 {"English" => "en", "中文" => "zh"}, session[:default_locale]) %>
       </li>
