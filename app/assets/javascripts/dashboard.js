@@ -47,6 +47,7 @@ fans_home.dashboard = function () {
             $(".close_detail_btn").click(function () {
                 $(this).parents(".hero-unit").hide().siblings(".detail_index").show();
                 $('.main_board').backstretch("resize");
+                return false;
             });
 
              //Tooltips

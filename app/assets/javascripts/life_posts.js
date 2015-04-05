@@ -30,15 +30,15 @@ fans_home.life_post = function () {
 
             get_life_item_data(0, "active");
 
-            $(".bs-docs-life .left.carousel-control").click(function () {
+            $(".bs-docs-life .left.photo-control").click(function () {
                 if ($(".carousel-inner .active").index() > 0) {
                     $life_carousel.carousel("prev");
                 } else {
                     $(this).tooltip("show");
                 }
-                $(".bs-docs-life .right.carousel-control").tooltip("destroy");
+                $(".bs-docs-life .right.photo-control").tooltip("destroy");
             });
-            $(".bs-docs-life .right.carousel-control").click(function () {
+            $(".bs-docs-life .right.photo-control").click(function () {
                 var total = parseInt($(".bs-docs-life .total-number").text());
                 var current_total = $(".carousel-inner .item").length;
                 var current_number = $(".carousel-inner .active").index() + 1;
@@ -53,7 +53,7 @@ fans_home.life_post = function () {
                 if (current_number == total) {
                     $(this).tooltip("show")
                 }
-                $(".bs-docs-life .left.carousel-control").tooltip("destroy");
+                $(".bs-docs-life .left.photo-control").tooltip("destroy");
             });
 
         }
