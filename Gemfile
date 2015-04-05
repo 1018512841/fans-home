@@ -101,4 +101,5 @@ group :development do
 end
 
 gem 'tabs_on_rails'
+gem 'kramdown'
 

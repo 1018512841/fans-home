@@ -18,6 +18,6 @@
   <dd><%= @blog.user %></dd>
 
   <dt>Body:</dt>
-  <dd><%= @blog.body %></dd>
+  <dd><%= sanitize @blog.html_body %></dd>
 
 </dl>
