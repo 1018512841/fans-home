@@ -1,18 +1,16 @@
 class CnblogConvert
 
   def initialize(user, options)
-    @user = user
     options = options.with_indifferent_access
+    @user = user
     @user_id = options[:user_id]
+    @end_point = "http://www.cnblogs.com/#{@user_id}/services/metablogapi.aspx"
     @user_name = options[:user_name]
     @password = options[:password]
   end
 
   def init_client
-    @client = MetaWeblog::Client.new("http://www.cnblogs.com/#{@user_id}/services/metablogapi.aspx",
-                                     @user_id,
-                                     @user_name,
-                                     @password)
+    @client = MetaWeblog::Client.new(@end_point, @user_id, @user_name, @password)
   end
 
   def convert_one(post)
