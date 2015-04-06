@@ -1,4 +1,5 @@
 require 'kramdown'
+require 'nokogiri'
 class Blog
   include Mongoid::Document
   include Mongoid::Timestamps
@@ -16,10 +17,10 @@ class Blog
   end
 
   def markdown
-    Kramdown::Document.new(self.body, remove_block_html_tags: true)
+    Kramdown::Document.new(self.body)
   end
 
   def text_body
-    markdown.remove_block_html_tags
+    Nokogiri::HTML(html_body).text
   end
 end
