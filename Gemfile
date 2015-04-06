@@ -104,6 +104,7 @@ gem 'tabs_on_rails'
 gem 'kramdown'
 gem 'metaweblog'
 gem 'reverse_markdown'
+gem 'mechanize'
 
 # gem 'qiniu', github: 'qiniu/ruby-sdk'
 gem 'qiniu'
