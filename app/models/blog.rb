@@ -8,7 +8,8 @@ class Blog
   field :title, type: String
   field :avatar, type: String
   field :body, type: String
-  field :tags, type: Array
+  field :tags, type: Array, default: []
+  field :origin, type: String, default: 'my'
 
   belongs_to :user
 

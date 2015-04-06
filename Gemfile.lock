@@ -173,6 +173,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaweblog (0.2.0)
     method_source (0.8.2)
     mime-types (1.25.1)
     mini_portile (0.5.3)
@@ -241,6 +242,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    reverse_markdown (0.7.0)
+      nokogiri
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -347,6 +350,7 @@ DEPENDENCIES
   jquery-ui-rails
   kramdown
   libnotify (= 0.8.0)
+  metaweblog
   mini_magick!
   mongoid (~> 4.0.0)
   mongoid-grid_fs!
@@ -357,6 +361,7 @@ DEPENDENCIES
   quiet_assets (~> 1.0.2)
   rails (= 4.0.4)
   rails-i18n
+  reverse_markdown
   rspec-rails (= 2.13.1)
   sass-rails (~> 4.0.2)
   sdoc
