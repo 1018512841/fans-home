@@ -6,10 +6,9 @@ class Blog
   include Mongoid::Timestamps
 
   field :title, type: String
-  field :avatar
+  field :avatar, type: String
   field :body, type: String
-
-  mount_uploader :avatar, AvatarUploader
+  field :tags, type: Array
 
   belongs_to :user
 

@@ -106,3 +106,4 @@ gem 'kramdown'
 # gem 'qiniu', github: 'qiniu/ruby-sdk'
 gem 'qiniu'
 gem 'httparty'
+gem "select2-rails"

@@ -1,7 +1,7 @@
 <%= javascript_include_tag 'blogs' %>
 
 <%= stylesheet_link_tag 'bootstrap-markdown.min' %>
-<%= simple_form_for(@blog, :html => {:class => "form-horizontal", :role => "form"}) do |f| %>
+<%= bootstrap_form_for(@blog, :html => {:class => "form-horizontal", :role => "form"}) do |f| %>
     <% if @blog.errors.any? %>
         <div class="alert alert-danger alert-dismissable" role="alert">
           <button type="button" class="close" data-dismiss="alert">
@@ -17,18 +17,25 @@
     <% end %>
 
 
-    <%= f.input :title, :label => "标题", input_html: {class: 'full-input'} %>
+    <%= f.text_field :title, :label => "标题", input_html: {class: 'full-input'} %>
 
-    <%= f.label :avatar, :label => "上传封面" %>
+    <%= f.text_field :avatar, :label => "上传封面",
+                     :append=>link_to('选择图片', nil, id: 'add_cover')  %>
+
+    <% if f.object.avatar %>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a class="thumbnail">
+              <%= image_tag f.object.avatar, id: "preview-avatar" %>
+            </a>
+          </div>
+        </div>
+    <% end %>
+
+    <%= f.select :tags, ['ruby', 'rails', 'jquery'], {label: '标签'}, {multiple: true, id: 'blog_tags'} %>
 
 
-    <%= f.file_field :avatar, label: '上传图片',
-                     :id => "avatar_field" %>
-    <div class="cover-path-wrapper">
-      <%= image_tag @blog.avatar  unless @blog.new_record? %>
-    </div>
-    <%= f.label :body, :label => "内容" %>
-    <%= f.text_area :body, class: 'full-text', rows: 30 %>
+    <%= f.text_area :body, :label => "内容", class: 'full-text', rows: 30 %>
     <div class="text-center">
       <%= f.submit "保存", class: 'btn btn-success text-center' %>
       <%= link_to '返回', blogs_path, {class: "btn btn-default"} %>
@@ -36,7 +43,8 @@
 <% end %>
 <script>
   $(function(){
+      $('#blog_tags').select2();
       $("#blog_body").markdown({language:'zh'});
-      qiniu.initUploadImage('test_qiniu',$('#blog_title'), $('.cover-path-wrapper'))
+      qiniu.initUploadImage('add_cover',$('#blog_avatar'), $('#preview-avatar'))
   })
 </script>

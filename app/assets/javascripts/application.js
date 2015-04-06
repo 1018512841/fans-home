@@ -23,6 +23,7 @@
 //= require jvetor-map/jquery-jvectormap-cn-merc-cn
 //= require city-select/prettify
 //= require city-select/jquery.city.select
+//= require select2
 
 //= require fw
 //= require life_posts
