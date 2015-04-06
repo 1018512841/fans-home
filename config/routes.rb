@@ -32,4 +32,9 @@ FansHome::Application.routes.draw do
   get "static_page/index"
   get "static_page/admin"
 
+  namespace :qiniu do
+    get :video_up_token
+    get :image_up_token
+    get :audio_up_token
+  end
 end

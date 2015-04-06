@@ -28,6 +28,7 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(blog_params)
     @blog.user = current_user
+    @blog.avatar.read
     respond_to do |format|
       if @blog.save
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
@@ -42,6 +43,7 @@ class BlogsController < ApplicationController
   # PATCH/PUT /blogs/1
   # PATCH/PUT /blogs/1.json
   def update
+    @blog.avatar.read
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }

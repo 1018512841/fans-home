@@ -1,0 +1,20 @@
+
+//保存封面图片
+var qiniu = function () {
+    return {
+        initUploadImage: function (browse_button, $formInput, $previewDom) {
+                var coverImageUploader = new QiniuUploader();
+                coverImageUploader.upload({
+                    browse_button: browse_button,
+                    uptoken_url: '/qiniu/image_up_token'
+                }, {
+                    'FileUploaded': function (up, file, info) {
+                        var info = $.parseJSON(info);
+                        var imagePath = '<%= QiniuDomain %>' + info.image_path;
+                        $formInput.val(imagePath);
+                        $previewDom.attr('src', imagePath);
+                    }
+                });
+        }
+    }
+}();

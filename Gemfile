@@ -103,3 +103,6 @@ end
 gem 'tabs_on_rails'
 gem 'kramdown'
 
+# gem 'qiniu', github: 'qiniu/ruby-sdk'
+gem 'qiniu'
+gem 'httparty'

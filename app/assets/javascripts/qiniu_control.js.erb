@@ -1,0 +1,49 @@
+//= require file_upload/moxie
+//= require file_upload/plupload.dev
+//= require file_upload/qiniu
+//= require file_upload/progress_ui
+
+function QiniuUploader() {
+//    console.log('新的上传实例');
+    this.upload = function(options, eventBindings) {
+        var defaultOptions = {
+            runtimes: 'html5,flash,html4',
+            unique_names: true,
+            drop_element: 'container',
+            max_file_size: '2000mb',
+            flash_swf_url: '<%= asset_path('file_upload/Moxie.swf') %>',
+            dragdrop: true,
+            chunk_size: '4mb',
+            domain: '<%= QiniuDomain %>',
+            auto_start: true,
+            init: {
+                'FilesAdded': function (up, files) {
+//                    console.debug('添加文件');
+                },
+                'BeforeUpload': function (up, file) {
+//                    console.debug('准备上传');
+                },
+                'UploadComplete': function () {
+//                    console.debug('上传成功!');
+                },
+                'FileUploaded': function (up, file, info) {
+//                    console.debug('成功上传一个文件');
+                },
+                'Error': function (up, err, errTip) {
+//                    console.error('出错: ' + errTip);
+                }
+            }
+        };
+        options = $.extend(defaultOptions, options);
+//        console.log(options);
+
+        for (prop in eventBindings){
+            if (eventBindings.hasOwnProperty(prop)) {
+                options.init[prop] = eventBindings[prop];
+            }   
+        }
+
+        var Qiniu = new QiniuJsSDK();
+        return Qiniu.uploader(options);
+    }
+}

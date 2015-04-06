@@ -1,6 +1,5 @@
-<%= javascript_include_tag 'markdown' %>
-<%= javascript_include_tag 'bootstrap-markdown' %>
-<%= javascript_include_tag 'bootstrap-markdown.zh' %>
+<%= javascript_include_tag 'blogs' %>
+
 <%= stylesheet_link_tag 'bootstrap-markdown.min' %>
 <%= simple_form_for(@blog, :html => {:class => "form-horizontal", :role => "form"}) do |f| %>
     <% if @blog.errors.any? %>
@@ -19,16 +18,25 @@
 
 
     <%= f.input :title, :label => "标题", input_html: {class: 'full-input'} %>
-    <%= f.label :username, :label => "内容" %>
+
+    <%= f.label :avatar, :label => "上传封面" %>
+
+
+    <%= f.file_field :avatar, label: '上传图片',
+                     :id => "avatar_field" %>
+    <div class="cover-path-wrapper">
+      <%= image_tag @blog.avatar  unless @blog.new_record? %>
+    </div>
+    <%= f.label :body, :label => "内容" %>
     <%= f.text_area :body, class: 'full-text', rows: 30 %>
     <div class="text-center">
       <%= f.submit "保存", class: 'btn btn-success text-center' %>
       <%= link_to '返回', blogs_path, {class: "btn btn-default"} %>
     </div>
 <% end %>
-
 <script>
   $(function(){
-      $("#blog_body").markdown({language:'zh'})
+      $("#blog_body").markdown({language:'zh'});
+      qiniu.initUploadImage('test_qiniu',$('#blog_title'), $('.cover-path-wrapper'))
   })
 </script>

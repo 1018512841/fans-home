@@ -1,13 +1,19 @@
-<div class="page-header">
-  <%= link_to blogs_path, :class => 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to @blog, :class => 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-info-sign"></span>
-    Show
-  <% end %>
-  <h1>Editing blog</h1>
+<%= stylesheet_link_tag 'blogs' %>
+
+<div class="container">
+
+  <div class="hero-unit" id="user_new_container">
+    <% if flash[:error] %>
+        <div class="alert">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Warning!</strong> <%= flash[:error] %>
+        </div>
+    <% end %>
+    <div class="page-header">
+      <h2>编辑博客</h2>
+    </div>
+    <%= render 'form' %>
+  </div>
 </div>
 
-<%= render 'form' %>
+
