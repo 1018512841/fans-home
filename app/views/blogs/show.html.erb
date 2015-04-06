@@ -1,24 +1,41 @@
-<div class="page-header">
-  <%= link_to blogs_path, :class => 'btn btn-default' do %>
-    <span class="glyphicon glyphicon-list-alt"></span>
-    Back
-  <% end %>
-  <%= link_to edit_blog_path(@blog), :class => 'btn btn-primary' do %>
-    <span class="glyphicon glyphicon-pencil"></span>
-    Edit
-  <% end %>
-  <h1>Show blog</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+      <div class="blog-post">
+        <h2 class="blog-post-title text-center"><%= @blog.title %></h2>
+
+        <p class="blog-post-meta">
+          <a href="#"><%= @blog.user.user_name %></a> 写于
+          <%= time_format(@blog.created_at) %>
+          <% @blog.tags.each do |tag| %>
+              <span class="label label-info"><%= tag %></span>
+          <% end %>
+        </p>
+        <%= image_tag @blog.avatar, width: "100%" %>
+      </div>
+      <article>
+        <%= sanitize @blog.html_body %>
+      </article>
+
+      <nav>
+        <ul class="pager">
+          <li><%= previous_tag(@blog) %></li>
+          <li><%= next_tag(@blog) %></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <div class="sidebar-module">
+        <h4>其他文章</h4>
+        <ol class="list-unstyled">
+          <% @recommends.each do |blog| %>
+              <li><%= link_to blog.title, blog_path(blog) %></li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+  </div>
 </div>
 
-<dl class="dl-horizontal">
-  <dt>Title:</dt>
-  <dd><%= @blog.title %></dd>
-  <dd><%= image_tag @blog.avatar %></dd>
-
-  <dt>User:</dt>
-  <dd><%= @blog.user %></dd>
-
-  <dt>Body:</dt>
-  <dd><%= sanitize @blog.html_body %></dd>
-
-</dl>

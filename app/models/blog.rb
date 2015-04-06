@@ -27,4 +27,12 @@ class Blog
   def text_body
     Nokogiri::HTML(html_body).text
   end
+
+  def next_one
+    self.class.where(:id => {:$gt => self.id}).order("id ASC").first
+  end
+
+  def previous_one
+    self.class.where(:id => {:$lt => self.id}).order("id DESC").first
+  end
 end
