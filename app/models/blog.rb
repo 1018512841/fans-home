@@ -10,6 +10,7 @@ class Blog
   field :body, type: String
   field :tags, type: Array, default: []
   field :origin, type: String, default: 'my'
+  field :mime, type: String, default: 'markdown'
 
   belongs_to :user
 
@@ -19,6 +20,14 @@ class Blog
 
   def html_body
     markdown.to_html
+  end
+
+  def body_text
+    if mime == 'html'
+      body
+    else
+      html_body
+    end
   end
 
   def markdown
