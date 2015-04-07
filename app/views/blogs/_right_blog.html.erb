@@ -1,9 +1,6 @@
 <div class="article">
   <div class="pic">
-    <a href="#" class="w_hover">
-      <img src="http://marry.qiniudn.com/o_19hqit76j1ok51gvmd4nh6drbc.jpg" alt="">
-      <span></span>
-    </a>
+    <%= link_to image_tag(right_blog.avatar), blog_path(right_blog), class:'w_hover' if right_blog.avatar %>
   </div>
 
   <div class="text">

@@ -2,12 +2,11 @@
   <div class="tail"></div>
   <h4 class="title"><%= link_to left_blog.title, blog_path(left_blog) %></h4>
 
-  <div class="f_pic">
-    <a href="content.html">
-      <img src="http://marry.qiniudn.com/o_19hqi0tok43j18isdjsvfj17r67.jpg" alt="">
-    </a>
-  </div>
-
+  <% if left_blog.avatar %>
+      <div class="f_pic">
+        <%= link_to image_tag(left_blog.avatar), blog_path(left_blog) %>
+      </div>
+  <% end %>
 
   <div class="info">
     <div class="date"><p><%= time_format(left_blog.created_at) %></p></div>

@@ -6,13 +6,13 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all.paginate(page:params[:page],per_page: 15)
     @hots = Blog.hots
-    @recommends = Blog.hots
+    @recommends = Blog.recommends
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @recommends = Blog.hots
+    @recommends = Blog.recommends
   end
 
   # GET /blogs/new
