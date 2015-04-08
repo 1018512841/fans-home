@@ -90,3 +90,4 @@ gem 'mechanize'
 gem 'qiniu'
 gem 'httparty'
 gem "select2-rails"
+gem 'thin'
