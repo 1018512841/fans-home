@@ -24,6 +24,7 @@
 //= require city-select/prettify
 //= require city-select/jquery.city.select
 //= require select2
+//= require jquery.danmu
 
 //= require fw
 //= require life_posts

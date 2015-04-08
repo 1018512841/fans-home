@@ -9,6 +9,7 @@ FansHome::Application.routes.draw do
   end
 
   root 'static_page#index'
+  get "static_page/test"
   post "tourist_posts/upload_image"
   post "tourist_posts/destroy_image"
   post "tourist_posts/tourist_city"

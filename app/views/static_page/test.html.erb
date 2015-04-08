@@ -1,0 +1,88 @@
+<style>
+    body {
+        font-family: "Microsoft YaHei" ! important;
+        font-color: #222;
+    }
+
+    pre {
+        line-height: 2em;
+        font-family: "Microsoft YaHei" ! important;
+    }
+
+    h4 {
+        line-height: 2em;
+    }
+
+    #danmuarea {
+        position: relative;
+        background: #222;
+        width: 800px;
+        height: 445px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .ctr {
+        font-size: 1em;
+        line-height: 2em;
+    }
+</style>
+<div class="container text-center">
+  <div id="danmuarea" class="text-center">
+    <div id="danmu">
+    </div>
+  </div>
+</div>
+<script>
+    (function () {
+        $("#danmu").danmu({
+                    // left:$("#danmuarea").offset().left,
+                    // top:$("#danmuarea").offset().top,
+                    // height: 445,
+                    //    width: 800,
+                    left: 0,
+                    top: 0,
+                    height: "100%",
+                    width: "100%",
+                    speed: 30000,
+                    opacity: 1,
+                    font_size_small: 16,
+                    font_size_big: 24,
+                    top_botton_danmu_time: 6000
+                }
+        );
+
+        $('#danmu').danmu('danmu_resume');
+
+        var new_obj = {text: "ddddd", color: "white", size: "1", position: "0", time: 25};
+        $('#danmu').danmu("add_danmu", new_obj);
+    })(jQuery);
+
+
+
+
+    var first = true;
+
+
+    function resumer() {
+
+        $('#danmu').danmu('danmu_resume');
+
+        var new_obj = {text: "ddddd", color: "white", size: "1", position: "0", time: 25};
+        $('#danmu').danmu("add_danmu", new_obj);
+    }
+
+
+    function send() {
+        var text = document.getElementById('text').value;
+        var color = document.getElementById('color').value;
+        var position = document.getElementById('position').value;
+        var time = $('#danmu').data("nowtime") + 5;
+        var size = document.getElementById('text_size').value;
+
+        var new_obj = {text: "ddddd", color: "white", size: "1", position: "0", time: 25};
+        $('#danmu').danmu("add_danmu", new_obj);
+    }
+
+</script>

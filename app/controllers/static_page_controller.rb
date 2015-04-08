@@ -6,4 +6,8 @@ class StaticPageController < ApplicationController
     @counts[2] = TouristPost.count
   end
 
+  def test
+
+  end
+
 end

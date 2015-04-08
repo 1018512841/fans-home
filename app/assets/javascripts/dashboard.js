@@ -58,6 +58,8 @@ fans_home.dashboard = function () {
             $('.social a.email').tooltip();
             $('.social a.resume').tooltip();
 
+            fans_home.dashboard.init_dan_mu();
+
         },
 
         /*
@@ -81,6 +83,35 @@ fans_home.dashboard = function () {
                     }
                 };
                 $.ajax(options);
+            })
+        },
+
+        init_dan_mu: function(){
+
+             $('#work-panel-close').click(function(){
+                 $('.detail_work').hide();
+                 $(".detail_index").show();
+                 $('.main_board').backstretch("resize");
+             });
+            $('.item_work').click(function(){
+                var $danmu = $("#danmu");
+                $danmu.danmu({
+                        left: 0,
+                        top: 0,
+                        height: "100%",
+                        width: "100%",
+                        speed: 30000,
+                        opacity: 1,
+                        font_size_small: 16,
+                        font_size_big: 24,
+                        top_botton_danmu_time: 6000
+                    }
+                );
+
+                $danmu.danmu('danmu_resume');
+
+                var new_obj = {text: "ddddd", color: "white", size: "1", position: "0", time: 25};
+                $danmu.danmu("add_danmu", new_obj);
             })
         }
     }
