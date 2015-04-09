@@ -4,9 +4,14 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all.paginate(page:params[:page],per_page: 15)
+    @all_blogs = Blog.all
+    @blogs = @all_blogs.paginate(page:params[:page],per_page: 15)
     @hots = Blog.hots
     @recommends = Blog.recommends
+    respond_to do |format|
+        format.html
+        format.json
+    end
   end
 
   # GET /blogs/1

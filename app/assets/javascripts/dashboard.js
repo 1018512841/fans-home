@@ -87,14 +87,21 @@ fans_home.dashboard = function () {
         },
 
         init_dan_mu: function(){
+            var $danmu = $("#danmu");
 
+                $('body').on('mouseenter',".flying", function(){
+                    $danmu.danmu("danmu_pause");
+                }).on('mouseleave',".flying", function(){
+                    $danmu.danmu("danmu_resume");
+                }).on('click',".flying", function(){
+                    window.location.href='/blogs/'+$(this).data('blog');
+                });
              $('#work-panel-close').click(function(){
                  $('.detail_work').hide();
                  $(".detail_index").show();
                  $('.main_board').backstretch("resize");
              });
             $('.item_work').click(function(){
-                var $danmu = $("#danmu");
                 $danmu.danmu({
                         left: 0,
                         top: 0,
@@ -109,9 +116,17 @@ fans_home.dashboard = function () {
                 );
 
                 $danmu.danmu('danmu_resume');
+                $.ajax({
+                    url:'/blogs.json',
+                    type:'get',
+                    success: function(data){
+                        $.each(data,function(){
+                            $danmu.danmu("add_danmu", this);
+                        } )
 
-                var new_obj = {text: "ddddd", color: "white", size: "1", position: "0", time: 25};
-                $danmu.danmu("add_danmu", new_obj);
+                    }
+                })
+
             })
         }
     }

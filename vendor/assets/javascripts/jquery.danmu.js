@@ -283,6 +283,11 @@ var cyntax = {
 						,"white-space":"nowrap"
 						,"font-weight":"bold"
 					});
+
+					if (danmus[i].data_blog ){
+						$("#linshi").data('blog', danmus[i].data_blog);
+					}
+
 					if (danmus[i].color<"#777777")
 						$("#linshi").css({
 							"text-shadow":" 0px 0px 2px #FFFFFF"
