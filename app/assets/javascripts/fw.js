@@ -7,6 +7,7 @@ var fans_home = {
     dashboard: {},
     user_screen:{},
     life_post:{},
+    blog:{},
     common:{}
 };
 
