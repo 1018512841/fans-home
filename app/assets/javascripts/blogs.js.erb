@@ -12,9 +12,10 @@ fans_home.blog = function () {
             fans_home.blog.initMarkdown();
         },
         initMarkdown: function () {
+            var loading;
             var itemObj = fans_home.common.uploadFile.initUploadObj({}, {
                 'BeforeUpload': function (up, file) {
-                    //loading = fw.common.dialog.startLoading('上传中，请稍后');
+                    loading = fans_home.common.dialog.startLoading('上传中，请稍后');
                 },
                 'FileUploaded': function (up, file, info) {
                     var e = $('#blog_body').data('markdown');
@@ -37,6 +38,7 @@ fans_home.blog = function () {
                         e.setSelection(cursor, cursor + chunk.length);
                     }
                     $('[title=qiniu-upload-img]').removeClass('active');
+                    fans_home.common.dialog.closeLoading(loading);
                 }
             });
 
