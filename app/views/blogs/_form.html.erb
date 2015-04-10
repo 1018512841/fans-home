@@ -91,5 +91,19 @@
       })
 
 
+      var loading;
+      var itemObj = fans_home.common.uploadFile.initUploadObj( {}, {
+          'BeforeUpload': function ( up, file ) {
+              //loading = fw.common.dialog.startLoading('上传中，请稍后');
+          },
+          'FileUploaded': function ( up, file, info ) {
+              var info = $.parseJSON( info );
+              console.log(info);
+          }
+      } );
+      $( document ).on( "click", ".glyphicon.glyphicon-upload", function () {
+          itemObj.startUpload( this );
+      } );
+
   })
 </script>

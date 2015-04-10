@@ -1,4 +1,4 @@
-//= require 'controls/qiniu_control'
+//= require 'qiniu_control'
 //保存封面图片
 
 
