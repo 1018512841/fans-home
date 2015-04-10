@@ -25,10 +25,11 @@
 //= require city-select/jquery.city.select
 //= require select2
 //= require jquery.danmu
-//= require layer/layer.js
-//= require layer/layer.ext.dev
+//= require layer/layer.js.erb
+//= require layer/layer.ext.dev.js.erb
 
 //= require fw
+//= require common/dialog
 //= require uploadFile
 //= require life_posts
 //= require tourist_post

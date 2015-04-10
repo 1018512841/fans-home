@@ -15,8 +15,8 @@
  *= require jvetor-map/jquery-jvectormap-1.2.2
  *= require bootstrap-datepicker
  *= require select2
- *= require layer/layer
- *= require layer/layer.ext
+ *= require layer/layer.css.erb
+ *= require layer/layer.ext.css.erb
 
  *= require life_posts
  *= require sessions
