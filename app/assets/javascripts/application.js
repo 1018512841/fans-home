@@ -27,6 +27,7 @@
 //= require jquery.danmu
 
 //= require fw
+//= require uploadFile
 //= require life_posts
 //= require tourist_post
 //= require tourist_posts
