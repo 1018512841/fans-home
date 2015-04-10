@@ -25,6 +25,8 @@
 //= require city-select/jquery.city.select
 //= require select2
 //= require jquery.danmu
+//= require layer/layer.js
+//= require layer/layer.ext.dev
 
 //= require fw
 //= require uploadFile
