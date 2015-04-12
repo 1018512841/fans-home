@@ -1,44 +1,46 @@
-<div class="container">
-  <div class="hero-unit" id="user_login_container">
-    <%= form_tag "", {:id => "user_login_form",
-                      :class => "form-horizontal"} do %>
-        <div class="control-group">
+<div class="">
+
+  <div class="row" id="user_login_container">
+    <div class="col-md-4 col-sm-offset-4 container jumbotron">
+    <%= bootstrap_form_for "", {:id => "user_login_form",
+                                :class => "form-horizontal"} do %>
+          <h2 class="text-center">登录</h2>
+        <div class="form-group">
           <%= label_tag "inputEmail",
                         I18n.t("user_index_email"),
                         {:class => "control-label"} %>
-          <div class="controls">
             <%= text_field_tag "user_email",
                                nil,
                                {:id => "inputEmail",
+                                :class=>'form-control',
                                 :placeholder => I18n.t("user_index_email")} %>
-            <span class="help-inline alert-error"></span>
-          </div>
+            <span class="text-danger"></span>
         </div>
-        <div class="control-group">
+        <div class="form-group">
           <%= label_tag "inputPassword",
                         I18n.t("user_index_password"),
                         {:class => "control-label"} %>
-          <div class="controls">
             <%= password_field_tag "user_password",
                                    nil,
                                    {:id => "inputPassword",
+                                    :class=>'form-control',
                                     :placeholder => I18n.t("user_index_password")} %>
-            <span class="help-inline alert-error"></span>
-          </div>
+          <span class="text-danger"></span>
         </div>
-        <div class="control-group">
-          <div class="controls">
-            <label class="checkbox">
+          <div class="checkbox">
+            <label>
               <%= check_box_tag "remember_me", "yes", false %><%= I18n.t("remember_me") %>
             </label>
+          </div>
+        <div class="form-group">
             <%= button_tag I18n.t("login_btn"),
-                           {:class => "btn",
+                           {:class => "btn btn-primary btn-block",
                             :id => 'user_login_btn',
                             :name => nil,
                             :type => "button"} %>
-          </div>
         </div>
     <% end %>
+    </div>
   </div>
 </div>
 <%= hidden_field_tag '', I18n.t("i18n_can_not_be_blank"), {:id => "i18n_can_not_be_blank"} %>

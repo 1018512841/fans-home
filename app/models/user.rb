@@ -8,7 +8,6 @@ class User
   field :encrypted_password, type: String
   field :role, type: String
 
-
   attr_accessor :password
   attr_reader :password_confirmation
 
