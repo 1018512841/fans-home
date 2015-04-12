@@ -28,17 +28,17 @@
                                                     total_unit: "张"} %>
         </div>
         <div class="item_work item-area" data-detail_panel="detail_work">
-          <%= render partial: "each_item", locals: {total_count: 33,
+          <%= render partial: "each_item", locals: {total_count: @counts[1],
                                                     item_name: I18n.t("work_text"),
                                                     total_unit: "篇"} %>
         </div>
         <div class="item_happy item-area" data-detail_panel="detail_tourist">
-          <%= render partial: "each_item", locals: {total_count: @counts[1],
+          <%= render partial: "each_item", locals: {total_count: @counts[2],
                                                     item_name: I18n.t("tourist_text"),
                                                     total_unit: "地"} %>
         </div>
         <div class="item_research item-area" data-detail_panel="detail_research">
-          <%= render partial: "each_item", locals: {total_count: 33,
+          <%= render partial: "each_item", locals: {total_count: @counts[3],
                                                     item_name: I18n.t("research_text"),
                                                     total_unit: "Posts"} %>
         </div>

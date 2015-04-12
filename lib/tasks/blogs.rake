@@ -14,11 +14,11 @@ namespace :blogs do
                                user_name: 'besfan',
                                password: '123zxc123')
     cnblog.convert do |title, created_at, body|
+      body = ReverseMarkdown.convert body
       Blog.create({
                       title: title,
                       created_at: created_at,
                       body: body,
-                      mime: 'html',
                       origin: 'cnblog',
                       user: user
                   })
@@ -37,11 +37,11 @@ namespace :blogs do
     end
     csdn = CsdnConvert.new(user, user_id: 'besfanfei')
     csdn.convert do |title, created_at, body|
+      body = ReverseMarkdown.convert body
       Blog.create({
                       title: title,
                       created_at: created_at,
                       body: body,
-                      mime: 'html',
                       origin: 'csdn',
                       user: user
                   })
