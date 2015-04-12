@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  before_action :check_user, except: [:index, :show]
 
   # GET /blogs
   # GET /blogs.json
@@ -70,13 +71,19 @@ class BlogsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_blog
+    @blog = Blog.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def blog_params
-      params.require(:blog).permit(:title, :user_id, :body, :avatar, tags:[])
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def blog_params
+    params.require(:blog).permit(:title, :user_id, :body, :avatar, tags: [])
+  end
+
+  def check_user
+    unless current_is_admin_role
+      render :file => 'public/404.html', :status => :not_found
     end
+  end
 end
