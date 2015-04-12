@@ -1,5 +1,3 @@
-<%= javascript_include_tag 'blogs' %>
-
 <%= stylesheet_link_tag 'bootstrap-markdown.min' %>
 <%= bootstrap_form_for(@blog, :html => {:class => "form-horizontal", :role => "form"}) do |f| %>
     <% if @blog.errors.any? %>

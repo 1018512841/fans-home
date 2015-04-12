@@ -93,3 +93,6 @@ gem "select2-rails"
 gem 'thin'
 
 gem 'multipart-post'
+
+gem 'mina', :git => "https://github.com/mina-deploy/mina.git"
+gem 'mina-sidekiq'

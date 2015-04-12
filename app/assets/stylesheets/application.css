@@ -19,6 +19,7 @@
  *= require layer/layer.ext.css.erb
 
  *= require life_posts
+ *= require blogs
  *= require sessions
  *= require scaffolds
  *= require tourist

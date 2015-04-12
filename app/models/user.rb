@@ -69,7 +69,7 @@ class User
     return status, message
   end
 
-  def authenticate_password(password)
+    def authenticate_password(password)
     self.encrypted_password == self.class.encrypt_password(password, self.salt)
   end
 
