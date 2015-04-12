@@ -48,7 +48,7 @@ class User
       user = self.find(user_id)
       if current_user_id == user.id.to_s
         status = "error"
-        message.push("'#{user.user_name}' "+I18n.t("delete_self_error"))
+        message.push("'#{user.user_name}' "+"不能删除自己")
         break
       end
 
@@ -56,14 +56,14 @@ class User
         user.destroy
         if user
           status = "success"
-          message.push(I18n.t("delete_user_list_success")+ ", name=#{user.user_name}")
+          message.push("删除成功"+ ", name=#{user.user_name}")
         else
           status = "error"
-          message.push(I18n.t("delete_user_list_failed")+ ", name=#{user.user_name}")
+          message.push("删除失败"+ ", name=#{user.user_name}")
         end
       else
         status = "error"
-        message.push("'#{user_id}' "+I18n.t("delete_user_list_not_existing"))
+        message.push("'#{user_id}' "+"不存在!")
       end
     end
     return status, message

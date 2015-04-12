@@ -6,8 +6,8 @@
 
       <p class="image_index_body"><%= link_to tourist_post.description, tourist_post %></p>
       <% if current_is_admin? %>
-          <p><%= link_to I18n.t("edit_btn"), edit_tourist_post_path(tourist_post), class: "btn btn-default" %>
-            <%= link_to I18n.t("delete_btn"), tourist_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-default" %></p>
+          <p><%= link_to "编辑", edit_tourist_post_path(tourist_post), class: "btn btn-default" %>
+            <%= link_to "删除", tourist_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-default" %></p>
       <% end %>
     </div>
   </div>

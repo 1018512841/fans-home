@@ -1,15 +1,14 @@
+<div class="col-sm-6 col-md-4">
+  <div class="thumbnail">
+    <%= link_to image_tag(life_post.avatar.thumb.url), life_post %>
+    <div class="caption">
+      <h3><%= link_to life_post.title, life_post %></h3>
 
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <%= link_to image_tag(life_post.avatar.thumb.url), life_post %>
-      <div class="caption">
-        <h3><%= link_to life_post.title, life_post %></h3>
-
-        <div class="image_index_body"><%= link_to life_post.body, life_post %></div>
-        <% if current_is_admin? %>
-            <p><%= link_to I18n.t("edit_btn"), edit_life_post_path(life_post), class: "btn btn-default" %>
-              <%= link_to I18n.t("delete_btn"), life_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-default" %></p>
-        <% end %>
-      </div>
+      <div class="image_index_body"><%= link_to life_post.body, life_post %></div>
+      <% if current_is_admin? %>
+          <p><%= link_to I18n.t("edit_btn"), edit_life_post_path(life_post), class: "btn btn-default" %>
+            <%= link_to I18n.t("delete_btn"), life_post, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-default" %></p>
+      <% end %>
     </div>
   </div>
+</div>
