@@ -201,6 +201,7 @@ GEM
     multi_json (1.10.0)
     multi_test (0.1.1)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
     netrc (0.10.3)
@@ -369,6 +370,7 @@ DEPENDENCIES
   mini_magick!
   mongoid (~> 4.0.0)
   mongoid-grid_fs!
+  multipart-post
   pry
   pry-byebug
   pry-rails
