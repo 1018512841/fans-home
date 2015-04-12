@@ -78,12 +78,12 @@ class User
                :inputEmail => []}
     if user.nil?
       status = 'failed'
-      message[:inputEmail].push("User email invalid")
+      message[:inputEmail].push("邮箱不正确")
     elsif user.authenticate_password(password)
       status = 'success'
     else
       status = 'failed'
-      message[:inputPassword].push("Password invalid")
+      message[:inputPassword].push("密码错误")
     end
     result = {:status => status, :message => message}
     return result
