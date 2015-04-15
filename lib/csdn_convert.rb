@@ -4,7 +4,7 @@ class CsdnConvert
     options = options.with_indifferent_access
     @user = user
     @user_id = options[:user_id]
-    @end_point = "http://blog.csdn.net/#{@user_id}"
+    @end_point = blog_url(@user_id)
     @detail_links = []
   end
 
@@ -12,7 +12,7 @@ class CsdnConvert
     init_client
     collect_next_page
     @detail_links.each do |detail|
-      post = @agent.get("http://blog.csdn.net#{detail}")
+      post = @agent.get(blog_url(name))
       convert_one(post, &block)
     end
   end
@@ -49,6 +49,10 @@ class CsdnConvert
     created_at = detail.at('.link_postdate').text.to_time
     body = detail.at('.article_content').inner_html
     block.call(title, created_at, body)
+  end
+
+  def blog_url(name)
+    "http://blog.csdn.net#{name}"
   end
 
 end
