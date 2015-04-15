@@ -14,6 +14,8 @@ class Blog
 
   belongs_to :user
 
+  validates_presence_of :title, :body
+
   scope :hots, -> { order(created_at: :desc).limit(5) }
   scope :recommends, -> { where(:avatar.ne => nil).order(created_at: :desc).limit(5) }
 

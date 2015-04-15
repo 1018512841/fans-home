@@ -14,7 +14,7 @@
     <% end %>
 
 
-    <%= f.text_field :title, :label => "标题", input_html: {class: 'full-input'} %>
+    <%= f.text_field :title, :label => "标题", input_html: {class: 'full-input'}, required:true %>
 
     <%= f.text_field :avatar, :label => "上传封面",
                      :append=>link_to('选择图片', nil, id: 'add_cover')  %>
@@ -32,7 +32,7 @@
     <%= f.select :tags, ['ruby', 'rails', 'jquery'], {label: '标签'}, {multiple: true, id: 'blog_tags'} %>
 
 
-    <%= f.text_area :body, :label => "内容", class: 'full-text', rows: 30 %>
+    <%= f.text_area :body, :label => "内容", class: 'full-text', rows: 30, required:true  %>
     <div class="text-center">
       <%= f.submit "保存", class: 'btn btn-success text-center' %>
       <%= link_to '返回', blogs_path, {class: "btn btn-default"} %>
