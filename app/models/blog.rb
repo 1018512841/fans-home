@@ -19,15 +19,7 @@ class Blog
 
 
   def html_body
-    markdown.to_html
-  end
-
-  def body_text
-    html_body
-  end
-
-  def markdown
-    Kramdown::Document.new(self.body)
+    Kramdown::Document.new(self.body).to_html
   end
 
   def text_body

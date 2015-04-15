@@ -14,7 +14,7 @@
         <%= image_tag @blog.avatar, width: "100%" %>
       </div>
       <article>
-        <%= sanitize @blog.body_text %>
+        <%= sanitize @blog.html_body %>
       </article>
 
       <nav>
