@@ -11,7 +11,7 @@ class User
   attr_accessor :password
   attr_reader :password_confirmation
 
-  validates_presence_of :user_name,:user_email
+  validates_presence_of :user_name, :user_email
   validates_uniqueness_of :user_email
   validates_format_of :user_email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
   validates_confirmation_of :password
@@ -26,67 +26,57 @@ class User
     end
   end
 
-  def self.encrypt_password(password, salt)
-    Digest::SHA2.hexdigest(password + "fans-home" + salt)
-  end
-
-  def self.user_list
-    users_array = self.all.map do |each|
-      [
-          "<a href='/users/#{each._id}' user_id='#{each._id}'  class='user_link'>#{each.user_name}</a>",
-          each.user_email
-      ]
-    end
-
-    return users_array
-  end
-
-  def self.destroy_user_by_ids(user_ids, current_user_id)
-    message = []
-    status = "success"
-    user_ids.each do |user_id|
-      user = self.find(user_id)
-      if current_user_id == user.id.to_s
-        status = "error"
-        message.push("'#{user.user_name}' "+"不能删除自己")
-        break
-      end
-
-      if user.present?
-        user.destroy
-        if user
-          status = "success"
-          message.push("删除成功"+ ", name=#{user.user_name}")
-        else
-          status = "error"
-          message.push("删除失败"+ ", name=#{user.user_name}")
-        end
-      else
-        status = "error"
-        message.push("'#{user_id}' "+"不存在!")
-      end
-    end
-    return status, message
-  end
-
-    def authenticate_password(password)
+  def authenticate_password(password)
     self.encrypted_password == self.class.encrypt_password(password, self.salt)
   end
 
-  def self.check_user_login(user, password)
-    message = {:inputPassword => [],
-               :inputEmail => []}
-    if user.nil?
-      status = 'failed'
-      message[:inputEmail].push("邮箱不正确")
-    elsif user.authenticate_password(password)
-      status = 'success'
-    else
-      status = 'failed'
-      message[:inputPassword].push("密码错误")
+  class << self
+    def encrypt_password(password, salt)
+      Digest::SHA2.hexdigest(password + "fans-home" + salt)
     end
-    result = {:status => status, :message => message}
-    return result
+
+    def destroy_user_by_ids(user_ids, current_user_id)
+      message = []
+      status = "success"
+      user_ids.each do |user_id|
+        user = self.find(user_id)
+        if current_user_id == user.id.to_s
+          status = "error"
+          message.push("'#{user.user_name}' "+"不能删除自己")
+          break
+        end
+
+        if user.present?
+          user.destroy
+          if user
+            status = "success"
+            message.push("删除成功"+ ", name=#{user.user_name}")
+          else
+            status = "error"
+            message.push("删除失败"+ ", name=#{user.user_name}")
+          end
+        else
+          status = "error"
+          message.push("'#{user_id}' "+"不存在!")
+        end
+      end
+      [status, message]
+    end
+
+    def check_user_login(user, password)
+      message = {:inputPassword => [],
+                 :inputEmail => []}
+      if user.nil?
+        status = 'failed'
+        message[:inputEmail].push("邮箱不正确")
+      elsif user.authenticate_password(password)
+        status = 'success'
+      else
+        status = 'failed'
+        message[:inputPassword].push("密码错误")
+      end
+      {:status => status, :message => message}
+    end
   end
 
   private

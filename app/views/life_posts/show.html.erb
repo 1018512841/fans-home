@@ -3,12 +3,12 @@
 
     <p id="notice"><%= notice %></p>
       <div class="row text-center col-lg-12">
-        <%= link_to(I18n.t("previous_page"), @life_post.previous_one_path,
+        <%= link_to(I18n.t("previous_page"), previous_one_path(@life_post),
                     {class: "btn btn-default",
                      style: "float:left",
                      disabled: @life_post.previous_one.nil?}) %>
         <span class="life_detail_page_title" style="font-size: xx-large"> <%= @life_post.title %></span>
-        <%= link_to(I18n.t("next_page"), @life_post.next_one_path,
+        <%= link_to(I18n.t("next_page"), next_one_path(@life_post),
                     {class: "btn btn-default",
                      style: "float:right",
                      disabled: @life_post.next_one.nil?}) %>

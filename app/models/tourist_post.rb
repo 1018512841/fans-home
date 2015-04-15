@@ -8,12 +8,10 @@ class TouristPost
   embeds_many :tourist_images
 
   def add_image(file)
-    result = ""
     image = TouristImage.new({avatar: file})
     image.avatar.read
     image.tourist_post = self
     image.save
-    result
   end
 
   def image_cover_url
@@ -25,11 +23,7 @@ class TouristPost
   end
 
   def normal_images
-    if self.tourist_images.length > 0
-      self.tourist_images[1..-1]
-    else
-      []
-    end
+    self.tourist_images[1..-1] || []
   end
 
   def format_coordinate

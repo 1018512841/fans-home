@@ -13,7 +13,12 @@ class UsersController < ApplicationController
 
 
   def user_list
-    users_array = User.user_list
+    users_array = User.all.map do |user|
+      [
+          "<a href='/users/#{user._id}' user_id='#{user._id}'  class='user_link'>#{user.user_name}</a>",
+          user.user_email
+      ]
+    end
     render :json => {data: users_array}
   end
 
