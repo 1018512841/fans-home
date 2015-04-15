@@ -87,14 +87,14 @@ describe User do
     describe "destroy_user_by_ids" do
       describe "user_ids is blank" do
         it "should return blank and success" do
-          status, message = User.destroy_user_by_ids([])
+          status, message = User.destroy_user_by_ids([],@user.id)
           status.should == "success"
           message.should == []
         end
       end
       describe "user_ids is not existing" do
         it "should return error message and error" do
-          status, message = User.destroy_user_by_ids([9999])
+          status, message = User.destroy_user_by_ids([9999],@user.id)
           status.should == "error"
           message.should == ["'9999' does not existing!"]
         end
@@ -108,7 +108,7 @@ describe User do
                              password: "123456",
                              password_conformation: "123456"})
           user.save
-          status, message = User.destroy_user_by_ids([user._id.to_s])
+          status, message = User.destroy_user_by_ids([user._id.to_s],@user.id)
           status.should == "success"
           message.should == ["Delete user success, name=#{user.user_name}"]
         end
