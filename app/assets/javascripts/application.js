@@ -27,6 +27,7 @@
 //= require jquery.danmu
 //= require layer/layer.js.erb
 //= require layer/layer.ext.dev.js.erb
+//= require bootstrap-markdown.js
 
 //= require fw
 //= require common/dialog
@@ -36,5 +37,6 @@
 //= require tourist_posts
 //= require user_screen
 //= require dashboard
+//= require blogs
 
 

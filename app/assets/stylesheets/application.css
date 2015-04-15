@@ -17,6 +17,7 @@
  *= require select2
  *= require layer/layer.css.erb
  *= require layer/layer.ext.css.erb
+ *= require bootstrap-markdown.min
 
  *= require life_posts
  *= require blogs
