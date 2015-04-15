@@ -12,7 +12,7 @@ class CsdnConvert
     init_client
     collect_next_page
     @detail_links.each do |detail|
-      post = @agent.get(blog_url(name))
+      post = @agent.get(blog_url(detail))
       convert_one(post, &block)
     end
   end
@@ -52,7 +52,7 @@ class CsdnConvert
   end
 
   def blog_url(name)
-    "http://blog.csdn.net#{name}"
+    "http://blog.csdn.net/#{name}"
   end
 
 end
