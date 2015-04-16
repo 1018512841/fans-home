@@ -2,7 +2,7 @@
 <div class="container jumbotron">
 
   <div class="hero-unit" id="user_new_container">
-    <% if current_is_login? %>
+    <% if current_user.present? %>
         <div class="alert alert-warning alert-dismissible fade in" role="alert">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
           <strong>Warning!</strong> <%= I18n.t "new_user_error_message" %>

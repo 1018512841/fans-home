@@ -17,4 +17,12 @@ module BlogsHelper
     end
   end
 
+  def delete_blog_tag(blog)
+    if blog.user == current_user
+      content_tag :span, class: 'owner-operate' do
+        link_to '删除', blog_path(@blog), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-warning'
+      end
+    end
+  end
+
 end

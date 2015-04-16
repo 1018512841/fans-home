@@ -10,6 +10,7 @@
           <% @blog.tags.each do |tag| %>
               <span class="label label-info"><%= tag %></span>
           <% end %>
+          <%= delete_blog_tag(@blog) %>
         </p>
         <%= image_tag @blog.avatar, width: "100%" %>
       </div>
