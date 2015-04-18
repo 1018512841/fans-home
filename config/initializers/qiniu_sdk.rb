@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'qiniu'
 
 Qiniu.establish_connection! :access_key => "381JZ6WLuJj_7Pdac67nk1rU6zo6ZuTK0cF2bLMb",

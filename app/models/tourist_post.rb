@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TouristPost
   include Mongoid::Document
   field :city, type: String

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'carrierwave/mongoid'
 class LifePost
   include Mongoid::Document

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module StaticPageHelper
   def generate_navbar_item(url, text)
     content_tag 'li', role: 'presentation' do

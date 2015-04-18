@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'net/http/post/multipart'
 require 'hmac-sha1'
 require 'httparty'

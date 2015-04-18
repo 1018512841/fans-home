@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::Panel
   include Mongoid::Document
   include Mongoid::Timestamps

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module BlogsHelper
 
   def previous_tag(blog)

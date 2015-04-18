@@ -7,17 +7,17 @@ gem 'rails-i18n'
 
 gem 'sqlite3', '1.3.9'
 
-gem "bootstrap-will_paginate", "0.0.10"
+gem 'bootstrap-will_paginate', '0.0.10'
 gem 'simple_form'
 gem 'bootstrap_form'
-gem "mongoid", "~> 4.0.0"
+gem 'mongoid', '~> 4.0.0'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 
 gem 'carrierwave', '0.10.0'
-gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
-gem 'mini_magick', :git => 'git://github.com/probablycorey/mini_magick.git'
+gem 'mini_magick', git: 'git://github.com/probablycorey/mini_magick.git'
 
 group :development, :test do
   gem 'rspec-rails', '2.13.1'
@@ -32,7 +32,7 @@ group :test do
   gem 'guard-spork', '1.5.0'
   gem 'childprocess'
   gem 'factory_girl_rails', '4.2.1'
-  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'cucumber-rails', '1.4.0', require: false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 # Use SCSS for stylesheets
@@ -56,7 +56,6 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-
 gem 'execjs'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'jquery-ui-rails'
@@ -66,34 +65,35 @@ group :development do
   # 更好的错误显示页面
   gem 'better_errors'
   # 隐藏 asset log
-  # Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-20 17:05:52 +0800
-  gem "quiet_assets", "~> 1.0.2"
+  # Started GET "/assets/jquery.js?body=1"
+  gem 'quiet_assets', '~> 1.0.2'
   # 调试
   gem 'pry'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'binding_of_caller'
   gem 'rubocop', require: false
+  gem 'magic_encoding'
 end
 
 gem 'tabs_on_rails'
 
-#markdown解释器
+# markdown解释器
 gem 'kramdown'
 # HTML转为markdown
 gem 'reverse_markdown'
 
-#博客的 metaweblog 协议的实现
+# 博客的 metaweblog 协议的实现
 gem 'metaweblog'
-#爬虫
+# 爬虫
 gem 'mechanize'
 
 gem 'qiniu'
 gem 'httparty'
-gem "select2-rails"
+gem 'select2-rails'
 gem 'thin'
 
 gem 'multipart-post'
 
-gem 'mina', :git => "https://github.com/mina-deploy/mina.git"
+gem 'mina', git: 'https://github.com/mina-deploy/mina.git'
 gem 'mina-sidekiq'

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class AdminTabBuilder < TabsOnRails::Tabs::Builder
   def open_tabs(options = {})
     @context.tag("ul", options, open = true)

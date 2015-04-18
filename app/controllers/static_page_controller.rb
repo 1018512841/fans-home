@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class StaticPageController < ApplicationController
   def index
     @panel = Admin::Panel.order(weight: :desc).first

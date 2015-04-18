@@ -1,3 +1,5 @@
+# -*- encoding : utf-8 -*-
+#encoding
 class Admin::PanelsController < AdminController
   before_action :set_admin_panel, only: [:show, :edit, :update, :destroy]
   set_tab :panel

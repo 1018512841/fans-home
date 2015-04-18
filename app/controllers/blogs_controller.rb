@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :check_user, except: [:index, :show]

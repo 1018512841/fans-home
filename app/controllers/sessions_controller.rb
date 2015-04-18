@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class SessionsController < ApplicationController
   def change_locale
     locale = params[:locale].to_s.downcase

@@ -183,6 +183,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     lumberjack (1.0.5)
+    magic_encoding (0.0.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -390,6 +391,7 @@ DEPENDENCIES
   jquery-ui-rails
   kramdown
   libnotify (= 0.8.0)
+  magic_encoding
   mechanize
   metaweblog
   mina!

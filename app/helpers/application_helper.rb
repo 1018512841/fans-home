@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module ApplicationHelper
   def current_user_name
     current_user = User.find_by(id:session[:user])

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module LifePostsHelper
 
   def next_one_path(post)

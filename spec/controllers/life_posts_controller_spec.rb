@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 require 'spec_helper'
 describe LifePostsController do
   describe 'display_life_item_picture' do

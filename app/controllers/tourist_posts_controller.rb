@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TouristPostsController < ApplicationController
   before_action :set_tourist_post, only: [:show, :edit, :update, :destroy]
   before_action :user_admin_check, only: [:new, :create, :edit, :update, :upload_image, :destroy_image, :destroy]
