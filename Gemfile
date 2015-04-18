@@ -73,6 +73,7 @@ group :development do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'binding_of_caller'
+  gem 'rubocop', require: false
 end
 
 gem 'tabs_on_rails'
