@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-
+# 后台管理首页的面板
 class Admin::PanelsController < AdminController
   before_action :set_admin_panel, only: [:show, :edit, :update, :destroy]
   set_tab :panel

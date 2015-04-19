@@ -1,5 +1,7 @@
 # -*- encoding : utf-8 -*-
 require 'carrierwave/mongoid'
+
+# 生活照片类
 class LifePost
   include Mongoid::Document
   include Mongoid::Timestamps
@@ -13,7 +15,4 @@ class LifePost
   mount_uploader :avatar, AvatarUploader
 
   scope :life_posts_with, ->(start, length) { offset(start).limit(length) }
-
-
-
 end

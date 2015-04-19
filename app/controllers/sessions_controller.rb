@@ -1,4 +1,5 @@
 # -*- encoding : utf-8 -*-
+# session
 class SessionsController < ApplicationController
   def change_locale
     locale = params[:locale].to_s.downcase
@@ -6,7 +7,7 @@ class SessionsController < ApplicationController
       if locale != session[:default_locale]
         session[:default_locale] = locale
         I18n.locale = locale
-        render :json => {}
+        render json: {}
       end
     end
   end

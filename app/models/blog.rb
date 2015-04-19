@@ -22,11 +22,10 @@ class Blog
   scope :recommends, -> { where(:avatar.ne => nil).order(created_at: :desc).limit(5) }
 
   def html_body
-    Kramdown::Document.new(self.body).to_html
+    Kramdown::Document.new(body).to_html
   end
 
   def text_body
     Nokogiri::HTML(html_body).text
   end
-
 end

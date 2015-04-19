@@ -1,14 +1,13 @@
 # -*- encoding : utf-8 -*-
+# 生活照
 class LifePostsController < ApplicationController
-
   before_action :set_life_post, only: [:show, :edit, :update, :destroy]
   before_action :user_admin_check, only: [:new, :create, :edit, :update, :destroy]
-
 
   # GET /life_posts
   # GET /life_posts.json
   def index
-    @life_posts = LifePost.asc(:id).paginate(:page => params[:page], :per_page => 8)
+    @life_posts = LifePost.asc(:id).paginate(page: params[:page], per_page: 8)
   end
 
   # GET /life_posts/1
@@ -29,10 +28,11 @@ class LifePostsController < ApplicationController
   # POST /life_posts.json
   def create
     @life_post = LifePost.new(life_post_params)
-
     content = @life_post.avatar.read
     respond_to do |format|
-      if @life_post.save && stale?(etag: content, last_modified: @life_post.updated_at.utc, public: true)
+      if @life_post.save && stale?(etag: content,
+                                   last_modified: @life_post.updated_at.utc,
+                                   public: true)
         format.html { redirect_to @life_post, notice: 'Life post was successfully created.' }
       else
         format.html { render action: 'new' }
@@ -43,16 +43,17 @@ class LifePostsController < ApplicationController
   # PATCH/PUT /life_posts/1
   # PATCH/PUT /life_posts/1.json
   def update
-      @life_post.set(life_post_params)
-
-      content = @life_post.avatar.read
-      respond_to do |format|
-        if @life_post.save && stale?(etag: content, last_modified: @life_post.updated_at.utc, public: true)
-          format.html { redirect_to @life_post, notice: 'Life post was successfully created.' }
-        else
-          format.html { render action: 'edit' }
-        end
+    @life_post.set(life_post_params)
+    content = @life_post.avatar.read
+    respond_to do |format|
+      if @life_post.save && stale?(etag: content,
+                                   last_modified: @life_post.updated_at.utc,
+                                   public: true)
+        format.html { redirect_to @life_post, notice: 'Life post was successfully created.' }
+      else
+        format.html { render action: 'edit' }
       end
+    end
   end
 
   # DELETE /life_posts/1
@@ -66,22 +67,22 @@ class LifePostsController < ApplicationController
 
   def display_life_item_picture
     life_item_list = LifePost.life_posts_with(params[:start], 3).to_a
-    if params[:first_active] == "active" && life_item_list.size>0
-      life_item_list[0].status = "active"
+    if params[:first_active] == 'active' && life_item_list.size > 0
+      life_item_list[0].status = 'active'
     end
-    render :partial => "life_posts/life_picture_item",
-           :locals => {:life_item_list => life_item_list}
+    render partial: 'life_posts/life_picture_item',
+           locals: { life_item_list: life_item_list }
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_life_post
-      @life_post = LifePost.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def life_post_params
-      params.require(:life_post).permit(:title, :body, :avatar, :avatar_cache)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_life_post
+    @life_post = LifePost.find(params[:id])
+  end
 
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def life_post_params
+    params.require(:life_post).permit(:title, :body, :avatar, :avatar_cache)
+  end
 end
