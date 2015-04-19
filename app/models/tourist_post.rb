@@ -1,4 +1,5 @@
 # -*- encoding : utf-8 -*-
+# 旅游表
 class TouristPost
   include Mongoid::Document
   field :city, type: String
@@ -9,29 +10,29 @@ class TouristPost
   embeds_many :tourist_images
 
   def add_image(file)
-    image = TouristImage.new({avatar: file})
+    image = TouristImage.new(avatar: file)
     image.avatar.read
     image.tourist_post = self
     image.save
   end
 
   def image_cover_url
-    if self.tourist_images.length > 0
-      self.tourist_images[0].avatar.thumb.url
+    if tourist_images.length > 0
+      tourist_images[0].avatar.thumb.url
     else
-      "/images/bootstrap-mdo-sfmoma-01.jpg"
+      '/images/bootstrap-mdo-sfmoma-01.jpg'
     end
   end
 
   def normal_images
-    self.tourist_images[1..-1] || []
+    tourist_images[1..-1] || []
   end
 
   def format_coordinate
-    self.coordinate.split(/,/).map(&:to_f).reverse
+    coordinate.split(/,/).map(&:to_f).reverse
   end
 
   def map_title
-    "#{self.city} (#{self.start_time}-#{self.end_time})"
+    "#{city} (#{start_time}-#{end_time})"
   end
 end

@@ -6,5 +6,8 @@ Style/AsciiComments:
 Style/Encoding:
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Metrics/LineLength:
   Max: 99

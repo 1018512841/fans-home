@@ -1,4 +1,5 @@
 # -*- encoding : utf-8 -*-
+# 用户表
 class User
   include Mongoid::Document
   include Mongoid::Timestamps
@@ -19,70 +20,69 @@ class User
 
   has_many :blogs
 
-  def password=(password)
-    @password = password
+  def password=(pwd)
+    @password = pwd
     if @password.present?
-      generate_salt
-      self.encrypted_password = self.class.encrypt_password(self.password, self.salt)
+      salt = generate_salt
+      self.encrypted_password = self.class.encrypt_password(password, salt)
     end
   end
 
   def authenticate_password(password)
-    self.encrypted_password == self.class.encrypt_password(password, self.salt)
+    encrypted_password == self.class.encrypt_password(password, salt)
   end
 
   class << self
     def encrypt_password(password, salt)
-      Digest::SHA2.hexdigest(password + "fans-home" + salt)
+      Digest::SHA2.hexdigest(password + 'fans-home' + salt)
     end
 
-    def destroy_user_by_ids(user_ids, current_user_id)
+    def destroy_by_ids(user_ids, c_user_id)
       message = []
-      status = "success"
+      status = 'success'
       user_ids.each do |user_id|
-        user = self.find(user_id)
-        if current_user_id == user.id.to_s
-          status = "error"
-          message.push("'#{user.user_name}' "+"不能删除自己")
+        user = find(user_id)
+        if c_user_id == user.id.to_s
+          status = 'error'
+          message.push("'#{user.user_name}' 不能删除自己")
           break
         end
 
         if user.present?
           user.destroy
           if user
-            status = "success"
-            message.push("删除成功"+ ", name=#{user.user_name}")
+            status = 'success'
+            message.push("删除成功, name=#{user.user_name}")
           else
-            status = "error"
-            message.push("删除失败"+ ", name=#{user.user_name}")
+            status = 'error'
+            message.push("删除失败, name=#{user.user_name}")
           end
         else
-          status = "error"
-          message.push("'#{user_id}' "+"不存在!")
+          status = 'error'
+          message.push("'#{user_id}' 不存在!")
         end
       end
       [status, message]
     end
 
     def check_user_login(user, password)
-      message = {:inputPassword => [],
-                 :inputEmail => []}
+      message = { inputPassword: [], inputEmail: [] }
       if user.nil?
         status = 'failed'
-        message[:inputEmail].push("邮箱不正确")
+        message[:inputEmail].push('邮箱不正确')
       elsif user.authenticate_password(password)
         status = 'success'
       else
         status = 'failed'
-        message[:inputPassword].push("密码错误")
+        message[:inputPassword].push('密码错误')
       end
-      {:status => status, :message => message}
+      { status: status, message: message }
     end
   end
 
   private
 
   def generate_salt
-    self.salt= self.object_id.to_s + rand.to_s
+    object_id.to_s + rand.to_s
   end
 end

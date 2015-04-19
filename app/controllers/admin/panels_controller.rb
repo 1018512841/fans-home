@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-#encoding
+
 class Admin::PanelsController < AdminController
   before_action :set_admin_panel, only: [:show, :edit, :update, :destroy]
   set_tab :panel
@@ -65,6 +65,7 @@ class Admin::PanelsController < AdminController
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_admin_panel
     @admin_panel = Admin::Panel.find(params[:id])

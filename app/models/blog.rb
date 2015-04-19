@@ -2,6 +2,7 @@
 require 'kramdown'
 require 'nokogiri'
 
+# 博客类
 class Blog
   include Mongoid::Document
   include Mongoid::Timestamps
@@ -19,7 +20,6 @@ class Blog
 
   scope :hots, -> { order(created_at: :desc).limit(5) }
   scope :recommends, -> { where(:avatar.ne => nil).order(created_at: :desc).limit(5) }
-
 
   def html_body
     Kramdown::Document.new(self.body).to_html

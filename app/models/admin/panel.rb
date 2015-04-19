@@ -1,4 +1,5 @@
 # -*- encoding : utf-8 -*-
+# 首页的面板
 class Admin::Panel
   include Mongoid::Document
   include Mongoid::Timestamps

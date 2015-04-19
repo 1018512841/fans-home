@@ -73,7 +73,7 @@ class UsersController < ApplicationController
   end
 
   def destroy_users
-    status, message = User.destroy_user_by_ids(params[:user_ids],session[:user])
+    status, message = User.destroy_by_ids(params[:user_ids],session[:user])
     render :json => {status: status, message: message}
   end
 
